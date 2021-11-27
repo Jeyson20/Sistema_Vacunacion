@@ -53,11 +53,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FrmCentros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCentros.Designer.cs">
+      <DependentUpon>FrmCentros.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmPacientes.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmPacientes.Designer.cs">
       <DependentUpon>FrmPacientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmVacunaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmVacunaciones.Designer.cs">
+      <DependentUpon>FrmVacunaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmVacunas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmVacunas.Designer.cs">
+      <DependentUpon>FrmVacunas.cs</DependentUpon>
     </Compile>
     <Compile Include="Menu.cs">
       <SubType>Form</SubType>
@@ -67,9 +85,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="FrmPacientes.resx">
-      <DependentUpon>FrmPacientes.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
     </EmbeddedResource>
