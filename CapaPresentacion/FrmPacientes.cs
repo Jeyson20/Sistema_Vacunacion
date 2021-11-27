@@ -162,6 +162,7 @@ namespace CapaPresentacion
                 MessageBox.Show("Seleccione la fila que desea Eliminar");
             }
         }
+
     }
 }
 
