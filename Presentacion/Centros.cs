@@ -120,10 +120,10 @@ namespace Presentacion
             }
 
         }
-
         private void btnImprimir_Click(object sender, EventArgs e)
         {
-
+            Form reporte = new ReporteCentros();
+            reporte.Show();
         }
 
         private void Centros_Load(object sender, EventArgs e)
