@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace CapaPresentacion
+namespace Presentacion
 {
     public partial class Menu : Form
     {
@@ -17,12 +17,12 @@ namespace CapaPresentacion
             InitializeComponent();
         }
 
-        private void Salir_Click(object sender, EventArgs e)
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
-
         private Form formActivado = null;
+
         private void AbrirFormularioWrapper(Form formHijo)
         {
             if (formActivado != null)
@@ -38,43 +38,22 @@ namespace CapaPresentacion
 
         private void btnVacunaciones_Click(object sender, EventArgs e)
         {
-
+            //AbrirFormularioWrapper();
         }
 
         private void btnVacunas_Click(object sender, EventArgs e)
         {
-
+            //AbrirFormularioWrapper();
         }
 
         private void Pacientes_Click(object sender, EventArgs e)
         {
-            AbrirFormularioWrapper(new FrmPacientes());
+            AbrirFormularioWrapper(new Pacientes());
         }
 
         private void btnCentros_Click(object sender, EventArgs e)
         {
-            AbrirFormularioWrapper(new FrmCentros());
+            AbrirFormularioWrapper(new Centros());
         }
-        bool vai = false;
-        private void Header_MouseDown(object sender, MouseEventArgs e)
-        {
-            vai = true;
-
-        }
-
-        private void Header_MouseMove(object sender, MouseEventArgs e)
-        {
-            if (vai ==true)
-            {
-                this.Location = Cursor.Position;
-            }
-        }
-
-        private void Header_MouseUp(object sender, MouseEventArgs e)
-        {
-            vai = false;
-        }
-
-
     }
 }

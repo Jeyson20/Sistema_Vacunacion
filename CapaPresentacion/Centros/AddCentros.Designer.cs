@@ -1,5 +1,5 @@
 ﻿
-namespace CapaPresentacion.Centros
+namespace Presentacion.Centros
 {
     partial class AddCentros
     {

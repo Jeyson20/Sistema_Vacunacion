@@ -10,16 +10,22 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace CapaPresentacion
+namespace Presentacion
 {
-    public partial class FrmPacientes : Form
+    public partial class Pacientes : Form
     {
         private bool Editarse = false;
         E_Pacientes ObjEntidad = new E_Pacientes();
         N_Pacientes ObjNegocio = new N_Pacientes();
-        public FrmPacientes()
+        public Pacientes()
         {
             InitializeComponent();
+        }
+
+        private void Pacientes_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'vacunacionDataSet.Pacientes' table. You can move, or remove it, as needed.
+            this.pacientesTableAdapter.Fill(this.vacunacionDataSet.Pacientes);
         }
         public void mostrarBuscarTabla(string buscar)
         {
@@ -38,23 +44,11 @@ namespace CapaPresentacion
             txtcedula.Focus();
         }
 
-        private void FrmPacientes_Load(object sender, EventArgs e)
-        {
-            // TODO: This line of code loads data into the 'vacunacionDataSet2.Pacientes' table. You can move, or remove it, as needed.
-            this.pacientesTableAdapter.Fill(this.vacunacionDataSet2.Pacientes);
-            // TODO: This line of code loads data into the 'vacunacionDataSet3.CentrosVacunas' table. You can move, or remove it, as needed.
-            mostrarBuscarTabla("");
-
-        }
-
-       
-
         private void btnEditar_Click(object sender, EventArgs e)
         {
             if (tablaPacientes.SelectedRows.Count > 0)
             {
                 Editarse = true;
-                txtId.Text = tablaPacientes.CurrentRow.Cells[1].Value.ToString();
                 txtcedula.Text = tablaPacientes.CurrentRow.Cells[1].Value.ToString();
                 textnombre.Text = tablaPacientes.CurrentRow.Cells[2].Value.ToString();
                 txtapellido.Text = tablaPacientes.CurrentRow.Cells[3].Value.ToString();
@@ -85,8 +79,8 @@ namespace CapaPresentacion
                     ObjNegocio.InsertandoPacientes(ObjEntidad);
 
                     MessageBox.Show("Se ha Guardado el registro");
-                    mostrarBuscarTabla("");
                     Limpiarcajas();
+                    mostrarBuscarTabla("");
                 }
                 catch (Exception ex)
                 {
@@ -97,7 +91,6 @@ namespace CapaPresentacion
             {
                 try
                 {
-                    ObjEntidad.Idpaciente = Convert.ToInt32(txtId.Text);
                     ObjEntidad.Cedula = txtcedula.Text;
                     ObjEntidad.Nombre = textnombre.Text;
                     ObjEntidad.Apellido = txtapellido.Text;
@@ -108,8 +101,8 @@ namespace CapaPresentacion
                     ObjNegocio.EditandoPaciente(ObjEntidad);
 
                     MessageBox.Show("Se ha Editado el registro");
-                    mostrarBuscarTabla("");
                     Limpiarcajas();
+                    mostrarBuscarTabla("");
                     Editarse = false;
                 }
                 catch (Exception ex)
@@ -117,25 +110,17 @@ namespace CapaPresentacion
                     MessageBox.Show("No se pudo editar el registro" + ex);
                 }
             }
+
         }
 
-
-           
-        private void btnEliminar_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
-            if (tablaPacientes.SelectedRows.Count > 0)
-            {
-                ObjEntidad.Cedula = tablaPacientes.CurrentRow.Cells[1].Value.ToString();
-                ObjNegocio.EliminandoPaciente(ObjEntidad);
 
-                MessageBox.Show("Se elimino correctamente");
-                mostrarBuscarTabla("");
-            }
-            else
-            {
-                MessageBox.Show("Seleccione la fila que desea Eliminar");
-            }
         }
 
+        private void btnLimpiar_Click(object sender, EventArgs e)
+        {
+            Limpiarcajas();
+        }
     }
 }
