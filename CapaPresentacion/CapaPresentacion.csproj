@@ -53,10 +53,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FrmCentros.cs">
+    <Compile Include="Centros\AddCentros.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmCentros.Designer.cs">
+    <Compile Include="Centros\AddCentros.Designer.cs">
+      <DependentUpon>AddCentros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Centros\FrmCentros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Centros\FrmCentros.Designer.cs">
       <DependentUpon>FrmCentros.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmPacientes.cs">
@@ -85,6 +91,36 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VacunacionDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VacunacionDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="VacunacionDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VacunacionDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="VacunacionDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VacunacionDataSet3.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Centros\AddCentros.resx">
+      <DependentUpon>AddCentros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Centros\FrmCentros.resx">
+      <DependentUpon>FrmCentros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPacientes.resx">
+      <DependentUpon>FrmPacientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmVacunaciones.resx">
+      <DependentUpon>FrmVacunaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmVacunas.resx">
+      <DependentUpon>FrmVacunas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
     </EmbeddedResource>
@@ -108,6 +144,39 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="VacunacionDataSet1.xsc">
+      <DependentUpon>VacunacionDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="VacunacionDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>VacunacionDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="VacunacionDataSet1.xss">
+      <DependentUpon>VacunacionDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="VacunacionDataSet2.xsc">
+      <DependentUpon>VacunacionDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="VacunacionDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>VacunacionDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="VacunacionDataSet2.xss">
+      <DependentUpon>VacunacionDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="VacunacionDataSet3.xsc">
+      <DependentUpon>VacunacionDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="VacunacionDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>VacunacionDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="VacunacionDataSet3.xss">
+      <DependentUpon>VacunacionDataSet3.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

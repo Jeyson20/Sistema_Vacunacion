@@ -10,7 +10,7 @@ namespace CapaNegocios
 {
     public class N_Pacientes
     {
-        Db_Vacunacion objDato = new Db_Vacunacion();
+        D_Pacientes objDato = new D_Pacientes();
 
         public List<E_Pacientes>ListadoPacientes(string buscar)
         {

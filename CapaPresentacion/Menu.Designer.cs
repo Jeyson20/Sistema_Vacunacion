@@ -31,7 +31,6 @@ namespace CapaPresentacion
         {
             this.Header = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
-            this.Salir = new System.Windows.Forms.PictureBox();
             this.Wrapper = new System.Windows.Forms.Panel();
             this.SideBar = new System.Windows.Forms.Panel();
             this.btnCentros = new System.Windows.Forms.Button();
@@ -39,10 +38,11 @@ namespace CapaPresentacion
             this.btnVacunas = new System.Windows.Forms.Button();
             this.btnVacunaciones = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.Salir = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Header.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Salir)).BeginInit();
             this.SideBar.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Salir)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -70,17 +70,6 @@ namespace CapaPresentacion
             this.label2.Size = new System.Drawing.Size(130, 18);
             this.label2.TabIndex = 4;
             this.label2.Text = "VACUNACIONES";
-            // 
-            // Salir
-            // 
-            this.Salir.Image = global::CapaPresentacion.Properties.Resources._61155;
-            this.Salir.Location = new System.Drawing.Point(773, 12);
-            this.Salir.Name = "Salir";
-            this.Salir.Size = new System.Drawing.Size(35, 35);
-            this.Salir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.Salir.TabIndex = 0;
-            this.Salir.TabStop = false;
-            this.Salir.Click += new System.EventHandler(this.Salir_Click);
             // 
             // Wrapper
             // 
@@ -169,6 +158,17 @@ namespace CapaPresentacion
             this.label1.TabIndex = 0;
             this.label1.Text = "ADMIN";
             // 
+            // Salir
+            // 
+            this.Salir.Image = global::CapaPresentacion.Properties.Resources._61155;
+            this.Salir.Location = new System.Drawing.Point(773, 12);
+            this.Salir.Name = "Salir";
+            this.Salir.Size = new System.Drawing.Size(35, 35);
+            this.Salir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Salir.TabIndex = 0;
+            this.Salir.TabStop = false;
+            this.Salir.Click += new System.EventHandler(this.Salir_Click);
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::CapaPresentacion.Properties.Resources.logoUser;
@@ -193,9 +193,9 @@ namespace CapaPresentacion
             this.Text = "Menu";
             this.Header.ResumeLayout(false);
             this.Header.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Salir)).EndInit();
             this.SideBar.ResumeLayout(false);
             this.SideBar.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Salir)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 

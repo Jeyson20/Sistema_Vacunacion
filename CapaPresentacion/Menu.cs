@@ -53,7 +53,7 @@ namespace CapaPresentacion
 
         private void btnCentros_Click(object sender, EventArgs e)
         {
-
+            AbrirFormularioWrapper(new FrmCentros());
         }
         bool vai = false;
         private void Header_MouseDown(object sender, MouseEventArgs e)

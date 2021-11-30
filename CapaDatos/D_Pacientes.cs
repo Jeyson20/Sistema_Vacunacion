@@ -10,7 +10,7 @@ using System.Data;
 
 namespace CapaDatos
 {
-    public class Db_Vacunacion
+    public class D_Pacientes
     {
         SqlConnection conexion = new SqlConnection(ConfigurationManager.ConnectionStrings["conectar"].ConnectionString);
 
