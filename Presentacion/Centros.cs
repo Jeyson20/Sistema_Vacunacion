@@ -20,12 +20,13 @@ namespace Presentacion
         public Centros()
         {
             InitializeComponent();
-            mostrarBuscarTabla("");
+           
+            mostrarBuscarTabla();
         }
-        public void mostrarBuscarTabla(string buscar)
+        public void mostrarBuscarTabla()
         {
             N_Centros objnegocio = new N_Centros();
-            tablacentros.DataSource = objnegocio.ListadoCentros(buscar);
+            tablacentros.DataSource = objnegocio.ListadoCentros();
         }
 
         private void Limpiarcajas()
@@ -54,7 +55,7 @@ namespace Presentacion
 
                     ObjNegocio.InsertandoCentros(ObjEntidad);
                     MessageBox.Show("Se ha Guardado el registro");
-                    mostrarBuscarTabla("");
+                    mostrarBuscarTabla();
                     Limpiarcajas();
                 }
                 catch (Exception ex)
@@ -75,7 +76,7 @@ namespace Presentacion
                     ObjNegocio.EditandoCentro(ObjEntidad);
 
                     MessageBox.Show("Se ha Editado el registro");
-                    mostrarBuscarTabla("");
+                    mostrarBuscarTabla();
                     Limpiarcajas();
                     Editarse = false;
                 }
@@ -111,7 +112,7 @@ namespace Presentacion
                 ObjNegocio.EliminandoCentros(ObjEntidad);
 
                 MessageBox.Show("Se elimino correctamente");
-                mostrarBuscarTabla("");
+                mostrarBuscarTabla();
                 Limpiarcajas();
             }
             else
@@ -128,10 +129,11 @@ namespace Presentacion
 
         private void Centros_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'vacunacionDataSet.Vacunaciones' table. You can move, or remove it, as needed.
-            this.vacunacionesTableAdapter.Fill(this.vacunacionDataSet.Vacunaciones);
+            mostrarBuscarTabla();
 
 
         }
+
+  
     }
 }

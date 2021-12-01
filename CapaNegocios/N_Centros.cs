@@ -13,10 +13,10 @@ namespace CapaNegocios
     {
         D_Centros objDato = new D_Centros();
 
-        public List<E_Centros> ListadoCentros(string buscar)
+        public DataTable ListadoCentros()
         {
 
-            return (List<E_Centros>)objDato.ListarCentros(buscar);
+            return objDato.ListarCentros();
 
         }
 

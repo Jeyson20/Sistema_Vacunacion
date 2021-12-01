@@ -115,7 +115,8 @@ namespace Presentacion
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            Form reporte = new ReportePacientes();
+            reporte.Show();
         }
 
         private void btnLimpiar_Click(object sender, EventArgs e)

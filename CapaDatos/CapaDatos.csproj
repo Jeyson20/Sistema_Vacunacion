@@ -47,6 +47,8 @@
   <ItemGroup>
     <Compile Include="D_Pacientes.cs" />
     <Compile Include="D_Centros.cs" />
+    <Compile Include="D_Vacunaciones.cs" />
+    <Compile Include="D_Vacunas.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

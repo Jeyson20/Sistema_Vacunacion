@@ -45,21 +45,19 @@ namespace Presentacion
             this.btnImprimir = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.tablacentros = new System.Windows.Forms.DataGridView();
+            this.pBUSCARCENTROBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.vacunacionDataSet = new Presentacion.VacunacionDataSet();
+            this.label6 = new System.Windows.Forms.Label();
             this.cenCodigoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cenProvinciaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cenCantidadLotesDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cenDescripcionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cenDireccionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.centrosVacunasBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.vacunacionDataSet = new Presentacion.VacunacionDataSet();
-            this.label6 = new System.Windows.Forms.Label();
-            this.centrosVacunasTableAdapter = new Presentacion.VacunacionDataSetTableAdapters.CentrosVacunasTableAdapter();
-            this.fKVacunacionesCentrosVacunasBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.vacunacionesTableAdapter = new Presentacion.VacunacionDataSetTableAdapters.VacunacionesTableAdapter();
+            this.pBUSCARCENTROBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.tablacentros)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.centrosVacunasBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBUSCARCENTROBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.vacunacionDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fKVacunacionesCentrosVacunasBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBUSCARCENTROBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // label5
@@ -206,12 +204,32 @@ namespace Presentacion
             this.cenCantidadLotesDataGridViewTextBoxColumn,
             this.cenDescripcionDataGridViewTextBoxColumn,
             this.cenDireccionDataGridViewTextBoxColumn});
-            this.tablacentros.DataSource = this.centrosVacunasBindingSource;
+            this.tablacentros.DataSource = this.pBUSCARCENTROBindingSource1;
             this.tablacentros.Location = new System.Drawing.Point(38, 110);
             this.tablacentros.Name = "tablacentros";
             this.tablacentros.ReadOnly = true;
             this.tablacentros.Size = new System.Drawing.Size(725, 162);
             this.tablacentros.TabIndex = 43;
+            // 
+            // pBUSCARCENTROBindingSource
+            // 
+            this.pBUSCARCENTROBindingSource.DataMember = "P_BUSCAR_CENTRO";
+            this.pBUSCARCENTROBindingSource.DataSource = this.vacunacionDataSet;
+            // 
+            // vacunacionDataSet
+            // 
+            this.vacunacionDataSet.DataSetName = "VacunacionDataSet";
+            this.vacunacionDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(34, 305);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(21, 16);
+            this.label6.TabIndex = 44;
+            this.label6.Text = "ID";
             // 
             // cenCodigoDataGridViewTextBoxColumn
             // 
@@ -250,38 +268,10 @@ namespace Presentacion
             this.cenDireccionDataGridViewTextBoxColumn.Name = "cenDireccionDataGridViewTextBoxColumn";
             this.cenDireccionDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // centrosVacunasBindingSource
+            // pBUSCARCENTROBindingSource1
             // 
-            this.centrosVacunasBindingSource.DataMember = "CentrosVacunas";
-            this.centrosVacunasBindingSource.DataSource = this.vacunacionDataSet;
-            // 
-            // vacunacionDataSet
-            // 
-            this.vacunacionDataSet.DataSetName = "VacunacionDataSet";
-            this.vacunacionDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(34, 305);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(21, 16);
-            this.label6.TabIndex = 44;
-            this.label6.Text = "ID";
-            // 
-            // centrosVacunasTableAdapter
-            // 
-            this.centrosVacunasTableAdapter.ClearBeforeFill = true;
-            // 
-            // fKVacunacionesCentrosVacunasBindingSource
-            // 
-            this.fKVacunacionesCentrosVacunasBindingSource.DataMember = "FK_Vacunaciones_CentrosVacunas";
-            this.fKVacunacionesCentrosVacunasBindingSource.DataSource = this.centrosVacunasBindingSource;
-            // 
-            // vacunacionesTableAdapter
-            // 
-            this.vacunacionesTableAdapter.ClearBeforeFill = true;
+            this.pBUSCARCENTROBindingSource1.DataMember = "P_BUSCAR_CENTRO";
+            this.pBUSCARCENTROBindingSource1.DataSource = this.vacunacionDataSet;
             // 
             // Centros
             // 
@@ -310,9 +300,9 @@ namespace Presentacion
             this.Text = "Centros";
             this.Load += new System.EventHandler(this.Centros_Load);
             ((System.ComponentModel.ISupportInitialize)(this.tablacentros)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.centrosVacunasBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBUSCARCENTROBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.vacunacionDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fKVacunacionesCentrosVacunasBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBUSCARCENTROBindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -336,14 +326,12 @@ namespace Presentacion
         private System.Windows.Forms.DataGridView tablacentros;
         private System.Windows.Forms.Label label6;
         private VacunacionDataSet vacunacionDataSet;
-        private System.Windows.Forms.BindingSource centrosVacunasBindingSource;
-        private VacunacionDataSetTableAdapters.CentrosVacunasTableAdapter centrosVacunasTableAdapter;
-        private System.Windows.Forms.BindingSource fKVacunacionesCentrosVacunasBindingSource;
-        private VacunacionDataSetTableAdapters.VacunacionesTableAdapter vacunacionesTableAdapter;
+        private System.Windows.Forms.BindingSource pBUSCARCENTROBindingSource;
         private System.Windows.Forms.DataGridViewTextBoxColumn cenCodigoDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn cenProvinciaDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn cenCantidadLotesDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn cenDescripcionDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn cenDireccionDataGridViewTextBoxColumn;
+        private System.Windows.Forms.BindingSource pBUSCARCENTROBindingSource1;
     }
 }

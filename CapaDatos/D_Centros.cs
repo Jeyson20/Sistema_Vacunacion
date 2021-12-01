@@ -14,36 +14,19 @@ namespace CapaDatos
     {
         SqlConnection conexion = new SqlConnection(ConfigurationManager.ConnectionStrings["conectar"].ConnectionString);
 
-        public object ListarCentros(string buscar)
+        public DataTable ListarCentros()
         {
-            SqlDataReader LeerFilas;
+            DataTable dataTable = new DataTable();
+            SqlDataReader sqlDataReader;
             SqlCommand cmd = new SqlCommand("P_BUSCAR_CENTRO", conexion);
             cmd.CommandType = CommandType.StoredProcedure;
             conexion.Open();
 
-            cmd.Parameters.AddWithValue("@BUSCAR", buscar);
-
-            LeerFilas = cmd.ExecuteReader();
-
-            List<E_Centros> Listar = new List<E_Centros>();
-
-            while (LeerFilas.Read())
-            {
-                Listar.Add(new E_Centros
-                {
-                    Cen_Codigo = LeerFilas.GetInt32(0),
-                    Cen_Provincia=  LeerFilas.GetInt32(1),
-                    Cen_CantidadLotes = LeerFilas.GetDecimal(2),
-                    Cen_Descripcion = LeerFilas.GetString(3),
-                    Cen_Direccion = LeerFilas.GetString(4),
-                });
-
-            }
+            sqlDataReader = cmd.ExecuteReader();
+            dataTable.Load(sqlDataReader);
+            sqlDataReader.Close();
             conexion.Close();
-            LeerFilas.Close();
-
-
-            return Listar;
+            return dataTable;
         }
 
         public DataTable ListarC(string buscar)

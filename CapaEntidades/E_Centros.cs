@@ -17,11 +17,13 @@ namespace CapaEntidades
         private string _Cen_Descripcion;
 
         private string _Cen_Direccion;
+        private string _buscar;
 
         public int Cen_Codigo { get => _Cen_Codigo; set => _Cen_Codigo = value; }
         public int Cen_Provincia { get => _Cen_Provincia; set => _Cen_Provincia = value; }
         public decimal Cen_CantidadLotes { get => _Cen_CantidadLotes; set => _Cen_CantidadLotes = value; }
         public string Cen_Descripcion { get => _Cen_Descripcion; set => _Cen_Descripcion = value; }
         public string Cen_Direccion { get => _Cen_Direccion; set => _Cen_Direccion = value; }
+        public string Buscar { get => _buscar; set => _buscar = value; }
     }
 }

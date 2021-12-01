@@ -2,23 +2,26 @@
 <Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2008/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
   <Body>
     <ReportItems>
-      <Tablix Name="Tablix2">
+      <Tablix Name="Tablix1">
         <TablixBody>
           <TablixColumns>
             <TablixColumn>
-              <Width>4.06303cm</Width>
+              <Width>2.82632cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>4.06303cm</Width>
+              <Width>2.82632cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>4.06303cm</Width>
+              <Width>2.82632cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>4.06303cm</Width>
+              <Width>4.83715cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>4.06303cm</Width>
+              <Width>2.82632cm</Width>
+            </TablixColumn>
+            <TablixColumn>
+              <Width>4.0434cm</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
@@ -27,14 +30,14 @@
               <TablixCells>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="Textbox8">
+                    <Textbox Name="Textbox1">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>CODIGO</Value>
+                              <Value>CEDULA</Value>
                               <Style>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
@@ -44,8 +47,19 @@
                             <TextAlign>Center</TextAlign>
                           </Style>
                         </Paragraph>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value />
+                              <Style>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>Textbox8</rd:DefaultName>
+                      <rd:DefaultName>Textbox1</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
@@ -62,14 +76,14 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="Textbox10">
+                    <Textbox Name="Textbox3">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>PROVINCIA</Value>
+                              <Value>NOMBRE</Value>
                               <Style>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
@@ -79,8 +93,19 @@
                             <TextAlign>Center</TextAlign>
                           </Style>
                         </Paragraph>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value />
+                              <Style>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>Textbox10</rd:DefaultName>
+                      <rd:DefaultName>Textbox3</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
@@ -97,14 +122,14 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="Textbox12">
+                    <Textbox Name="Textbox7">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>CANTIDAD </Value>
+                              <Value>APELLIDO</Value>
                               <Style>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
@@ -115,7 +140,7 @@
                           </Style>
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>Textbox12</rd:DefaultName>
+                      <rd:DefaultName>Textbox7</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
@@ -132,14 +157,14 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="Textbox20">
+                    <Textbox Name="Textbox9">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>DESCRIPCION</Value>
+                              <Value>FECHA DE NACIMIENTO</Value>
                               <Style>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
@@ -149,8 +174,19 @@
                             <TextAlign>Center</TextAlign>
                           </Style>
                         </Paragraph>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value />
+                              <Style>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>Textbox20</rd:DefaultName>
+                      <rd:DefaultName>Textbox9</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
@@ -167,7 +203,53 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="Textbox22">
+                    <Textbox Name="Textbox11">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>SEXO</Value>
+                              <Style>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
+                        </Paragraph>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value />
+                              <Style>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox11</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>LightGrey</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <BackgroundColor>Silver</BackgroundColor>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Textbox5">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
@@ -184,8 +266,19 @@
                             <TextAlign>Center</TextAlign>
                           </Style>
                         </Paragraph>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value />
+                              <Style>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>Textbox22</rd:DefaultName>
+                      <rd:DefaultName>Textbox5</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
@@ -207,14 +300,14 @@
               <TablixCells>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="Cen_Codigo">
+                    <Textbox Name="Pac_Cedula">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!Cen_Codigo.Value</Value>
+                              <Value>=Fields!Pac_Cedula.Value</Value>
                               <Style />
                             </TextRun>
                           </TextRuns>
@@ -223,7 +316,7 @@
                           </Style>
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>Cen_Codigo</rd:DefaultName>
+                      <rd:DefaultName>Pac_Cedula</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
@@ -239,14 +332,14 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="Cen_Provincia">
+                    <Textbox Name="Pac_Nombre">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!Cen_Provincia.Value</Value>
+                              <Value>=Fields!Pac_Nombre.Value</Value>
                               <Style />
                             </TextRun>
                           </TextRuns>
@@ -255,7 +348,7 @@
                           </Style>
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>Cen_Provincia</rd:DefaultName>
+                      <rd:DefaultName>Pac_Nombre</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
@@ -271,14 +364,14 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="Cen_CantidadLotes">
+                    <Textbox Name="Pac_Apellido1">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!Cen_CantidadLotes.Value</Value>
+                              <Value>=Fields!Pac_Apellido.Value</Value>
                               <Style />
                             </TextRun>
                           </TextRuns>
@@ -287,7 +380,7 @@
                           </Style>
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>Cen_CantidadLotes</rd:DefaultName>
+                      <rd:DefaultName>Pac_Apellido1</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
@@ -303,14 +396,14 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="Cen_Descripcion">
+                    <Textbox Name="Pac_FNacimiento">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!Cen_Descripcion.Value</Value>
+                              <Value>=Fields!Pac_FNacimiento.Value</Value>
                               <Style />
                             </TextRun>
                           </TextRuns>
@@ -319,7 +412,7 @@
                           </Style>
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>Cen_Descripcion</rd:DefaultName>
+                      <rd:DefaultName>Pac_FNacimiento</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
@@ -335,14 +428,14 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="Cen_Direccion">
+                    <Textbox Name="Pac_Sexo">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!Cen_Direccion.Value</Value>
+                              <Value>=Fields!Pac_Sexo.Value</Value>
                               <Style />
                             </TextRun>
                           </TextRuns>
@@ -351,7 +444,39 @@
                           </Style>
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>Cen_Direccion</rd:DefaultName>
+                      <rd:DefaultName>Pac_Sexo</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>LightGrey</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Pac_Direccion">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=Fields!Pac_Direccion.Value</Value>
+                              <Style />
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Pac_Direccion</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
@@ -376,6 +501,7 @@
             <TablixMember />
             <TablixMember />
             <TablixMember />
+            <TablixMember />
           </TablixMembers>
         </TablixColumnHierarchy>
         <TablixRowHierarchy>
@@ -385,17 +511,13 @@
             </TablixMember>
             <TablixMember>
               <Group Name="Details" />
-              <TablixMembers>
-                <TablixMember />
-              </TablixMembers>
             </TablixMember>
           </TablixMembers>
         </TablixRowHierarchy>
         <DataSetName>DataSet1</DataSetName>
-        <Top>0.07056cm</Top>
-        <Left>0.34374cm</Left>
+        <Left>0.36724cm</Left>
         <Height>1.2cm</Height>
-        <Width>20.31514cm</Width>
+        <Width>20.18583cm</Width>
         <Style>
           <Border>
             <Style>None</Style>
@@ -403,15 +525,8 @@
         </Style>
       </Tablix>
     </ReportItems>
-    <Height>17.07082mm</Height>
-    <Style>
-      <Border>
-        <Style>Dashed</Style>
-      </Border>
-      <TopBorder>
-        <Style>Dashed</Style>
-      </TopBorder>
-    </Style>
+    <Height>80.8354mm</Height>
+    <Style />
   </Body>
   <Width>210mm</Width>
   <Page>
@@ -427,7 +542,7 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value>REPORTE DE CENTROS DE VACUNACION</Value>
+                  <Value>REPORTE DE PACIENTES</Value>
                   <Style>
                     <FontFamily>Arial Black</FontFamily>
                     <FontSize>18pt</FontSize>
@@ -440,10 +555,10 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox24</rd:DefaultName>
-          <Top>0.64918cm</Top>
-          <Left>2.58974cm</Left>
+          <Top>0.81357cm</Top>
+          <Left>5.91043cm</Left>
           <Height>1.16473cm</Height>
-          <Width>14.74896cm</Width>
+          <Width>9.61604cm</Width>
           <Style>
             <Border>
               <Style>None</Style>
@@ -454,7 +569,7 @@
             <PaddingBottom>2pt</PaddingBottom>
           </Style>
         </Textbox>
-        <Textbox Name="Textbox1">
+        <Textbox Name="Textbox2">
           <CanGrow>true</CanGrow>
           <KeepTogether>true</KeepTogether>
           <Paragraphs>
@@ -469,8 +584,8 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox1</rd:DefaultName>
-          <Top>0.96668cm</Top>
-          <Left>17.51508cm</Left>
+          <Top>1.13107cm</Top>
+          <Left>16.35974cm</Left>
           <Height>0.58264cm</Height>
           <Width>3.1438cm</Width>
           <ZIndex>1</ZIndex>
@@ -496,7 +611,7 @@
       <PrintOnFirstPage>true</PrintOnFirstPage>
       <PrintOnLastPage>true</PrintOnLastPage>
       <ReportItems>
-        <Textbox Name="Textbox2">
+        <Textbox Name="Textbox4">
           <CanGrow>true</CanGrow>
           <KeepTogether>true</KeepTogether>
           <Paragraphs>
@@ -513,8 +628,8 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox2</rd:DefaultName>
-          <Top>0.75037cm</Top>
-          <Left>5.50016cm</Left>
+          <Top>0.71865cm</Top>
+          <Left>5.82365cm</Left>
           <Height>0.52062cm</Height>
           <Width>9.35271cm</Width>
           <Style>
@@ -536,10 +651,10 @@
     </PageFooter>
     <PageHeight>29.7cm</PageHeight>
     <PageWidth>21cm</PageWidth>
-    <LeftMargin>0cm</LeftMargin>
-    <RightMargin>0cm</RightMargin>
-    <TopMargin>0cm</TopMargin>
-    <BottomMargin>0cm</BottomMargin>
+    <LeftMargin>2cm</LeftMargin>
+    <RightMargin>2cm</RightMargin>
+    <TopMargin>2cm</TopMargin>
+    <BottomMargin>2cm</BottomMargin>
     <ColumnSpacing>0.13cm</ColumnSpacing>
     <Style />
   </Page>
@@ -550,7 +665,7 @@
         <DataProvider>System.Data.DataSet</DataProvider>
         <ConnectString>/* Local Connection */</ConnectString>
       </ConnectionProperties>
-      <rd:DataSourceID>ea638713-34ca-4c7f-8a92-73763598bc24</rd:DataSourceID>
+      <rd:DataSourceID>2743ab05-913e-4313-b555-26ca75ff58cd</rd:DataSourceID>
     </DataSource>
   </DataSources>
   <DataSets>
@@ -560,37 +675,45 @@
         <CommandText>/* Local Query */</CommandText>
       </Query>
       <Fields>
-        <Field Name="Cen_Codigo">
-          <DataField>Cen_Codigo</DataField>
+        <Field Name="Pac_Codigo">
+          <DataField>Pac_Codigo</DataField>
           <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
-        <Field Name="Cen_Provincia">
-          <DataField>Cen_Provincia</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="Cen_CantidadLotes">
-          <DataField>Cen_CantidadLotes</DataField>
-          <rd:TypeName>System.Decimal</rd:TypeName>
-        </Field>
-        <Field Name="Cen_Descripcion">
-          <DataField>Cen_Descripcion</DataField>
+        <Field Name="Pac_Cedula">
+          <DataField>Pac_Cedula</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="Cen_Direccion">
-          <DataField>Cen_Direccion</DataField>
+        <Field Name="Pac_Nombre">
+          <DataField>Pac_Nombre</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Pac_Apellido">
+          <DataField>Pac_Apellido</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Pac_FNacimiento">
+          <DataField>Pac_FNacimiento</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="Pac_Sexo">
+          <DataField>Pac_Sexo</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Pac_Direccion">
+          <DataField>Pac_Direccion</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
       </Fields>
       <rd:DataSetInfo>
         <rd:DataSetName>VacunacionDataSet</rd:DataSetName>
         <rd:SchemaPath>C:\Users\Nomar\source\repos\Vacuna\Presentacion\VacunacionDataSet.xsd</rd:SchemaPath>
-        <rd:TableName>CentrosVacunas</rd:TableName>
+        <rd:TableName>Pacientes</rd:TableName>
         <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
         <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
-        <rd:TableAdapterName>CentrosVacunasTableAdapter</rd:TableAdapterName>
+        <rd:TableAdapterName>PacientesTableAdapter</rd:TableAdapterName>
       </rd:DataSetInfo>
     </DataSet>
   </DataSets>
   <rd:ReportUnitType>Cm</rd:ReportUnitType>
-  <rd:ReportID>7f34d083-7afd-46cf-9449-4ba323acdcd2</rd:ReportID>
+  <rd:ReportID>cee9d04f-7da2-49a5-9b09-292135f31037</rd:ReportID>
 </Report>
