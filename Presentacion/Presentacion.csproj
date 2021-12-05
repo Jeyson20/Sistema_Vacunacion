@@ -96,11 +96,34 @@
     <Compile Include="ReportePacientes.Designer.cs">
       <DependentUpon>ReportePacientes.cs</DependentUpon>
     </Compile>
+    <Compile Include="ReporteVacunas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReporteVacunas.Designer.cs">
+      <DependentUpon>ReporteVacunas.cs</DependentUpon>
+    </Compile>
     <Compile Include="SqlServerTypes\Loader.cs" />
     <Compile Include="VacunacionDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>VacunacionDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="VacunacionDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VacunacionDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Vacunaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vacunaciones.Designer.cs">
+      <DependentUpon>Vacunaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vacunas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vacunas.Designer.cs">
+      <DependentUpon>Vacunas.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Centros.resx">
       <DependentUpon>Centros.cs</DependentUpon>
@@ -124,11 +147,21 @@
     <EmbeddedResource Include="ReportePacientes.resx">
       <DependentUpon>ReportePacientes.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\ReportVacunas.rdlc" />
     <EmbeddedResource Include="Reportes\Report1.rdlc" />
     <EmbeddedResource Include="ReporteCentros.resx">
       <DependentUpon>ReporteCentros.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reportes\Report3.rdlc" />
+    <EmbeddedResource Include="ReporteVacunas.resx">
+      <DependentUpon>ReporteVacunas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vacunaciones.resx">
+      <DependentUpon>Vacunaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vacunas.resx">
+      <DependentUpon>Vacunas.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -149,6 +182,17 @@
     </None>
     <None Include="VacunacionDataSet.xss">
       <DependentUpon>VacunacionDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="VacunacionDataSet1.xsc">
+      <DependentUpon>VacunacionDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="VacunacionDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>VacunacionDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="VacunacionDataSet1.xss">
+      <DependentUpon>VacunacionDataSet1.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>

@@ -54,7 +54,9 @@ namespace CapaDatos
             cmd.CommandType = CommandType.StoredProcedure;
             conexion.Open();
             cmd.Parameters.AddWithValue("@PROVINCIA", centros.Cen_Provincia);
+            cmd.Parameters.AddWithValue("@NUMEROLOTES", centros.Numero_Lotes);
             cmd.Parameters.AddWithValue("@CANTIDAD", centros.Cen_CantidadLotes);
+            cmd.Parameters.AddWithValue("@VENCIMIENTO", centros.Vencimiento);
             cmd.Parameters.AddWithValue("@DESCRIPCION", centros.Cen_Descripcion);
             cmd.Parameters.AddWithValue("@DIRECCION", centros.Cen_Direccion);
 
@@ -71,7 +73,9 @@ namespace CapaDatos
             conexion.Open();
             cmd.Parameters.AddWithValue("@ID", centros.Cen_Codigo);
             cmd.Parameters.AddWithValue("@PROVINCIA", centros.Cen_Provincia);
+            cmd.Parameters.AddWithValue("@NUMEROLOTES", centros.Numero_Lotes);
             cmd.Parameters.AddWithValue("@CANTIDAD", centros.Cen_CantidadLotes);
+            cmd.Parameters.AddWithValue("@VENCIMIENTO", centros.Vencimiento);
             cmd.Parameters.AddWithValue("@DESCRIPCION", centros.Cen_Descripcion);
             cmd.Parameters.AddWithValue("@DIRECCION", centros.Cen_Direccion);
 

@@ -34,7 +34,9 @@ namespace Presentacion
             Editarse = false;
             txtId.Text = "";
             txtProvincia.Text = "";
+            txtLote.Text = "";
             txtCantidad.Text = "";
+            dateTimePicker1.Text = "";
             txtDescripcion.Text = "";
             txtDireccion.Text = "";
             txtProvincia.Focus();
@@ -49,7 +51,9 @@ namespace Presentacion
                 try
                 {
                     ObjEntidad.Cen_Provincia = Convert.ToInt32(txtProvincia.Text);
+                    ObjEntidad.Numero_Lotes = txtLote.Text;
                     ObjEntidad.Cen_CantidadLotes = Convert.ToInt32(txtCantidad.Text);
+                    ObjEntidad.Vencimiento = Convert.ToDateTime(dateTimePicker1.Text);
                     ObjEntidad.Cen_Descripcion = txtDescripcion.Text;
                     ObjEntidad.Cen_Direccion = txtDireccion.Text;
 
@@ -69,7 +73,9 @@ namespace Presentacion
                 {
                     ObjEntidad.Cen_Codigo = Convert.ToInt32(txtId.Text);
                     ObjEntidad.Cen_Provincia = Convert.ToInt32(txtProvincia.Text);
+                    ObjEntidad.Numero_Lotes = txtLote.Text;
                     ObjEntidad.Cen_CantidadLotes = Convert.ToInt32(txtCantidad.Text);
+                    ObjEntidad.Vencimiento = Convert.ToDateTime(dateTimePicker1.Text);
                     ObjEntidad.Cen_Descripcion = txtDescripcion.Text;
                     ObjEntidad.Cen_Direccion = txtDireccion.Text;
 
@@ -94,9 +100,11 @@ namespace Presentacion
                 Editarse = true;
                 txtId.Text = tablacentros.CurrentRow.Cells[0].Value.ToString();
                 txtProvincia.Text = tablacentros.CurrentRow.Cells[1].Value.ToString();
-                txtCantidad.Text = tablacentros.CurrentRow.Cells[2].Value.ToString();
-                txtDescripcion.Text = tablacentros.CurrentRow.Cells[3].Value.ToString();
-                txtDireccion.Text = tablacentros.CurrentRow.Cells[4].Value.ToString();
+                txtLote.Text = tablacentros.CurrentRow.Cells[2].Value.ToString();
+                txtCantidad.Text = tablacentros.CurrentRow.Cells[3].Value.ToString();
+                dateTimePicker1.Value = Convert.ToDateTime(tablacentros.CurrentRow.Cells[4].Value.ToString());
+                txtDescripcion.Text = tablacentros.CurrentRow.Cells[5].Value.ToString();
+                txtDireccion.Text = tablacentros.CurrentRow.Cells[6].Value.ToString();
             }
             else
             {
@@ -129,6 +137,9 @@ namespace Presentacion
 
         private void Centros_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'vacunacionDataSet1.CentrosVacunas' table. You can move, or remove it, as needed.
+            this.centrosVacunasTableAdapter.Fill(this.vacunacionDataSet1.CentrosVacunas);
+            // TODO: This line of code loads data into the 'vacunacionDataSet.CentrosVacunas' table. You can move, or remove it, as needed.
             mostrarBuscarTabla();
 
 

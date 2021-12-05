@@ -32,9 +32,6 @@ namespace Presentacion
             this.components = new System.ComponentModel.Container();
             this.Pacinetes = new System.Windows.Forms.Label();
             this.tablaPacientes = new System.Windows.Forms.DataGridView();
-            this.vacunacionDataSet = new Presentacion.VacunacionDataSet();
-            this.pacientesBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.pacientesTableAdapter = new Presentacion.VacunacionDataSetTableAdapters.PacientesTableAdapter();
             this.pacCodigoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pacCedulaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pacNombreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -42,6 +39,9 @@ namespace Presentacion
             this.pacFNacimientoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pacSexoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pacDireccionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pacientesBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.vacunacionDataSet = new Presentacion.VacunacionDataSet();
+            this.pacientesTableAdapter = new Presentacion.VacunacionDataSetTableAdapters.PacientesTableAdapter();
             this.checkSexo = new System.Windows.Forms.CheckedListBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label2 = new System.Windows.Forms.Label();
@@ -59,8 +59,8 @@ namespace Presentacion
             this.btnGuardar = new System.Windows.Forms.Button();
             this.btnLimpiar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.tablaPacientes)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.vacunacionDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pacientesBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vacunacionDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // Pacinetes
@@ -94,20 +94,6 @@ namespace Presentacion
             this.tablaPacientes.ReadOnly = true;
             this.tablaPacientes.Size = new System.Drawing.Size(695, 205);
             this.tablaPacientes.TabIndex = 2;
-            // 
-            // vacunacionDataSet
-            // 
-            this.vacunacionDataSet.DataSetName = "VacunacionDataSet";
-            this.vacunacionDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // pacientesBindingSource
-            // 
-            this.pacientesBindingSource.DataMember = "Pacientes";
-            this.pacientesBindingSource.DataSource = this.vacunacionDataSet;
-            // 
-            // pacientesTableAdapter
-            // 
-            this.pacientesTableAdapter.ClearBeforeFill = true;
             // 
             // pacCodigoDataGridViewTextBoxColumn
             // 
@@ -160,16 +146,29 @@ namespace Presentacion
             this.pacDireccionDataGridViewTextBoxColumn.Name = "pacDireccionDataGridViewTextBoxColumn";
             this.pacDireccionDataGridViewTextBoxColumn.ReadOnly = true;
             // 
+            // pacientesBindingSource
+            // 
+            this.pacientesBindingSource.DataMember = "Pacientes";
+            this.pacientesBindingSource.DataSource = this.vacunacionDataSet;
+            // 
+            // vacunacionDataSet
+            // 
+            this.vacunacionDataSet.DataSetName = "VacunacionDataSet";
+            this.vacunacionDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // pacientesTableAdapter
+            // 
+            this.pacientesTableAdapter.ClearBeforeFill = true;
+            // 
             // checkSexo
             // 
             this.checkSexo.FormattingEnabled = true;
             this.checkSexo.Items.AddRange(new object[] {
             "MASCULINO",
-            "FEMENINO",
-            "OTROS"});
-            this.checkSexo.Location = new System.Drawing.Point(478, 396);
+            "FEMENINO"});
+            this.checkSexo.Location = new System.Drawing.Point(478, 400);
             this.checkSexo.Name = "checkSexo";
-            this.checkSexo.Size = new System.Drawing.Size(173, 49);
+            this.checkSexo.Size = new System.Drawing.Size(173, 34);
             this.checkSexo.TabIndex = 46;
             // 
             // dateTimePicker1
@@ -340,8 +339,8 @@ namespace Presentacion
             this.Text = "Pacientes";
             this.Load += new System.EventHandler(this.Pacientes_Load);
             ((System.ComponentModel.ISupportInitialize)(this.tablaPacientes)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.vacunacionDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pacientesBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vacunacionDataSet)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -34,7 +34,7 @@ namespace CapaDatos
         public void InsertarVacunas(E_Vacunas vacunas)
         {
 
-            SqlCommand cmd = new SqlCommand("P_INSERTAR_VACUNA", conexion);
+            SqlCommand cmd = new SqlCommand("P_INSERTAR_VACUNAS", conexion);
             cmd.CommandType = CommandType.StoredProcedure;
             conexion.Open();
 
@@ -55,6 +55,7 @@ namespace CapaDatos
             SqlCommand cmd = new SqlCommand("P_EDITAR_VACUNAS", conexion);
             cmd.CommandType = CommandType.StoredProcedure;
             conexion.Open();
+            cmd.Parameters.AddWithValue("@ID", vacunas.V_Codigo);
             cmd.Parameters.AddWithValue("@LABORATORIO", vacunas.V_Laboratorio);
             cmd.Parameters.AddWithValue("@MARCA", vacunas.V_Marca);
             cmd.Parameters.AddWithValue("@EXPIRACION", vacunas.V_Expiracion);

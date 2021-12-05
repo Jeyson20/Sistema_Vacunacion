@@ -2,29 +2,26 @@
 <Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2008/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
   <Body>
     <ReportItems>
-      <Tablix Name="Tablix3">
+      <Tablix Name="Tablix1">
         <TablixBody>
           <TablixColumns>
             <TablixColumn>
-              <Width>2.7419cm</Width>
+              <Width>3.39506cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.7419cm</Width>
+              <Width>3.39506cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.7419cm</Width>
+              <Width>3.39506cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.7419cm</Width>
+              <Width>3.39506cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.7419cm</Width>
+              <Width>3.39506cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.7419cm</Width>
-            </TablixColumn>
-            <TablixColumn>
-              <Width>3.86667cm</Width>
+              <Width>3.39506cm</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
@@ -33,7 +30,7 @@
               <TablixCells>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="Textbox49">
+                    <Textbox Name="Textbox3">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
@@ -50,19 +47,8 @@
                             <TextAlign>Center</TextAlign>
                           </Style>
                         </Paragraph>
-                        <Paragraph>
-                          <TextRuns>
-                            <TextRun>
-                              <Value />
-                              <Style>
-                                <FontWeight>Bold</FontWeight>
-                              </Style>
-                            </TextRun>
-                          </TextRuns>
-                          <Style />
-                        </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>Textbox49</rd:DefaultName>
+                      <rd:DefaultName>Textbox3</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
@@ -79,14 +65,14 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="Textbox47">
+                    <Textbox Name="Textbox5">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>PROVINCIA</Value>
+                              <Value>LABORATORIO</Value>
                               <Style>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
@@ -97,7 +83,7 @@
                           </Style>
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>Textbox47</rd:DefaultName>
+                      <rd:DefaultName>Textbox5</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
@@ -114,14 +100,14 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="Textbox45">
+                    <Textbox Name="Textbox7">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>NUMERO LOTE</Value>
+                              <Value>MARCA</Value>
                               <Style>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
@@ -132,7 +118,7 @@
                           </Style>
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>Textbox45</rd:DefaultName>
+                      <rd:DefaultName>Textbox7</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
@@ -149,14 +135,14 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="Textbox43">
+                    <Textbox Name="Textbox9">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>CANTIDAD LOTE</Value>
+                              <Value>EXPIRACION</Value>
                               <Style>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
@@ -167,7 +153,7 @@
                           </Style>
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>Textbox43</rd:DefaultName>
+                      <rd:DefaultName>Textbox9</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
@@ -184,14 +170,14 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="Textbox37">
+                    <Textbox Name="Textbox11">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>VENCIMIENTO LOTE</Value>
+                              <Value>LOTE</Value>
                               <Style>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
@@ -202,7 +188,7 @@
                           </Style>
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>Textbox37</rd:DefaultName>
+                      <rd:DefaultName>Textbox11</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
@@ -219,14 +205,14 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="Textbox39">
+                    <Textbox Name="Textbox13">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>DESCRIPCION</Value>
+                              <Value>CANTIDAD</Value>
                               <Style>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
@@ -236,65 +222,8 @@
                             <TextAlign>Center</TextAlign>
                           </Style>
                         </Paragraph>
-                        <Paragraph>
-                          <TextRuns>
-                            <TextRun>
-                              <Value />
-                              <Style>
-                                <FontWeight>Bold</FontWeight>
-                              </Style>
-                            </TextRun>
-                          </TextRuns>
-                          <Style />
-                        </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>Textbox39</rd:DefaultName>
-                      <Style>
-                        <Border>
-                          <Color>LightGrey</Color>
-                          <Style>Solid</Style>
-                        </Border>
-                        <BackgroundColor>Silver</BackgroundColor>
-                        <PaddingLeft>2pt</PaddingLeft>
-                        <PaddingRight>2pt</PaddingRight>
-                        <PaddingTop>2pt</PaddingTop>
-                        <PaddingBottom>2pt</PaddingBottom>
-                      </Style>
-                    </Textbox>
-                  </CellContents>
-                </TablixCell>
-                <TablixCell>
-                  <CellContents>
-                    <Textbox Name="Textbox41">
-                      <CanGrow>true</CanGrow>
-                      <KeepTogether>true</KeepTogether>
-                      <Paragraphs>
-                        <Paragraph>
-                          <TextRuns>
-                            <TextRun>
-                              <Value>DIRECCION</Value>
-                              <Style>
-                                <FontWeight>Bold</FontWeight>
-                              </Style>
-                            </TextRun>
-                          </TextRuns>
-                          <Style>
-                            <TextAlign>Center</TextAlign>
-                          </Style>
-                        </Paragraph>
-                        <Paragraph>
-                          <TextRuns>
-                            <TextRun>
-                              <Value />
-                              <Style>
-                                <FontWeight>Bold</FontWeight>
-                              </Style>
-                            </TextRun>
-                          </TextRuns>
-                          <Style />
-                        </Paragraph>
-                      </Paragraphs>
-                      <rd:DefaultName>Textbox41</rd:DefaultName>
+                      <rd:DefaultName>Textbox13</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
@@ -316,14 +245,14 @@
               <TablixCells>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="Cen_Codigo">
+                    <Textbox Name="V_Codigo">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!Cen_Codigo.Value</Value>
+                              <Value>=Fields!V_Codigo.Value</Value>
                               <Style />
                             </TextRun>
                           </TextRuns>
@@ -332,7 +261,7 @@
                           </Style>
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>Cen_Codigo</rd:DefaultName>
+                      <rd:DefaultName>V_Codigo</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
@@ -348,14 +277,14 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="Cen_Provincia">
+                    <Textbox Name="V_Laboratorio">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!Cen_Provincia.Value</Value>
+                              <Value>=Fields!V_Laboratorio.Value</Value>
                               <Style />
                             </TextRun>
                           </TextRuns>
@@ -364,7 +293,7 @@
                           </Style>
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>Cen_Provincia</rd:DefaultName>
+                      <rd:DefaultName>V_Laboratorio</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
@@ -380,14 +309,14 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="Numero_Lotes">
+                    <Textbox Name="V_Marca">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!Numero_Lotes.Value</Value>
+                              <Value>=Fields!V_Marca.Value</Value>
                               <Style />
                             </TextRun>
                           </TextRuns>
@@ -396,7 +325,7 @@
                           </Style>
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>Numero_Lotes</rd:DefaultName>
+                      <rd:DefaultName>V_Marca</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
@@ -412,14 +341,14 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="Cen_CantidadLotes">
+                    <Textbox Name="V_Expiracion">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!Cen_CantidadLotes.Value</Value>
+                              <Value>=Fields!V_Expiracion.Value</Value>
                               <Style />
                             </TextRun>
                           </TextRuns>
@@ -428,7 +357,7 @@
                           </Style>
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>Cen_CantidadLotes</rd:DefaultName>
+                      <rd:DefaultName>V_Expiracion</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
@@ -444,14 +373,14 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="Cen_VencimientoLotes">
+                    <Textbox Name="V_Lote">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!Cen_VencimientoLotes.Value</Value>
+                              <Value>=Fields!V_Lote.Value</Value>
                               <Style />
                             </TextRun>
                           </TextRuns>
@@ -460,7 +389,7 @@
                           </Style>
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>Cen_VencimientoLotes</rd:DefaultName>
+                      <rd:DefaultName>V_Lote</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
@@ -476,14 +405,14 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="Cen_Descripcion">
+                    <Textbox Name="V_Cantidad">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!Cen_Descripcion.Value</Value>
+                              <Value>=Fields!V_Cantidad.Value</Value>
                               <Style />
                             </TextRun>
                           </TextRuns>
@@ -492,39 +421,7 @@
                           </Style>
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>Cen_Descripcion</rd:DefaultName>
-                      <Style>
-                        <Border>
-                          <Color>LightGrey</Color>
-                          <Style>Solid</Style>
-                        </Border>
-                        <PaddingLeft>2pt</PaddingLeft>
-                        <PaddingRight>2pt</PaddingRight>
-                        <PaddingTop>2pt</PaddingTop>
-                        <PaddingBottom>2pt</PaddingBottom>
-                      </Style>
-                    </Textbox>
-                  </CellContents>
-                </TablixCell>
-                <TablixCell>
-                  <CellContents>
-                    <Textbox Name="Cen_Direccion">
-                      <CanGrow>true</CanGrow>
-                      <KeepTogether>true</KeepTogether>
-                      <Paragraphs>
-                        <Paragraph>
-                          <TextRuns>
-                            <TextRun>
-                              <Value>=Fields!Cen_Direccion.Value</Value>
-                              <Style />
-                            </TextRun>
-                          </TextRuns>
-                          <Style>
-                            <TextAlign>Center</TextAlign>
-                          </Style>
-                        </Paragraph>
-                      </Paragraphs>
-                      <rd:DefaultName>Cen_Direccion</rd:DefaultName>
+                      <rd:DefaultName>V_Cantidad</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
@@ -550,7 +447,6 @@
             <TablixMember />
             <TablixMember />
             <TablixMember />
-            <TablixMember />
           </TablixMembers>
         </TablixColumnHierarchy>
         <TablixRowHierarchy>
@@ -564,10 +460,10 @@
           </TablixMembers>
         </TablixRowHierarchy>
         <DataSetName>DataSet1</DataSetName>
-        <Top>0.03528cm</Top>
-        <Left>0.34078cm</Left>
+        <Top>0.17639cm</Top>
+        <Left>0.28849cm</Left>
         <Height>1.2cm</Height>
-        <Width>20.3181cm</Width>
+        <Width>20.37039cm</Width>
         <Style>
           <Border>
             <Style>None</Style>
@@ -575,7 +471,7 @@
         </Style>
       </Tablix>
     </ReportItems>
-    <Height>12.35278mm</Height>
+    <Height>13.76389mm</Height>
     <Style>
       <Border>
         <Style>Dashed</Style>
@@ -599,7 +495,7 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value>REPORTE DE CENTROS DE VACUNACION</Value>
+                  <Value>REPORTE DE VACUNAS</Value>
                   <Style>
                     <FontFamily>Arial Black</FontFamily>
                     <FontSize>18pt</FontSize>
@@ -613,9 +509,9 @@
           </Paragraphs>
           <rd:DefaultName>Textbox24</rd:DefaultName>
           <Top>0.64918cm</Top>
-          <Left>2.58974cm</Left>
+          <Left>5.76474cm</Left>
           <Height>1.16473cm</Height>
-          <Width>14.74896cm</Width>
+          <Width>9.13979cm</Width>
           <Style>
             <Border>
               <Style>None</Style>
@@ -704,6 +600,7 @@
         <Border>
           <Style>None</Style>
         </Border>
+        <BackgroundColor>White</BackgroundColor>
       </Style>
     </PageFooter>
     <PageHeight>80.8354mm</PageHeight>
@@ -717,13 +614,6 @@
   </Page>
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
-    <DataSource Name="VacunacionDataSet">
-      <ConnectionProperties>
-        <DataProvider>System.Data.DataSet</DataProvider>
-        <ConnectString>/* Local Connection */</ConnectString>
-      </ConnectionProperties>
-      <rd:DataSourceID>ea638713-34ca-4c7f-8a92-73763598bc24</rd:DataSourceID>
-    </DataSource>
     <DataSource Name="VacunacionDataSet1">
       <ConnectionProperties>
         <DataProvider>System.Data.DataSet</DataProvider>
@@ -739,42 +629,38 @@
         <CommandText>/* Local Query */</CommandText>
       </Query>
       <Fields>
-        <Field Name="Cen_Codigo">
-          <DataField>Cen_Codigo</DataField>
+        <Field Name="V_Codigo">
+          <DataField>V_Codigo</DataField>
           <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
-        <Field Name="Cen_Provincia">
-          <DataField>Cen_Provincia</DataField>
+        <Field Name="V_Laboratorio">
+          <DataField>V_Laboratorio</DataField>
           <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
-        <Field Name="Numero_Lotes">
-          <DataField>Numero_Lotes</DataField>
+        <Field Name="V_Marca">
+          <DataField>V_Marca</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="Cen_CantidadLotes">
-          <DataField>Cen_CantidadLotes</DataField>
-          <rd:TypeName>System.Decimal</rd:TypeName>
-        </Field>
-        <Field Name="Cen_VencimientoLotes">
-          <DataField>Cen_VencimientoLotes</DataField>
+        <Field Name="V_Expiracion">
+          <DataField>V_Expiracion</DataField>
           <rd:TypeName>System.DateTime</rd:TypeName>
         </Field>
-        <Field Name="Cen_Descripcion">
-          <DataField>Cen_Descripcion</DataField>
+        <Field Name="V_Lote">
+          <DataField>V_Lote</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="Cen_Direccion">
-          <DataField>Cen_Direccion</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
+        <Field Name="V_Cantidad">
+          <DataField>V_Cantidad</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
         </Field>
       </Fields>
       <rd:DataSetInfo>
         <rd:DataSetName>VacunacionDataSet1</rd:DataSetName>
         <rd:SchemaPath>C:\Users\Nomar\Desktop\Vacuna\Presentacion\VacunacionDataSet1.xsd</rd:SchemaPath>
-        <rd:TableName>CentrosVacunas</rd:TableName>
+        <rd:TableName>Vacunas</rd:TableName>
         <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
         <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
-        <rd:TableAdapterName>CentrosVacunasTableAdapter</rd:TableAdapterName>
+        <rd:TableAdapterName>VacunasTableAdapter</rd:TableAdapterName>
       </rd:DataSetInfo>
     </DataSet>
   </DataSets>

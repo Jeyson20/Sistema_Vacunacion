@@ -38,12 +38,12 @@ namespace Presentacion
 
         private void btnVacunaciones_Click(object sender, EventArgs e)
         {
-            //AbrirFormularioWrapper();
+            AbrirFormularioWrapper(new Vacunaciones());
         }
 
         private void btnVacunas_Click(object sender, EventArgs e)
         {
-            //AbrirFormularioWrapper();
+            AbrirFormularioWrapper(new Vacunas());
         }
 
         private void Pacientes_Click(object sender, EventArgs e)

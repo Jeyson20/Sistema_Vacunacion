@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 
 namespace CapaEntidades
 {
-    public class Provincias
+    public class Laboratorio
     {
-        public int Prv_Codigo { get; set; }
+        public int Lab_Codigo { get; set; }
 
-        public string Prv_Descripcion { get; set; }
+        public string Lab_Descripcion { get; set; }
 
     }
 }
+
