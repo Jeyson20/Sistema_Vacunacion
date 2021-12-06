@@ -41,7 +41,6 @@ namespace Presentacion
             this.pacDireccionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pacientesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.vacunacionDataSet = new Presentacion.VacunacionDataSet();
-            this.pacientesTableAdapter = new Presentacion.VacunacionDataSetTableAdapters.PacientesTableAdapter();
             this.checkSexo = new System.Windows.Forms.CheckedListBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label2 = new System.Windows.Forms.Label();
@@ -58,6 +57,7 @@ namespace Presentacion
             this.button2 = new System.Windows.Forms.Button();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.btnLimpiar = new System.Windows.Forms.Button();
+            this.pacientesTableAdapter = new Presentacion.VacunacionDataSetTableAdapters.PacientesTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.tablaPacientes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pacientesBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.vacunacionDataSet)).BeginInit();
@@ -112,6 +112,7 @@ namespace Presentacion
             // 
             // pacNombreDataGridViewTextBoxColumn
             // 
+            this.pacNombreDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.pacNombreDataGridViewTextBoxColumn.DataPropertyName = "Pac_Nombre";
             this.pacNombreDataGridViewTextBoxColumn.HeaderText = "NOMBRE";
             this.pacNombreDataGridViewTextBoxColumn.Name = "pacNombreDataGridViewTextBoxColumn";
@@ -119,6 +120,7 @@ namespace Presentacion
             // 
             // pacApellidoDataGridViewTextBoxColumn
             // 
+            this.pacApellidoDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.pacApellidoDataGridViewTextBoxColumn.DataPropertyName = "Pac_Apellido";
             this.pacApellidoDataGridViewTextBoxColumn.HeaderText = "APELLIDO";
             this.pacApellidoDataGridViewTextBoxColumn.Name = "pacApellidoDataGridViewTextBoxColumn";
@@ -126,6 +128,7 @@ namespace Presentacion
             // 
             // pacFNacimientoDataGridViewTextBoxColumn
             // 
+            this.pacFNacimientoDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.pacFNacimientoDataGridViewTextBoxColumn.DataPropertyName = "Pac_FNacimiento";
             this.pacFNacimientoDataGridViewTextBoxColumn.HeaderText = "FECHA NACIMIENTO";
             this.pacFNacimientoDataGridViewTextBoxColumn.Name = "pacFNacimientoDataGridViewTextBoxColumn";
@@ -155,10 +158,6 @@ namespace Presentacion
             // 
             this.vacunacionDataSet.DataSetName = "VacunacionDataSet";
             this.vacunacionDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // pacientesTableAdapter
-            // 
-            this.pacientesTableAdapter.ClearBeforeFill = true;
             // 
             // checkSexo
             // 
@@ -310,11 +309,15 @@ namespace Presentacion
             this.btnLimpiar.UseVisualStyleBackColor = true;
             this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
             // 
+            // pacientesTableAdapter
+            // 
+            this.pacientesTableAdapter.ClearBeforeFill = true;
+            // 
             // Pacientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(820, 576);
             this.Controls.Add(this.btnLimpiar);
             this.Controls.Add(this.btnEditar);
@@ -350,16 +353,6 @@ namespace Presentacion
 
         private System.Windows.Forms.Label Pacinetes;
         private System.Windows.Forms.DataGridView tablaPacientes;
-        private VacunacionDataSet vacunacionDataSet;
-        private System.Windows.Forms.BindingSource pacientesBindingSource;
-        private VacunacionDataSetTableAdapters.PacientesTableAdapter pacientesTableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn pacCodigoDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn pacCedulaDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn pacNombreDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn pacApellidoDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn pacFNacimientoDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn pacSexoDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn pacDireccionDataGridViewTextBoxColumn;
         private System.Windows.Forms.CheckedListBox checkSexo;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Label label2;
@@ -376,5 +369,15 @@ namespace Presentacion
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.Button btnLimpiar;
+        private VacunacionDataSet vacunacionDataSet;
+        private System.Windows.Forms.BindingSource pacientesBindingSource;
+        private VacunacionDataSetTableAdapters.PacientesTableAdapter pacientesTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn pacCodigoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn pacCedulaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn pacNombreDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn pacApellidoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn pacFNacimientoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn pacSexoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn pacDireccionDataGridViewTextBoxColumn;
     }
 }

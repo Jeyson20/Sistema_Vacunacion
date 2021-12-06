@@ -6,30 +6,27 @@
         <TablixBody>
           <TablixColumns>
             <TablixColumn>
-              <Width>1.91521cm</Width>
+              <Width>2.5cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>3.57077cm</Width>
+              <Width>3.32021cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.04876cm</Width>
+              <Width>2.97625cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.33854cm</Width>
+              <Width>3.4525cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>3.34396cm</Width>
+              <Width>3.00396cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>4.05833cm</Width>
-            </TablixColumn>
-            <TablixColumn>
-              <Width>3.72443cm</Width>
+              <Width>3.58351cm</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
             <TablixRow>
-              <Height>0.56472cm</Height>
+              <Height>0.6cm</Height>
               <TablixCells>
                 <TablixCell>
                   <CellContents>
@@ -75,7 +72,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>PROVINCIA</Value>
+                              <Value>PACIENTE</Value>
                               <Style>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
@@ -110,7 +107,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>NUM LOTE</Value>
+                              <Value>CENTRO</Value>
                               <Style>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
@@ -145,7 +142,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>CANTIDAD</Value>
+                              <Value>VACUNA</Value>
                               <Style>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
@@ -180,7 +177,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>VENCIMIENTO</Value>
+                              <Value>DOSIS</Value>
                               <Style>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
@@ -215,7 +212,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>CENTRO</Value>
+                              <Value>FVACUNACION</Value>
                               <Style>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
@@ -241,45 +238,10 @@
                     </Textbox>
                   </CellContents>
                 </TablixCell>
-                <TablixCell>
-                  <CellContents>
-                    <Textbox Name="Textbox15">
-                      <CanGrow>true</CanGrow>
-                      <KeepTogether>true</KeepTogether>
-                      <Paragraphs>
-                        <Paragraph>
-                          <TextRuns>
-                            <TextRun>
-                              <Value>DIRECCION</Value>
-                              <Style>
-                                <FontWeight>Bold</FontWeight>
-                              </Style>
-                            </TextRun>
-                          </TextRuns>
-                          <Style>
-                            <TextAlign>Center</TextAlign>
-                          </Style>
-                        </Paragraph>
-                      </Paragraphs>
-                      <rd:DefaultName>Textbox15</rd:DefaultName>
-                      <Style>
-                        <Border>
-                          <Color>LightGrey</Color>
-                          <Style>Solid</Style>
-                        </Border>
-                        <BackgroundColor>Silver</BackgroundColor>
-                        <PaddingLeft>2pt</PaddingLeft>
-                        <PaddingRight>2pt</PaddingRight>
-                        <PaddingTop>2pt</PaddingTop>
-                        <PaddingBottom>2pt</PaddingBottom>
-                      </Style>
-                    </Textbox>
-                  </CellContents>
-                </TablixCell>
               </TablixCells>
             </TablixRow>
             <TablixRow>
-              <Height>0.56472cm</Height>
+              <Height>0.6cm</Height>
               <TablixCells>
                 <TablixCell>
                   <CellContents>
@@ -315,14 +277,14 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="PROVINCIA">
+                    <Textbox Name="PACIENTE">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!PROVINCIA.Value</Value>
+                              <Value>=Fields!PACIENTE.Value</Value>
                               <Style />
                             </TextRun>
                           </TextRuns>
@@ -331,103 +293,7 @@
                           </Style>
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>PROVINCIA</rd:DefaultName>
-                      <Style>
-                        <Border>
-                          <Color>LightGrey</Color>
-                          <Style>Solid</Style>
-                        </Border>
-                        <PaddingLeft>2pt</PaddingLeft>
-                        <PaddingRight>2pt</PaddingRight>
-                        <PaddingTop>2pt</PaddingTop>
-                        <PaddingBottom>2pt</PaddingBottom>
-                      </Style>
-                    </Textbox>
-                  </CellContents>
-                </TablixCell>
-                <TablixCell>
-                  <CellContents>
-                    <Textbox Name="NUMLOTE">
-                      <CanGrow>true</CanGrow>
-                      <KeepTogether>true</KeepTogether>
-                      <Paragraphs>
-                        <Paragraph>
-                          <TextRuns>
-                            <TextRun>
-                              <Value>=Fields!NUMLOTE.Value</Value>
-                              <Style />
-                            </TextRun>
-                          </TextRuns>
-                          <Style>
-                            <TextAlign>Center</TextAlign>
-                          </Style>
-                        </Paragraph>
-                      </Paragraphs>
-                      <rd:DefaultName>NUMLOTE</rd:DefaultName>
-                      <Style>
-                        <Border>
-                          <Color>LightGrey</Color>
-                          <Style>Solid</Style>
-                        </Border>
-                        <PaddingLeft>2pt</PaddingLeft>
-                        <PaddingRight>2pt</PaddingRight>
-                        <PaddingTop>2pt</PaddingTop>
-                        <PaddingBottom>2pt</PaddingBottom>
-                      </Style>
-                    </Textbox>
-                  </CellContents>
-                </TablixCell>
-                <TablixCell>
-                  <CellContents>
-                    <Textbox Name="CANTIDAD">
-                      <CanGrow>true</CanGrow>
-                      <KeepTogether>true</KeepTogether>
-                      <Paragraphs>
-                        <Paragraph>
-                          <TextRuns>
-                            <TextRun>
-                              <Value>=Fields!CANTIDAD.Value</Value>
-                              <Style />
-                            </TextRun>
-                          </TextRuns>
-                          <Style>
-                            <TextAlign>Center</TextAlign>
-                          </Style>
-                        </Paragraph>
-                      </Paragraphs>
-                      <rd:DefaultName>CANTIDAD</rd:DefaultName>
-                      <Style>
-                        <Border>
-                          <Color>LightGrey</Color>
-                          <Style>Solid</Style>
-                        </Border>
-                        <PaddingLeft>2pt</PaddingLeft>
-                        <PaddingRight>2pt</PaddingRight>
-                        <PaddingTop>2pt</PaddingTop>
-                        <PaddingBottom>2pt</PaddingBottom>
-                      </Style>
-                    </Textbox>
-                  </CellContents>
-                </TablixCell>
-                <TablixCell>
-                  <CellContents>
-                    <Textbox Name="VENCIMIENTO">
-                      <CanGrow>true</CanGrow>
-                      <KeepTogether>true</KeepTogether>
-                      <Paragraphs>
-                        <Paragraph>
-                          <TextRuns>
-                            <TextRun>
-                              <Value>=Fields!VENCIMIENTO.Value</Value>
-                              <Style />
-                            </TextRun>
-                          </TextRuns>
-                          <Style>
-                            <TextAlign>Center</TextAlign>
-                          </Style>
-                        </Paragraph>
-                      </Paragraphs>
-                      <rd:DefaultName>VENCIMIENTO</rd:DefaultName>
+                      <rd:DefaultName>PACIENTE</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
@@ -475,14 +341,14 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="DIRECCION">
+                    <Textbox Name="VACUNA">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!DIRECCION.Value</Value>
+                              <Value>=Fields!VACUNA.Value</Value>
                               <Style />
                             </TextRun>
                           </TextRuns>
@@ -491,7 +357,71 @@
                           </Style>
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>DIRECCION</rd:DefaultName>
+                      <rd:DefaultName>VACUNA</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>LightGrey</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="DOSIS">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=Fields!DOSIS.Value</Value>
+                              <Style />
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>DOSIS</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>LightGrey</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="FVACUNACION">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=Fields!FVACUNACION.Value</Value>
+                              <Style />
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>FVACUNACION</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
@@ -517,7 +447,6 @@
             <TablixMember />
             <TablixMember />
             <TablixMember />
-            <TablixMember />
           </TablixMembers>
         </TablixColumnHierarchy>
         <TablixRowHierarchy>
@@ -531,8 +460,9 @@
           </TablixMembers>
         </TablixRowHierarchy>
         <DataSetName>DataSet1</DataSetName>
-        <Height>1.12944cm</Height>
-        <Width>21cm</Width>
+        <Left>1.35974cm</Left>
+        <Height>1.2cm</Height>
+        <Width>18.83643cm</Width>
         <Style>
           <Border>
             <Style>None</Style>
@@ -547,7 +477,7 @@
       </Border>
     </Style>
   </Body>
-  <Width>210mm</Width>
+  <Width>212.93908mm</Width>
   <Page>
     <PageHeader>
       <Height>1.81391cm</Height>
@@ -561,7 +491,7 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value>REPORTE DE CENTROS DE VACUNACION</Value>
+                  <Value>REPORTE DE VACUNACIONES</Value>
                   <Style>
                     <FontFamily>Arial Black</FontFamily>
                     <FontSize>18pt</FontSize>
@@ -575,9 +505,9 @@
           </Paragraphs>
           <rd:DefaultName>Textbox24</rd:DefaultName>
           <Top>0.64918cm</Top>
-          <Left>2.58974cm</Left>
+          <Left>4.17724cm</Left>
           <Height>1.16473cm</Height>
-          <Width>14.74896cm</Width>
+          <Width>12.26313cm</Width>
           <Style>
             <Border>
               <Style>None</Style>
@@ -700,38 +630,34 @@
           <DataField>CODIGO</DataField>
           <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
-        <Field Name="PROVINCIA">
-          <DataField>PROVINCIA</DataField>
+        <Field Name="PACIENTE">
+          <DataField>PACIENTE</DataField>
           <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="NUMLOTE">
-          <DataField>NUMLOTE</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="CANTIDAD">
-          <DataField>CANTIDAD</DataField>
-          <rd:TypeName>System.Decimal</rd:TypeName>
-        </Field>
-        <Field Name="VENCIMIENTO">
-          <DataField>VENCIMIENTO</DataField>
-          <rd:TypeName>System.DateTime</rd:TypeName>
         </Field>
         <Field Name="CENTRO">
           <DataField>CENTRO</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="DIRECCION">
-          <DataField>DIRECCION</DataField>
+        <Field Name="VACUNA">
+          <DataField>VACUNA</DataField>
           <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DOSIS">
+          <DataField>DOSIS</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="FVACUNACION">
+          <DataField>FVACUNACION</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
         </Field>
       </Fields>
       <rd:DataSetInfo>
         <rd:DataSetName>VacunacionDataSet</rd:DataSetName>
         <rd:SchemaPath>C:\Users\Nomar\Desktop\Vacuna\Presentacion\VacunacionDataSet.xsd</rd:SchemaPath>
-        <rd:TableName>P_BUSCAR_CENTRO</rd:TableName>
+        <rd:TableName>P_BUSCAR_VACUNACION</rd:TableName>
         <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
         <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
-        <rd:TableAdapterName>P_BUSCAR_CENTROTableAdapter</rd:TableAdapterName>
+        <rd:TableAdapterName>P_BUSCAR_VACUNACIONTableAdapter</rd:TableAdapterName>
       </rd:DataSetInfo>
     </DataSet>
   </DataSets>

@@ -21,30 +21,38 @@ namespace Presentacion
         {
             InitializeComponent();
             mostrarBuscarTabla();
+            mostrarLaboratorios();
         }
 
         public void mostrarBuscarTabla()
         {
             tablacentros.DataSource = ObjNegocio.ListadoVacunas();
         }
+        public void mostrarLaboratorios()
+        {
+            N_Laboratorio objnegocio = new N_Laboratorio();
+            cmbLaboratorio.DataSource = objnegocio.ListadoLabo();
+            cmbLaboratorio.ValueMember = "Lab_Codigo";
+            cmbLaboratorio.DisplayMember = "Lab_Descripcion";
+        }
 
         private void Limpiarcajas()
         {
             Editarse = false;
             txtId.Text = "";
-            txtLaboratorio.Text = "";
+            cmbLaboratorio.Text = "";
             txtMarca.Text = "";
             dateTimePicker1.Text = "";
             txtLote.Text = "";
             txtCantidad.Text = "";
-            txtLaboratorio.Focus();
+            cmbLaboratorio.Focus();
 
         }
 
         private void Vacunas_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'vacunacionDataSet1.Vacunas' table. You can move, or remove it, as needed.
-            this.vacunasTableAdapter.Fill(this.vacunacionDataSet1.Vacunas);
+            // TODO: This line of code loads data into the 'vacunacionDataSet.P_BUSCAR_VACUNA' table. You can move, or remove it, as needed.
+            this.p_BUSCAR_VACUNATableAdapter.Fill(this.vacunacionDataSet.P_BUSCAR_VACUNA);
             mostrarBuscarTabla();
 
         }
@@ -55,7 +63,7 @@ namespace Presentacion
             {
                 try
                 {
-                    ObjEntidad.V_Laboratorio = Convert.ToInt32(txtLaboratorio.Text);
+                    ObjEntidad.V_Laboratorio = Convert.ToInt32(cmbLaboratorio.SelectedValue);
                     ObjEntidad.V_Marca = txtMarca.Text;
                     ObjEntidad.V_Expiracion = Convert.ToDateTime(dateTimePicker1.Text);
                     ObjEntidad.V_Lote = txtLote.Text;
@@ -76,7 +84,7 @@ namespace Presentacion
                 try
                 {
                     ObjEntidad.V_Codigo = Convert.ToInt32(txtId.Text);
-                    ObjEntidad.V_Laboratorio = Convert.ToInt32(txtLaboratorio.Text);
+                    ObjEntidad.V_Laboratorio = Convert.ToInt32(cmbLaboratorio.SelectedValue.ToString());
                     ObjEntidad.V_Marca = txtMarca.Text;
                     ObjEntidad.V_Expiracion = Convert.ToDateTime(dateTimePicker1.Text);
                     ObjEntidad.V_Lote = txtLote.Text;
@@ -102,7 +110,7 @@ namespace Presentacion
             {
                 Editarse = true;
                 txtId.Text = tablacentros.CurrentRow.Cells[0].Value.ToString();
-                txtLaboratorio.Text = tablacentros.CurrentRow.Cells[1].Value.ToString();
+                cmbLaboratorio.Text = tablacentros.CurrentRow.Cells[1].Value.ToString();
                 txtMarca.Text = tablacentros.CurrentRow.Cells[2].Value.ToString();
                 dateTimePicker1.Value = Convert.ToDateTime(tablacentros.CurrentRow.Cells[3].Value.ToString());
                 txtLote.Text = tablacentros.CurrentRow.Cells[4].Value.ToString();
@@ -133,7 +141,7 @@ namespace Presentacion
 
         private void btnImprimir_Click(object sender, EventArgs e)
         {
-            Form reporte = new ReporteVacunas();
+            Form reporte = new ReportesVacunas();
             reporte.Show();
         }
     }

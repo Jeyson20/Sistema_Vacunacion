@@ -40,9 +40,17 @@ namespace Presentacion {
         
         private P_BUSCAR_CENTRODataTable tableP_BUSCAR_CENTRO;
         
+        private P_BUSCAR_DOSISDataTable tableP_BUSCAR_DOSIS;
+        
+        private P_BUSCAR_LABORATORIODataTable tableP_BUSCAR_LABORATORIO;
+        
         private P_BUSCAR_PACIENTEDataTable tableP_BUSCAR_PACIENTE;
         
+        private P_BUSCAR_PROVINCIADataTable tableP_BUSCAR_PROVINCIA;
+        
         private P_BUSCAR_VACUNADataTable tableP_BUSCAR_VACUNA;
+        
+        private P_BUSCAR_VACUNACIONDataTable tableP_BUSCAR_VACUNACION;
         
         private global::System.Data.DataRelation relationFK_CentrosVacunas_Provincias;
         
@@ -108,11 +116,23 @@ namespace Presentacion {
                 if ((ds.Tables["P_BUSCAR_CENTRO"] != null)) {
                     base.Tables.Add(new P_BUSCAR_CENTRODataTable(ds.Tables["P_BUSCAR_CENTRO"]));
                 }
+                if ((ds.Tables["P_BUSCAR_DOSIS"] != null)) {
+                    base.Tables.Add(new P_BUSCAR_DOSISDataTable(ds.Tables["P_BUSCAR_DOSIS"]));
+                }
+                if ((ds.Tables["P_BUSCAR_LABORATORIO"] != null)) {
+                    base.Tables.Add(new P_BUSCAR_LABORATORIODataTable(ds.Tables["P_BUSCAR_LABORATORIO"]));
+                }
                 if ((ds.Tables["P_BUSCAR_PACIENTE"] != null)) {
                     base.Tables.Add(new P_BUSCAR_PACIENTEDataTable(ds.Tables["P_BUSCAR_PACIENTE"]));
                 }
+                if ((ds.Tables["P_BUSCAR_PROVINCIA"] != null)) {
+                    base.Tables.Add(new P_BUSCAR_PROVINCIADataTable(ds.Tables["P_BUSCAR_PROVINCIA"]));
+                }
                 if ((ds.Tables["P_BUSCAR_VACUNA"] != null)) {
                     base.Tables.Add(new P_BUSCAR_VACUNADataTable(ds.Tables["P_BUSCAR_VACUNA"]));
+                }
+                if ((ds.Tables["P_BUSCAR_VACUNACION"] != null)) {
+                    base.Tables.Add(new P_BUSCAR_VACUNACIONDataTable(ds.Tables["P_BUSCAR_VACUNACION"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -216,6 +236,26 @@ namespace Presentacion {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
+        public P_BUSCAR_DOSISDataTable P_BUSCAR_DOSIS {
+            get {
+                return this.tableP_BUSCAR_DOSIS;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Browsable(false)]
+        [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
+        public P_BUSCAR_LABORATORIODataTable P_BUSCAR_LABORATORIO {
+            get {
+                return this.tableP_BUSCAR_LABORATORIO;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Browsable(false)]
+        [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
         public P_BUSCAR_PACIENTEDataTable P_BUSCAR_PACIENTE {
             get {
                 return this.tableP_BUSCAR_PACIENTE;
@@ -226,9 +266,29 @@ namespace Presentacion {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
+        public P_BUSCAR_PROVINCIADataTable P_BUSCAR_PROVINCIA {
+            get {
+                return this.tableP_BUSCAR_PROVINCIA;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Browsable(false)]
+        [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
         public P_BUSCAR_VACUNADataTable P_BUSCAR_VACUNA {
             get {
                 return this.tableP_BUSCAR_VACUNA;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Browsable(false)]
+        [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
+        public P_BUSCAR_VACUNACIONDataTable P_BUSCAR_VACUNACION {
+            get {
+                return this.tableP_BUSCAR_VACUNACION;
             }
         }
         
@@ -323,11 +383,23 @@ namespace Presentacion {
                 if ((ds.Tables["P_BUSCAR_CENTRO"] != null)) {
                     base.Tables.Add(new P_BUSCAR_CENTRODataTable(ds.Tables["P_BUSCAR_CENTRO"]));
                 }
+                if ((ds.Tables["P_BUSCAR_DOSIS"] != null)) {
+                    base.Tables.Add(new P_BUSCAR_DOSISDataTable(ds.Tables["P_BUSCAR_DOSIS"]));
+                }
+                if ((ds.Tables["P_BUSCAR_LABORATORIO"] != null)) {
+                    base.Tables.Add(new P_BUSCAR_LABORATORIODataTable(ds.Tables["P_BUSCAR_LABORATORIO"]));
+                }
                 if ((ds.Tables["P_BUSCAR_PACIENTE"] != null)) {
                     base.Tables.Add(new P_BUSCAR_PACIENTEDataTable(ds.Tables["P_BUSCAR_PACIENTE"]));
                 }
+                if ((ds.Tables["P_BUSCAR_PROVINCIA"] != null)) {
+                    base.Tables.Add(new P_BUSCAR_PROVINCIADataTable(ds.Tables["P_BUSCAR_PROVINCIA"]));
+                }
                 if ((ds.Tables["P_BUSCAR_VACUNA"] != null)) {
                     base.Tables.Add(new P_BUSCAR_VACUNADataTable(ds.Tables["P_BUSCAR_VACUNA"]));
+                }
+                if ((ds.Tables["P_BUSCAR_VACUNACION"] != null)) {
+                    base.Tables.Add(new P_BUSCAR_VACUNACIONDataTable(ds.Tables["P_BUSCAR_VACUNACION"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -410,16 +482,40 @@ namespace Presentacion {
                     this.tableP_BUSCAR_CENTRO.InitVars();
                 }
             }
+            this.tableP_BUSCAR_DOSIS = ((P_BUSCAR_DOSISDataTable)(base.Tables["P_BUSCAR_DOSIS"]));
+            if ((initTable == true)) {
+                if ((this.tableP_BUSCAR_DOSIS != null)) {
+                    this.tableP_BUSCAR_DOSIS.InitVars();
+                }
+            }
+            this.tableP_BUSCAR_LABORATORIO = ((P_BUSCAR_LABORATORIODataTable)(base.Tables["P_BUSCAR_LABORATORIO"]));
+            if ((initTable == true)) {
+                if ((this.tableP_BUSCAR_LABORATORIO != null)) {
+                    this.tableP_BUSCAR_LABORATORIO.InitVars();
+                }
+            }
             this.tableP_BUSCAR_PACIENTE = ((P_BUSCAR_PACIENTEDataTable)(base.Tables["P_BUSCAR_PACIENTE"]));
             if ((initTable == true)) {
                 if ((this.tableP_BUSCAR_PACIENTE != null)) {
                     this.tableP_BUSCAR_PACIENTE.InitVars();
                 }
             }
+            this.tableP_BUSCAR_PROVINCIA = ((P_BUSCAR_PROVINCIADataTable)(base.Tables["P_BUSCAR_PROVINCIA"]));
+            if ((initTable == true)) {
+                if ((this.tableP_BUSCAR_PROVINCIA != null)) {
+                    this.tableP_BUSCAR_PROVINCIA.InitVars();
+                }
+            }
             this.tableP_BUSCAR_VACUNA = ((P_BUSCAR_VACUNADataTable)(base.Tables["P_BUSCAR_VACUNA"]));
             if ((initTable == true)) {
                 if ((this.tableP_BUSCAR_VACUNA != null)) {
                     this.tableP_BUSCAR_VACUNA.InitVars();
+                }
+            }
+            this.tableP_BUSCAR_VACUNACION = ((P_BUSCAR_VACUNACIONDataTable)(base.Tables["P_BUSCAR_VACUNACION"]));
+            if ((initTable == true)) {
+                if ((this.tableP_BUSCAR_VACUNACION != null)) {
+                    this.tableP_BUSCAR_VACUNACION.InitVars();
                 }
             }
             this.relationFK_CentrosVacunas_Provincias = this.Relations["FK_CentrosVacunas_Provincias"];
@@ -454,10 +550,18 @@ namespace Presentacion {
             base.Tables.Add(this.tableVacunas);
             this.tableP_BUSCAR_CENTRO = new P_BUSCAR_CENTRODataTable();
             base.Tables.Add(this.tableP_BUSCAR_CENTRO);
+            this.tableP_BUSCAR_DOSIS = new P_BUSCAR_DOSISDataTable();
+            base.Tables.Add(this.tableP_BUSCAR_DOSIS);
+            this.tableP_BUSCAR_LABORATORIO = new P_BUSCAR_LABORATORIODataTable();
+            base.Tables.Add(this.tableP_BUSCAR_LABORATORIO);
             this.tableP_BUSCAR_PACIENTE = new P_BUSCAR_PACIENTEDataTable();
             base.Tables.Add(this.tableP_BUSCAR_PACIENTE);
+            this.tableP_BUSCAR_PROVINCIA = new P_BUSCAR_PROVINCIADataTable();
+            base.Tables.Add(this.tableP_BUSCAR_PROVINCIA);
             this.tableP_BUSCAR_VACUNA = new P_BUSCAR_VACUNADataTable();
             base.Tables.Add(this.tableP_BUSCAR_VACUNA);
+            this.tableP_BUSCAR_VACUNACION = new P_BUSCAR_VACUNACIONDataTable();
+            base.Tables.Add(this.tableP_BUSCAR_VACUNACION);
             this.relationFK_CentrosVacunas_Provincias = new global::System.Data.DataRelation("FK_CentrosVacunas_Provincias", new global::System.Data.DataColumn[] {
                         this.tableProvincias.Prv_CodigoColumn}, new global::System.Data.DataColumn[] {
                         this.tableCentrosVacunas.Cen_ProvinciaColumn}, false);
@@ -534,13 +638,37 @@ namespace Presentacion {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        private bool ShouldSerializeP_BUSCAR_DOSIS() {
+            return false;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        private bool ShouldSerializeP_BUSCAR_LABORATORIO() {
+            return false;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private bool ShouldSerializeP_BUSCAR_PACIENTE() {
             return false;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        private bool ShouldSerializeP_BUSCAR_PROVINCIA() {
+            return false;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private bool ShouldSerializeP_BUSCAR_VACUNA() {
+            return false;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        private bool ShouldSerializeP_BUSCAR_VACUNACION() {
             return false;
         }
         
@@ -624,10 +752,22 @@ namespace Presentacion {
         public delegate void P_BUSCAR_CENTRORowChangeEventHandler(object sender, P_BUSCAR_CENTRORowChangeEvent e);
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        public delegate void P_BUSCAR_DOSISRowChangeEventHandler(object sender, P_BUSCAR_DOSISRowChangeEvent e);
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        public delegate void P_BUSCAR_LABORATORIORowChangeEventHandler(object sender, P_BUSCAR_LABORATORIORowChangeEvent e);
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         public delegate void P_BUSCAR_PACIENTERowChangeEventHandler(object sender, P_BUSCAR_PACIENTERowChangeEvent e);
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        public delegate void P_BUSCAR_PROVINCIARowChangeEventHandler(object sender, P_BUSCAR_PROVINCIARowChangeEvent e);
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         public delegate void P_BUSCAR_VACUNARowChangeEventHandler(object sender, P_BUSCAR_VACUNARowChangeEvent e);
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        public delegate void P_BUSCAR_VACUNACIONRowChangeEventHandler(object sender, P_BUSCAR_VACUNACIONRowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
@@ -640,7 +780,11 @@ namespace Presentacion {
             
             private global::System.Data.DataColumn columnCen_Provincia;
             
+            private global::System.Data.DataColumn columnNumero_Lotes;
+            
             private global::System.Data.DataColumn columnCen_CantidadLotes;
+            
+            private global::System.Data.DataColumn columnCen_VencimientoLotes;
             
             private global::System.Data.DataColumn columnCen_Descripcion;
             
@@ -697,9 +841,25 @@ namespace Presentacion {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn Numero_LotesColumn {
+                get {
+                    return this.columnNumero_Lotes;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public global::System.Data.DataColumn Cen_CantidadLotesColumn {
                 get {
                     return this.columnCen_CantidadLotes;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn Cen_VencimientoLotesColumn {
+                get {
+                    return this.columnCen_VencimientoLotes;
                 }
             }
             
@@ -756,12 +916,14 @@ namespace Presentacion {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public CentrosVacunasRow AddCentrosVacunasRow(ProvinciasRow parentProvinciasRowByFK_CentrosVacunas_Provincias, decimal Cen_CantidadLotes, string Cen_Descripcion, string Cen_Direccion) {
+            public CentrosVacunasRow AddCentrosVacunasRow(ProvinciasRow parentProvinciasRowByFK_CentrosVacunas_Provincias, string Numero_Lotes, decimal Cen_CantidadLotes, System.DateTime Cen_VencimientoLotes, string Cen_Descripcion, string Cen_Direccion) {
                 CentrosVacunasRow rowCentrosVacunasRow = ((CentrosVacunasRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
                         null,
+                        Numero_Lotes,
                         Cen_CantidadLotes,
+                        Cen_VencimientoLotes,
                         Cen_Descripcion,
                         Cen_Direccion};
                 if ((parentProvinciasRowByFK_CentrosVacunas_Provincias != null)) {
@@ -798,7 +960,9 @@ namespace Presentacion {
             internal void InitVars() {
                 this.columnCen_Codigo = base.Columns["Cen_Codigo"];
                 this.columnCen_Provincia = base.Columns["Cen_Provincia"];
+                this.columnNumero_Lotes = base.Columns["Numero_Lotes"];
                 this.columnCen_CantidadLotes = base.Columns["Cen_CantidadLotes"];
+                this.columnCen_VencimientoLotes = base.Columns["Cen_VencimientoLotes"];
                 this.columnCen_Descripcion = base.Columns["Cen_Descripcion"];
                 this.columnCen_Direccion = base.Columns["Cen_Direccion"];
             }
@@ -810,8 +974,12 @@ namespace Presentacion {
                 base.Columns.Add(this.columnCen_Codigo);
                 this.columnCen_Provincia = new global::System.Data.DataColumn("Cen_Provincia", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnCen_Provincia);
+                this.columnNumero_Lotes = new global::System.Data.DataColumn("Numero_Lotes", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnNumero_Lotes);
                 this.columnCen_CantidadLotes = new global::System.Data.DataColumn("Cen_CantidadLotes", typeof(decimal), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnCen_CantidadLotes);
+                this.columnCen_VencimientoLotes = new global::System.Data.DataColumn("Cen_VencimientoLotes", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCen_VencimientoLotes);
                 this.columnCen_Descripcion = new global::System.Data.DataColumn("Cen_Descripcion", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnCen_Descripcion);
                 this.columnCen_Direccion = new global::System.Data.DataColumn("Cen_Direccion", typeof(string), null, global::System.Data.MappingType.Element);
@@ -825,10 +993,11 @@ namespace Presentacion {
                 this.columnCen_Codigo.ReadOnly = true;
                 this.columnCen_Codigo.Unique = true;
                 this.columnCen_Provincia.AllowDBNull = false;
+                this.columnNumero_Lotes.AllowDBNull = false;
+                this.columnNumero_Lotes.MaxLength = 15;
                 this.columnCen_CantidadLotes.AllowDBNull = false;
-                this.columnCen_Descripcion.AllowDBNull = false;
+                this.columnCen_VencimientoLotes.AllowDBNull = false;
                 this.columnCen_Descripcion.MaxLength = 30;
-                this.columnCen_Direccion.AllowDBNull = false;
                 this.columnCen_Direccion.MaxLength = 60;
             }
             
@@ -2369,7 +2538,6 @@ namespace Presentacion {
                 this.columnVac_Centro.AllowDBNull = false;
                 this.columnVac_Vacuna.AllowDBNull = false;
                 this.columnVac_Dosis.AllowDBNull = false;
-                this.columnVac_Fecha.AllowDBNull = false;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2844,15 +3012,19 @@ namespace Presentacion {
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
         public partial class P_BUSCAR_CENTRODataTable : global::System.Data.TypedTableBase<P_BUSCAR_CENTRORow> {
             
-            private global::System.Data.DataColumn columnCen_Codigo;
+            private global::System.Data.DataColumn columnCODIGO;
             
-            private global::System.Data.DataColumn columnCen_Provincia;
+            private global::System.Data.DataColumn columnPROVINCIA;
             
-            private global::System.Data.DataColumn columnCen_CantidadLotes;
+            private global::System.Data.DataColumn columnNUMLOTE;
             
-            private global::System.Data.DataColumn columnCen_Descripcion;
+            private global::System.Data.DataColumn columnCANTIDAD;
             
-            private global::System.Data.DataColumn columnCen_Direccion;
+            private global::System.Data.DataColumn columnVENCIMIENTO;
+            
+            private global::System.Data.DataColumn columnCENTRO;
+            
+            private global::System.Data.DataColumn columnDIRECCION;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
@@ -2889,41 +3061,57 @@ namespace Presentacion {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn Cen_CodigoColumn {
+            public global::System.Data.DataColumn CODIGOColumn {
                 get {
-                    return this.columnCen_Codigo;
+                    return this.columnCODIGO;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn Cen_ProvinciaColumn {
+            public global::System.Data.DataColumn PROVINCIAColumn {
                 get {
-                    return this.columnCen_Provincia;
+                    return this.columnPROVINCIA;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn Cen_CantidadLotesColumn {
+            public global::System.Data.DataColumn NUMLOTEColumn {
                 get {
-                    return this.columnCen_CantidadLotes;
+                    return this.columnNUMLOTE;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn Cen_DescripcionColumn {
+            public global::System.Data.DataColumn CANTIDADColumn {
                 get {
-                    return this.columnCen_Descripcion;
+                    return this.columnCANTIDAD;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn Cen_DireccionColumn {
+            public global::System.Data.DataColumn VENCIMIENTOColumn {
                 get {
-                    return this.columnCen_Direccion;
+                    return this.columnVENCIMIENTO;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn CENTROColumn {
+                get {
+                    return this.columnCENTRO;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn DIRECCIONColumn {
+                get {
+                    return this.columnDIRECCION;
                 }
             }
             
@@ -2964,14 +3152,16 @@ namespace Presentacion {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public P_BUSCAR_CENTRORow AddP_BUSCAR_CENTRORow(int Cen_Provincia, decimal Cen_CantidadLotes, string Cen_Descripcion, string Cen_Direccion) {
+            public P_BUSCAR_CENTRORow AddP_BUSCAR_CENTRORow(string PROVINCIA, string NUMLOTE, decimal CANTIDAD, System.DateTime VENCIMIENTO, string CENTRO, string DIRECCION) {
                 P_BUSCAR_CENTRORow rowP_BUSCAR_CENTRORow = ((P_BUSCAR_CENTRORow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
-                        Cen_Provincia,
-                        Cen_CantidadLotes,
-                        Cen_Descripcion,
-                        Cen_Direccion};
+                        PROVINCIA,
+                        NUMLOTE,
+                        CANTIDAD,
+                        VENCIMIENTO,
+                        CENTRO,
+                        DIRECCION};
                 rowP_BUSCAR_CENTRORow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowP_BUSCAR_CENTRORow);
                 return rowP_BUSCAR_CENTRORow;
@@ -2979,9 +3169,9 @@ namespace Presentacion {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public P_BUSCAR_CENTRORow FindByCen_Codigo(int Cen_Codigo) {
+            public P_BUSCAR_CENTRORow FindByCODIGO(int CODIGO) {
                 return ((P_BUSCAR_CENTRORow)(this.Rows.Find(new object[] {
-                            Cen_Codigo})));
+                            CODIGO})));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -3001,38 +3191,46 @@ namespace Presentacion {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             internal void InitVars() {
-                this.columnCen_Codigo = base.Columns["Cen_Codigo"];
-                this.columnCen_Provincia = base.Columns["Cen_Provincia"];
-                this.columnCen_CantidadLotes = base.Columns["Cen_CantidadLotes"];
-                this.columnCen_Descripcion = base.Columns["Cen_Descripcion"];
-                this.columnCen_Direccion = base.Columns["Cen_Direccion"];
+                this.columnCODIGO = base.Columns["CODIGO"];
+                this.columnPROVINCIA = base.Columns["PROVINCIA"];
+                this.columnNUMLOTE = base.Columns["NUMLOTE"];
+                this.columnCANTIDAD = base.Columns["CANTIDAD"];
+                this.columnVENCIMIENTO = base.Columns["VENCIMIENTO"];
+                this.columnCENTRO = base.Columns["CENTRO"];
+                this.columnDIRECCION = base.Columns["DIRECCION"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             private void InitClass() {
-                this.columnCen_Codigo = new global::System.Data.DataColumn("Cen_Codigo", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnCen_Codigo);
-                this.columnCen_Provincia = new global::System.Data.DataColumn("Cen_Provincia", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnCen_Provincia);
-                this.columnCen_CantidadLotes = new global::System.Data.DataColumn("Cen_CantidadLotes", typeof(decimal), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnCen_CantidadLotes);
-                this.columnCen_Descripcion = new global::System.Data.DataColumn("Cen_Descripcion", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnCen_Descripcion);
-                this.columnCen_Direccion = new global::System.Data.DataColumn("Cen_Direccion", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnCen_Direccion);
+                this.columnCODIGO = new global::System.Data.DataColumn("CODIGO", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCODIGO);
+                this.columnPROVINCIA = new global::System.Data.DataColumn("PROVINCIA", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPROVINCIA);
+                this.columnNUMLOTE = new global::System.Data.DataColumn("NUMLOTE", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnNUMLOTE);
+                this.columnCANTIDAD = new global::System.Data.DataColumn("CANTIDAD", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCANTIDAD);
+                this.columnVENCIMIENTO = new global::System.Data.DataColumn("VENCIMIENTO", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnVENCIMIENTO);
+                this.columnCENTRO = new global::System.Data.DataColumn("CENTRO", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCENTRO);
+                this.columnDIRECCION = new global::System.Data.DataColumn("DIRECCION", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDIRECCION);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
-                                this.columnCen_Codigo}, true));
-                this.columnCen_Codigo.AutoIncrement = true;
-                this.columnCen_Codigo.AllowDBNull = false;
-                this.columnCen_Codigo.ReadOnly = true;
-                this.columnCen_Codigo.Unique = true;
-                this.columnCen_Provincia.AllowDBNull = false;
-                this.columnCen_CantidadLotes.AllowDBNull = false;
-                this.columnCen_Descripcion.AllowDBNull = false;
-                this.columnCen_Descripcion.MaxLength = 30;
-                this.columnCen_Direccion.AllowDBNull = false;
-                this.columnCen_Direccion.MaxLength = 60;
+                                this.columnCODIGO}, true));
+                this.columnCODIGO.AutoIncrement = true;
+                this.columnCODIGO.AllowDBNull = false;
+                this.columnCODIGO.ReadOnly = true;
+                this.columnCODIGO.Unique = true;
+                this.columnPROVINCIA.AllowDBNull = false;
+                this.columnPROVINCIA.MaxLength = 20;
+                this.columnNUMLOTE.AllowDBNull = false;
+                this.columnNUMLOTE.MaxLength = 15;
+                this.columnCANTIDAD.AllowDBNull = false;
+                this.columnVENCIMIENTO.AllowDBNull = false;
+                this.columnCENTRO.MaxLength = 30;
+                this.columnDIRECCION.MaxLength = 60;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -3119,6 +3317,558 @@ namespace Presentacion {
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
                 attribute2.FixedValue = "P_BUSCAR_CENTRODataTable";
+                type.Attributes.Add(attribute2);
+                type.Particle = sequence;
+                global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
+                if (xs.Contains(dsSchema.TargetNamespace)) {
+                    global::System.IO.MemoryStream s1 = new global::System.IO.MemoryStream();
+                    global::System.IO.MemoryStream s2 = new global::System.IO.MemoryStream();
+                    try {
+                        global::System.Xml.Schema.XmlSchema schema = null;
+                        dsSchema.Write(s1);
+                        for (global::System.Collections.IEnumerator schemas = xs.Schemas(dsSchema.TargetNamespace).GetEnumerator(); schemas.MoveNext(); ) {
+                            schema = ((global::System.Xml.Schema.XmlSchema)(schemas.Current));
+                            s2.SetLength(0);
+                            schema.Write(s2);
+                            if ((s1.Length == s2.Length)) {
+                                s1.Position = 0;
+                                s2.Position = 0;
+                                for (; ((s1.Position != s1.Length) 
+                                            && (s1.ReadByte() == s2.ReadByte())); ) {
+                                    ;
+                                }
+                                if ((s1.Position == s1.Length)) {
+                                    return type;
+                                }
+                            }
+                        }
+                    }
+                    finally {
+                        if ((s1 != null)) {
+                            s1.Close();
+                        }
+                        if ((s2 != null)) {
+                            s2.Close();
+                        }
+                    }
+                }
+                xs.Add(dsSchema);
+                return type;
+            }
+        }
+        
+        /// <summary>
+        ///Represents the strongly named DataTable class.
+        ///</summary>
+        [global::System.Serializable()]
+        [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
+        public partial class P_BUSCAR_DOSISDataTable : global::System.Data.TypedTableBase<P_BUSCAR_DOSISRow> {
+            
+            private global::System.Data.DataColumn columnId_Dosis;
+            
+            private global::System.Data.DataColumn columnDescripcion;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public P_BUSCAR_DOSISDataTable() {
+                this.TableName = "P_BUSCAR_DOSIS";
+                this.BeginInit();
+                this.InitClass();
+                this.EndInit();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            internal P_BUSCAR_DOSISDataTable(global::System.Data.DataTable table) {
+                this.TableName = table.TableName;
+                if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
+                    this.CaseSensitive = table.CaseSensitive;
+                }
+                if ((table.Locale.ToString() != table.DataSet.Locale.ToString())) {
+                    this.Locale = table.Locale;
+                }
+                if ((table.Namespace != table.DataSet.Namespace)) {
+                    this.Namespace = table.Namespace;
+                }
+                this.Prefix = table.Prefix;
+                this.MinimumCapacity = table.MinimumCapacity;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected P_BUSCAR_DOSISDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+                    base(info, context) {
+                this.InitVars();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn Id_DosisColumn {
+                get {
+                    return this.columnId_Dosis;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn DescripcionColumn {
+                get {
+                    return this.columnDescripcion;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            [global::System.ComponentModel.Browsable(false)]
+            public int Count {
+                get {
+                    return this.Rows.Count;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public P_BUSCAR_DOSISRow this[int index] {
+                get {
+                    return ((P_BUSCAR_DOSISRow)(this.Rows[index]));
+                }
+            }
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public event P_BUSCAR_DOSISRowChangeEventHandler P_BUSCAR_DOSISRowChanging;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public event P_BUSCAR_DOSISRowChangeEventHandler P_BUSCAR_DOSISRowChanged;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public event P_BUSCAR_DOSISRowChangeEventHandler P_BUSCAR_DOSISRowDeleting;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public event P_BUSCAR_DOSISRowChangeEventHandler P_BUSCAR_DOSISRowDeleted;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void AddP_BUSCAR_DOSISRow(P_BUSCAR_DOSISRow row) {
+                this.Rows.Add(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public P_BUSCAR_DOSISRow AddP_BUSCAR_DOSISRow(string Descripcion) {
+                P_BUSCAR_DOSISRow rowP_BUSCAR_DOSISRow = ((P_BUSCAR_DOSISRow)(this.NewRow()));
+                object[] columnValuesArray = new object[] {
+                        null,
+                        Descripcion};
+                rowP_BUSCAR_DOSISRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowP_BUSCAR_DOSISRow);
+                return rowP_BUSCAR_DOSISRow;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public P_BUSCAR_DOSISRow FindById_Dosis(int Id_Dosis) {
+                return ((P_BUSCAR_DOSISRow)(this.Rows.Find(new object[] {
+                            Id_Dosis})));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public override global::System.Data.DataTable Clone() {
+                P_BUSCAR_DOSISDataTable cln = ((P_BUSCAR_DOSISDataTable)(base.Clone()));
+                cln.InitVars();
+                return cln;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override global::System.Data.DataTable CreateInstance() {
+                return new P_BUSCAR_DOSISDataTable();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            internal void InitVars() {
+                this.columnId_Dosis = base.Columns["Id_Dosis"];
+                this.columnDescripcion = base.Columns["Descripcion"];
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            private void InitClass() {
+                this.columnId_Dosis = new global::System.Data.DataColumn("Id_Dosis", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnId_Dosis);
+                this.columnDescripcion = new global::System.Data.DataColumn("Descripcion", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDescripcion);
+                this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
+                                this.columnId_Dosis}, true));
+                this.columnId_Dosis.AutoIncrement = true;
+                this.columnId_Dosis.AllowDBNull = false;
+                this.columnId_Dosis.ReadOnly = true;
+                this.columnId_Dosis.Unique = true;
+                this.columnDescripcion.AllowDBNull = false;
+                this.columnDescripcion.MaxLength = 20;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public P_BUSCAR_DOSISRow NewP_BUSCAR_DOSISRow() {
+                return ((P_BUSCAR_DOSISRow)(this.NewRow()));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
+                return new P_BUSCAR_DOSISRow(builder);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override global::System.Type GetRowType() {
+                return typeof(P_BUSCAR_DOSISRow);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanged(e);
+                if ((this.P_BUSCAR_DOSISRowChanged != null)) {
+                    this.P_BUSCAR_DOSISRowChanged(this, new P_BUSCAR_DOSISRowChangeEvent(((P_BUSCAR_DOSISRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanging(e);
+                if ((this.P_BUSCAR_DOSISRowChanging != null)) {
+                    this.P_BUSCAR_DOSISRowChanging(this, new P_BUSCAR_DOSISRowChangeEvent(((P_BUSCAR_DOSISRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleted(e);
+                if ((this.P_BUSCAR_DOSISRowDeleted != null)) {
+                    this.P_BUSCAR_DOSISRowDeleted(this, new P_BUSCAR_DOSISRowChangeEvent(((P_BUSCAR_DOSISRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleting(e);
+                if ((this.P_BUSCAR_DOSISRowDeleting != null)) {
+                    this.P_BUSCAR_DOSISRowDeleting(this, new P_BUSCAR_DOSISRowChangeEvent(((P_BUSCAR_DOSISRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void RemoveP_BUSCAR_DOSISRow(P_BUSCAR_DOSISRow row) {
+                this.Rows.Remove(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
+                global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
+                global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
+                VacunacionDataSet ds = new VacunacionDataSet();
+                global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
+                any1.Namespace = "http://www.w3.org/2001/XMLSchema";
+                any1.MinOccurs = new decimal(0);
+                any1.MaxOccurs = decimal.MaxValue;
+                any1.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any1);
+                global::System.Xml.Schema.XmlSchemaAny any2 = new global::System.Xml.Schema.XmlSchemaAny();
+                any2.Namespace = "urn:schemas-microsoft-com:xml-diffgram-v1";
+                any2.MinOccurs = new decimal(1);
+                any2.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any2);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute1 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute1.Name = "namespace";
+                attribute1.FixedValue = ds.Namespace;
+                type.Attributes.Add(attribute1);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute2.Name = "tableTypeName";
+                attribute2.FixedValue = "P_BUSCAR_DOSISDataTable";
+                type.Attributes.Add(attribute2);
+                type.Particle = sequence;
+                global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
+                if (xs.Contains(dsSchema.TargetNamespace)) {
+                    global::System.IO.MemoryStream s1 = new global::System.IO.MemoryStream();
+                    global::System.IO.MemoryStream s2 = new global::System.IO.MemoryStream();
+                    try {
+                        global::System.Xml.Schema.XmlSchema schema = null;
+                        dsSchema.Write(s1);
+                        for (global::System.Collections.IEnumerator schemas = xs.Schemas(dsSchema.TargetNamespace).GetEnumerator(); schemas.MoveNext(); ) {
+                            schema = ((global::System.Xml.Schema.XmlSchema)(schemas.Current));
+                            s2.SetLength(0);
+                            schema.Write(s2);
+                            if ((s1.Length == s2.Length)) {
+                                s1.Position = 0;
+                                s2.Position = 0;
+                                for (; ((s1.Position != s1.Length) 
+                                            && (s1.ReadByte() == s2.ReadByte())); ) {
+                                    ;
+                                }
+                                if ((s1.Position == s1.Length)) {
+                                    return type;
+                                }
+                            }
+                        }
+                    }
+                    finally {
+                        if ((s1 != null)) {
+                            s1.Close();
+                        }
+                        if ((s2 != null)) {
+                            s2.Close();
+                        }
+                    }
+                }
+                xs.Add(dsSchema);
+                return type;
+            }
+        }
+        
+        /// <summary>
+        ///Represents the strongly named DataTable class.
+        ///</summary>
+        [global::System.Serializable()]
+        [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
+        public partial class P_BUSCAR_LABORATORIODataTable : global::System.Data.TypedTableBase<P_BUSCAR_LABORATORIORow> {
+            
+            private global::System.Data.DataColumn columnLab_Codigo;
+            
+            private global::System.Data.DataColumn columnLab_Descripcion;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public P_BUSCAR_LABORATORIODataTable() {
+                this.TableName = "P_BUSCAR_LABORATORIO";
+                this.BeginInit();
+                this.InitClass();
+                this.EndInit();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            internal P_BUSCAR_LABORATORIODataTable(global::System.Data.DataTable table) {
+                this.TableName = table.TableName;
+                if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
+                    this.CaseSensitive = table.CaseSensitive;
+                }
+                if ((table.Locale.ToString() != table.DataSet.Locale.ToString())) {
+                    this.Locale = table.Locale;
+                }
+                if ((table.Namespace != table.DataSet.Namespace)) {
+                    this.Namespace = table.Namespace;
+                }
+                this.Prefix = table.Prefix;
+                this.MinimumCapacity = table.MinimumCapacity;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected P_BUSCAR_LABORATORIODataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+                    base(info, context) {
+                this.InitVars();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn Lab_CodigoColumn {
+                get {
+                    return this.columnLab_Codigo;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn Lab_DescripcionColumn {
+                get {
+                    return this.columnLab_Descripcion;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            [global::System.ComponentModel.Browsable(false)]
+            public int Count {
+                get {
+                    return this.Rows.Count;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public P_BUSCAR_LABORATORIORow this[int index] {
+                get {
+                    return ((P_BUSCAR_LABORATORIORow)(this.Rows[index]));
+                }
+            }
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public event P_BUSCAR_LABORATORIORowChangeEventHandler P_BUSCAR_LABORATORIORowChanging;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public event P_BUSCAR_LABORATORIORowChangeEventHandler P_BUSCAR_LABORATORIORowChanged;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public event P_BUSCAR_LABORATORIORowChangeEventHandler P_BUSCAR_LABORATORIORowDeleting;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public event P_BUSCAR_LABORATORIORowChangeEventHandler P_BUSCAR_LABORATORIORowDeleted;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void AddP_BUSCAR_LABORATORIORow(P_BUSCAR_LABORATORIORow row) {
+                this.Rows.Add(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public P_BUSCAR_LABORATORIORow AddP_BUSCAR_LABORATORIORow(string Lab_Descripcion) {
+                P_BUSCAR_LABORATORIORow rowP_BUSCAR_LABORATORIORow = ((P_BUSCAR_LABORATORIORow)(this.NewRow()));
+                object[] columnValuesArray = new object[] {
+                        null,
+                        Lab_Descripcion};
+                rowP_BUSCAR_LABORATORIORow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowP_BUSCAR_LABORATORIORow);
+                return rowP_BUSCAR_LABORATORIORow;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public P_BUSCAR_LABORATORIORow FindByLab_Codigo(int Lab_Codigo) {
+                return ((P_BUSCAR_LABORATORIORow)(this.Rows.Find(new object[] {
+                            Lab_Codigo})));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public override global::System.Data.DataTable Clone() {
+                P_BUSCAR_LABORATORIODataTable cln = ((P_BUSCAR_LABORATORIODataTable)(base.Clone()));
+                cln.InitVars();
+                return cln;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override global::System.Data.DataTable CreateInstance() {
+                return new P_BUSCAR_LABORATORIODataTable();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            internal void InitVars() {
+                this.columnLab_Codigo = base.Columns["Lab_Codigo"];
+                this.columnLab_Descripcion = base.Columns["Lab_Descripcion"];
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            private void InitClass() {
+                this.columnLab_Codigo = new global::System.Data.DataColumn("Lab_Codigo", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnLab_Codigo);
+                this.columnLab_Descripcion = new global::System.Data.DataColumn("Lab_Descripcion", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnLab_Descripcion);
+                this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
+                                this.columnLab_Codigo}, true));
+                this.columnLab_Codigo.AutoIncrement = true;
+                this.columnLab_Codigo.AllowDBNull = false;
+                this.columnLab_Codigo.ReadOnly = true;
+                this.columnLab_Codigo.Unique = true;
+                this.columnLab_Descripcion.AllowDBNull = false;
+                this.columnLab_Descripcion.MaxLength = 20;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public P_BUSCAR_LABORATORIORow NewP_BUSCAR_LABORATORIORow() {
+                return ((P_BUSCAR_LABORATORIORow)(this.NewRow()));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
+                return new P_BUSCAR_LABORATORIORow(builder);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override global::System.Type GetRowType() {
+                return typeof(P_BUSCAR_LABORATORIORow);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanged(e);
+                if ((this.P_BUSCAR_LABORATORIORowChanged != null)) {
+                    this.P_BUSCAR_LABORATORIORowChanged(this, new P_BUSCAR_LABORATORIORowChangeEvent(((P_BUSCAR_LABORATORIORow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanging(e);
+                if ((this.P_BUSCAR_LABORATORIORowChanging != null)) {
+                    this.P_BUSCAR_LABORATORIORowChanging(this, new P_BUSCAR_LABORATORIORowChangeEvent(((P_BUSCAR_LABORATORIORow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleted(e);
+                if ((this.P_BUSCAR_LABORATORIORowDeleted != null)) {
+                    this.P_BUSCAR_LABORATORIORowDeleted(this, new P_BUSCAR_LABORATORIORowChangeEvent(((P_BUSCAR_LABORATORIORow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleting(e);
+                if ((this.P_BUSCAR_LABORATORIORowDeleting != null)) {
+                    this.P_BUSCAR_LABORATORIORowDeleting(this, new P_BUSCAR_LABORATORIORowChangeEvent(((P_BUSCAR_LABORATORIORow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void RemoveP_BUSCAR_LABORATORIORow(P_BUSCAR_LABORATORIORow row) {
+                this.Rows.Remove(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
+                global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
+                global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
+                VacunacionDataSet ds = new VacunacionDataSet();
+                global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
+                any1.Namespace = "http://www.w3.org/2001/XMLSchema";
+                any1.MinOccurs = new decimal(0);
+                any1.MaxOccurs = decimal.MaxValue;
+                any1.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any1);
+                global::System.Xml.Schema.XmlSchemaAny any2 = new global::System.Xml.Schema.XmlSchemaAny();
+                any2.Namespace = "urn:schemas-microsoft-com:xml-diffgram-v1";
+                any2.MinOccurs = new decimal(1);
+                any2.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any2);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute1 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute1.Name = "namespace";
+                attribute1.FixedValue = ds.Namespace;
+                type.Attributes.Add(attribute1);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute2.Name = "tableTypeName";
+                attribute2.FixedValue = "P_BUSCAR_LABORATORIODataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -3518,19 +4268,295 @@ namespace Presentacion {
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
+        public partial class P_BUSCAR_PROVINCIADataTable : global::System.Data.TypedTableBase<P_BUSCAR_PROVINCIARow> {
+            
+            private global::System.Data.DataColumn columnPrv_Codigo;
+            
+            private global::System.Data.DataColumn columnPrv_Descripcion;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public P_BUSCAR_PROVINCIADataTable() {
+                this.TableName = "P_BUSCAR_PROVINCIA";
+                this.BeginInit();
+                this.InitClass();
+                this.EndInit();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            internal P_BUSCAR_PROVINCIADataTable(global::System.Data.DataTable table) {
+                this.TableName = table.TableName;
+                if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
+                    this.CaseSensitive = table.CaseSensitive;
+                }
+                if ((table.Locale.ToString() != table.DataSet.Locale.ToString())) {
+                    this.Locale = table.Locale;
+                }
+                if ((table.Namespace != table.DataSet.Namespace)) {
+                    this.Namespace = table.Namespace;
+                }
+                this.Prefix = table.Prefix;
+                this.MinimumCapacity = table.MinimumCapacity;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected P_BUSCAR_PROVINCIADataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+                    base(info, context) {
+                this.InitVars();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn Prv_CodigoColumn {
+                get {
+                    return this.columnPrv_Codigo;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn Prv_DescripcionColumn {
+                get {
+                    return this.columnPrv_Descripcion;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            [global::System.ComponentModel.Browsable(false)]
+            public int Count {
+                get {
+                    return this.Rows.Count;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public P_BUSCAR_PROVINCIARow this[int index] {
+                get {
+                    return ((P_BUSCAR_PROVINCIARow)(this.Rows[index]));
+                }
+            }
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public event P_BUSCAR_PROVINCIARowChangeEventHandler P_BUSCAR_PROVINCIARowChanging;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public event P_BUSCAR_PROVINCIARowChangeEventHandler P_BUSCAR_PROVINCIARowChanged;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public event P_BUSCAR_PROVINCIARowChangeEventHandler P_BUSCAR_PROVINCIARowDeleting;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public event P_BUSCAR_PROVINCIARowChangeEventHandler P_BUSCAR_PROVINCIARowDeleted;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void AddP_BUSCAR_PROVINCIARow(P_BUSCAR_PROVINCIARow row) {
+                this.Rows.Add(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public P_BUSCAR_PROVINCIARow AddP_BUSCAR_PROVINCIARow(string Prv_Descripcion) {
+                P_BUSCAR_PROVINCIARow rowP_BUSCAR_PROVINCIARow = ((P_BUSCAR_PROVINCIARow)(this.NewRow()));
+                object[] columnValuesArray = new object[] {
+                        null,
+                        Prv_Descripcion};
+                rowP_BUSCAR_PROVINCIARow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowP_BUSCAR_PROVINCIARow);
+                return rowP_BUSCAR_PROVINCIARow;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public P_BUSCAR_PROVINCIARow FindByPrv_Codigo(int Prv_Codigo) {
+                return ((P_BUSCAR_PROVINCIARow)(this.Rows.Find(new object[] {
+                            Prv_Codigo})));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public override global::System.Data.DataTable Clone() {
+                P_BUSCAR_PROVINCIADataTable cln = ((P_BUSCAR_PROVINCIADataTable)(base.Clone()));
+                cln.InitVars();
+                return cln;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override global::System.Data.DataTable CreateInstance() {
+                return new P_BUSCAR_PROVINCIADataTable();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            internal void InitVars() {
+                this.columnPrv_Codigo = base.Columns["Prv_Codigo"];
+                this.columnPrv_Descripcion = base.Columns["Prv_Descripcion"];
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            private void InitClass() {
+                this.columnPrv_Codigo = new global::System.Data.DataColumn("Prv_Codigo", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPrv_Codigo);
+                this.columnPrv_Descripcion = new global::System.Data.DataColumn("Prv_Descripcion", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPrv_Descripcion);
+                this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
+                                this.columnPrv_Codigo}, true));
+                this.columnPrv_Codigo.AutoIncrement = true;
+                this.columnPrv_Codigo.AllowDBNull = false;
+                this.columnPrv_Codigo.ReadOnly = true;
+                this.columnPrv_Codigo.Unique = true;
+                this.columnPrv_Descripcion.AllowDBNull = false;
+                this.columnPrv_Descripcion.MaxLength = 20;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public P_BUSCAR_PROVINCIARow NewP_BUSCAR_PROVINCIARow() {
+                return ((P_BUSCAR_PROVINCIARow)(this.NewRow()));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
+                return new P_BUSCAR_PROVINCIARow(builder);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override global::System.Type GetRowType() {
+                return typeof(P_BUSCAR_PROVINCIARow);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanged(e);
+                if ((this.P_BUSCAR_PROVINCIARowChanged != null)) {
+                    this.P_BUSCAR_PROVINCIARowChanged(this, new P_BUSCAR_PROVINCIARowChangeEvent(((P_BUSCAR_PROVINCIARow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanging(e);
+                if ((this.P_BUSCAR_PROVINCIARowChanging != null)) {
+                    this.P_BUSCAR_PROVINCIARowChanging(this, new P_BUSCAR_PROVINCIARowChangeEvent(((P_BUSCAR_PROVINCIARow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleted(e);
+                if ((this.P_BUSCAR_PROVINCIARowDeleted != null)) {
+                    this.P_BUSCAR_PROVINCIARowDeleted(this, new P_BUSCAR_PROVINCIARowChangeEvent(((P_BUSCAR_PROVINCIARow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleting(e);
+                if ((this.P_BUSCAR_PROVINCIARowDeleting != null)) {
+                    this.P_BUSCAR_PROVINCIARowDeleting(this, new P_BUSCAR_PROVINCIARowChangeEvent(((P_BUSCAR_PROVINCIARow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void RemoveP_BUSCAR_PROVINCIARow(P_BUSCAR_PROVINCIARow row) {
+                this.Rows.Remove(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
+                global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
+                global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
+                VacunacionDataSet ds = new VacunacionDataSet();
+                global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
+                any1.Namespace = "http://www.w3.org/2001/XMLSchema";
+                any1.MinOccurs = new decimal(0);
+                any1.MaxOccurs = decimal.MaxValue;
+                any1.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any1);
+                global::System.Xml.Schema.XmlSchemaAny any2 = new global::System.Xml.Schema.XmlSchemaAny();
+                any2.Namespace = "urn:schemas-microsoft-com:xml-diffgram-v1";
+                any2.MinOccurs = new decimal(1);
+                any2.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any2);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute1 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute1.Name = "namespace";
+                attribute1.FixedValue = ds.Namespace;
+                type.Attributes.Add(attribute1);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute2.Name = "tableTypeName";
+                attribute2.FixedValue = "P_BUSCAR_PROVINCIADataTable";
+                type.Attributes.Add(attribute2);
+                type.Particle = sequence;
+                global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
+                if (xs.Contains(dsSchema.TargetNamespace)) {
+                    global::System.IO.MemoryStream s1 = new global::System.IO.MemoryStream();
+                    global::System.IO.MemoryStream s2 = new global::System.IO.MemoryStream();
+                    try {
+                        global::System.Xml.Schema.XmlSchema schema = null;
+                        dsSchema.Write(s1);
+                        for (global::System.Collections.IEnumerator schemas = xs.Schemas(dsSchema.TargetNamespace).GetEnumerator(); schemas.MoveNext(); ) {
+                            schema = ((global::System.Xml.Schema.XmlSchema)(schemas.Current));
+                            s2.SetLength(0);
+                            schema.Write(s2);
+                            if ((s1.Length == s2.Length)) {
+                                s1.Position = 0;
+                                s2.Position = 0;
+                                for (; ((s1.Position != s1.Length) 
+                                            && (s1.ReadByte() == s2.ReadByte())); ) {
+                                    ;
+                                }
+                                if ((s1.Position == s1.Length)) {
+                                    return type;
+                                }
+                            }
+                        }
+                    }
+                    finally {
+                        if ((s1 != null)) {
+                            s1.Close();
+                        }
+                        if ((s2 != null)) {
+                            s2.Close();
+                        }
+                    }
+                }
+                xs.Add(dsSchema);
+                return type;
+            }
+        }
+        
+        /// <summary>
+        ///Represents the strongly named DataTable class.
+        ///</summary>
+        [global::System.Serializable()]
+        [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
         public partial class P_BUSCAR_VACUNADataTable : global::System.Data.TypedTableBase<P_BUSCAR_VACUNARow> {
             
-            private global::System.Data.DataColumn columnV_Codigo;
+            private global::System.Data.DataColumn columnCODIGO;
             
-            private global::System.Data.DataColumn columnV_Laboratorio;
+            private global::System.Data.DataColumn columnLABORATORIO;
             
-            private global::System.Data.DataColumn columnV_Marca;
+            private global::System.Data.DataColumn columnMARCA;
             
-            private global::System.Data.DataColumn columnV_Expiracion;
+            private global::System.Data.DataColumn columnEXPIRACION;
             
-            private global::System.Data.DataColumn columnV_Lote;
+            private global::System.Data.DataColumn columnLOTE;
             
-            private global::System.Data.DataColumn columnV_Cantidad;
+            private global::System.Data.DataColumn columnCANTIDAD;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
@@ -3567,49 +4593,49 @@ namespace Presentacion {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn V_CodigoColumn {
+            public global::System.Data.DataColumn CODIGOColumn {
                 get {
-                    return this.columnV_Codigo;
+                    return this.columnCODIGO;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn V_LaboratorioColumn {
+            public global::System.Data.DataColumn LABORATORIOColumn {
                 get {
-                    return this.columnV_Laboratorio;
+                    return this.columnLABORATORIO;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn V_MarcaColumn {
+            public global::System.Data.DataColumn MARCAColumn {
                 get {
-                    return this.columnV_Marca;
+                    return this.columnMARCA;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn V_ExpiracionColumn {
+            public global::System.Data.DataColumn EXPIRACIONColumn {
                 get {
-                    return this.columnV_Expiracion;
+                    return this.columnEXPIRACION;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn V_LoteColumn {
+            public global::System.Data.DataColumn LOTEColumn {
                 get {
-                    return this.columnV_Lote;
+                    return this.columnLOTE;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn V_CantidadColumn {
+            public global::System.Data.DataColumn CANTIDADColumn {
                 get {
-                    return this.columnV_Cantidad;
+                    return this.columnCANTIDAD;
                 }
             }
             
@@ -3650,15 +4676,15 @@ namespace Presentacion {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public P_BUSCAR_VACUNARow AddP_BUSCAR_VACUNARow(int V_Laboratorio, string V_Marca, System.DateTime V_Expiracion, string V_Lote, decimal V_Cantidad) {
+            public P_BUSCAR_VACUNARow AddP_BUSCAR_VACUNARow(string LABORATORIO, string MARCA, System.DateTime EXPIRACION, string LOTE, decimal CANTIDAD) {
                 P_BUSCAR_VACUNARow rowP_BUSCAR_VACUNARow = ((P_BUSCAR_VACUNARow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
-                        V_Laboratorio,
-                        V_Marca,
-                        V_Expiracion,
-                        V_Lote,
-                        V_Cantidad};
+                        LABORATORIO,
+                        MARCA,
+                        EXPIRACION,
+                        LOTE,
+                        CANTIDAD};
                 rowP_BUSCAR_VACUNARow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowP_BUSCAR_VACUNARow);
                 return rowP_BUSCAR_VACUNARow;
@@ -3666,9 +4692,9 @@ namespace Presentacion {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public P_BUSCAR_VACUNARow FindByV_Codigo(int V_Codigo) {
+            public P_BUSCAR_VACUNARow FindByCODIGO(int CODIGO) {
                 return ((P_BUSCAR_VACUNARow)(this.Rows.Find(new object[] {
-                            V_Codigo})));
+                            CODIGO})));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -3688,41 +4714,42 @@ namespace Presentacion {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             internal void InitVars() {
-                this.columnV_Codigo = base.Columns["V_Codigo"];
-                this.columnV_Laboratorio = base.Columns["V_Laboratorio"];
-                this.columnV_Marca = base.Columns["V_Marca"];
-                this.columnV_Expiracion = base.Columns["V_Expiracion"];
-                this.columnV_Lote = base.Columns["V_Lote"];
-                this.columnV_Cantidad = base.Columns["V_Cantidad"];
+                this.columnCODIGO = base.Columns["CODIGO"];
+                this.columnLABORATORIO = base.Columns["LABORATORIO"];
+                this.columnMARCA = base.Columns["MARCA"];
+                this.columnEXPIRACION = base.Columns["EXPIRACION"];
+                this.columnLOTE = base.Columns["LOTE"];
+                this.columnCANTIDAD = base.Columns["CANTIDAD"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             private void InitClass() {
-                this.columnV_Codigo = new global::System.Data.DataColumn("V_Codigo", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnV_Codigo);
-                this.columnV_Laboratorio = new global::System.Data.DataColumn("V_Laboratorio", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnV_Laboratorio);
-                this.columnV_Marca = new global::System.Data.DataColumn("V_Marca", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnV_Marca);
-                this.columnV_Expiracion = new global::System.Data.DataColumn("V_Expiracion", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnV_Expiracion);
-                this.columnV_Lote = new global::System.Data.DataColumn("V_Lote", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnV_Lote);
-                this.columnV_Cantidad = new global::System.Data.DataColumn("V_Cantidad", typeof(decimal), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnV_Cantidad);
+                this.columnCODIGO = new global::System.Data.DataColumn("CODIGO", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCODIGO);
+                this.columnLABORATORIO = new global::System.Data.DataColumn("LABORATORIO", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnLABORATORIO);
+                this.columnMARCA = new global::System.Data.DataColumn("MARCA", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnMARCA);
+                this.columnEXPIRACION = new global::System.Data.DataColumn("EXPIRACION", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnEXPIRACION);
+                this.columnLOTE = new global::System.Data.DataColumn("LOTE", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnLOTE);
+                this.columnCANTIDAD = new global::System.Data.DataColumn("CANTIDAD", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCANTIDAD);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
-                                this.columnV_Codigo}, true));
-                this.columnV_Codigo.AutoIncrement = true;
-                this.columnV_Codigo.AllowDBNull = false;
-                this.columnV_Codigo.ReadOnly = true;
-                this.columnV_Codigo.Unique = true;
-                this.columnV_Laboratorio.AllowDBNull = false;
-                this.columnV_Marca.AllowDBNull = false;
-                this.columnV_Marca.MaxLength = 20;
-                this.columnV_Expiracion.AllowDBNull = false;
-                this.columnV_Lote.AllowDBNull = false;
-                this.columnV_Lote.MaxLength = 10;
+                                this.columnCODIGO}, true));
+                this.columnCODIGO.AutoIncrement = true;
+                this.columnCODIGO.AllowDBNull = false;
+                this.columnCODIGO.ReadOnly = true;
+                this.columnCODIGO.Unique = true;
+                this.columnLABORATORIO.AllowDBNull = false;
+                this.columnLABORATORIO.MaxLength = 20;
+                this.columnMARCA.AllowDBNull = false;
+                this.columnMARCA.MaxLength = 20;
+                this.columnEXPIRACION.AllowDBNull = false;
+                this.columnLOTE.AllowDBNull = false;
+                this.columnLOTE.MaxLength = 10;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -3850,6 +4877,343 @@ namespace Presentacion {
         }
         
         /// <summary>
+        ///Represents the strongly named DataTable class.
+        ///</summary>
+        [global::System.Serializable()]
+        [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
+        public partial class P_BUSCAR_VACUNACIONDataTable : global::System.Data.TypedTableBase<P_BUSCAR_VACUNACIONRow> {
+            
+            private global::System.Data.DataColumn columnCODIGO;
+            
+            private global::System.Data.DataColumn columnPACIENTE;
+            
+            private global::System.Data.DataColumn columnCENTRO;
+            
+            private global::System.Data.DataColumn columnVACUNA;
+            
+            private global::System.Data.DataColumn columnDOSIS;
+            
+            private global::System.Data.DataColumn columnFVACUNACION;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public P_BUSCAR_VACUNACIONDataTable() {
+                this.TableName = "P_BUSCAR_VACUNACION";
+                this.BeginInit();
+                this.InitClass();
+                this.EndInit();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            internal P_BUSCAR_VACUNACIONDataTable(global::System.Data.DataTable table) {
+                this.TableName = table.TableName;
+                if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
+                    this.CaseSensitive = table.CaseSensitive;
+                }
+                if ((table.Locale.ToString() != table.DataSet.Locale.ToString())) {
+                    this.Locale = table.Locale;
+                }
+                if ((table.Namespace != table.DataSet.Namespace)) {
+                    this.Namespace = table.Namespace;
+                }
+                this.Prefix = table.Prefix;
+                this.MinimumCapacity = table.MinimumCapacity;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected P_BUSCAR_VACUNACIONDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+                    base(info, context) {
+                this.InitVars();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn CODIGOColumn {
+                get {
+                    return this.columnCODIGO;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn PACIENTEColumn {
+                get {
+                    return this.columnPACIENTE;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn CENTROColumn {
+                get {
+                    return this.columnCENTRO;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn VACUNAColumn {
+                get {
+                    return this.columnVACUNA;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn DOSISColumn {
+                get {
+                    return this.columnDOSIS;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn FVACUNACIONColumn {
+                get {
+                    return this.columnFVACUNACION;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            [global::System.ComponentModel.Browsable(false)]
+            public int Count {
+                get {
+                    return this.Rows.Count;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public P_BUSCAR_VACUNACIONRow this[int index] {
+                get {
+                    return ((P_BUSCAR_VACUNACIONRow)(this.Rows[index]));
+                }
+            }
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public event P_BUSCAR_VACUNACIONRowChangeEventHandler P_BUSCAR_VACUNACIONRowChanging;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public event P_BUSCAR_VACUNACIONRowChangeEventHandler P_BUSCAR_VACUNACIONRowChanged;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public event P_BUSCAR_VACUNACIONRowChangeEventHandler P_BUSCAR_VACUNACIONRowDeleting;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public event P_BUSCAR_VACUNACIONRowChangeEventHandler P_BUSCAR_VACUNACIONRowDeleted;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void AddP_BUSCAR_VACUNACIONRow(P_BUSCAR_VACUNACIONRow row) {
+                this.Rows.Add(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public P_BUSCAR_VACUNACIONRow AddP_BUSCAR_VACUNACIONRow(string PACIENTE, string CENTRO, string VACUNA, string DOSIS, System.DateTime FVACUNACION) {
+                P_BUSCAR_VACUNACIONRow rowP_BUSCAR_VACUNACIONRow = ((P_BUSCAR_VACUNACIONRow)(this.NewRow()));
+                object[] columnValuesArray = new object[] {
+                        null,
+                        PACIENTE,
+                        CENTRO,
+                        VACUNA,
+                        DOSIS,
+                        FVACUNACION};
+                rowP_BUSCAR_VACUNACIONRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowP_BUSCAR_VACUNACIONRow);
+                return rowP_BUSCAR_VACUNACIONRow;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public P_BUSCAR_VACUNACIONRow FindByCODIGO(int CODIGO) {
+                return ((P_BUSCAR_VACUNACIONRow)(this.Rows.Find(new object[] {
+                            CODIGO})));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public override global::System.Data.DataTable Clone() {
+                P_BUSCAR_VACUNACIONDataTable cln = ((P_BUSCAR_VACUNACIONDataTable)(base.Clone()));
+                cln.InitVars();
+                return cln;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override global::System.Data.DataTable CreateInstance() {
+                return new P_BUSCAR_VACUNACIONDataTable();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            internal void InitVars() {
+                this.columnCODIGO = base.Columns["CODIGO"];
+                this.columnPACIENTE = base.Columns["PACIENTE"];
+                this.columnCENTRO = base.Columns["CENTRO"];
+                this.columnVACUNA = base.Columns["VACUNA"];
+                this.columnDOSIS = base.Columns["DOSIS"];
+                this.columnFVACUNACION = base.Columns["FVACUNACION"];
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            private void InitClass() {
+                this.columnCODIGO = new global::System.Data.DataColumn("CODIGO", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCODIGO);
+                this.columnPACIENTE = new global::System.Data.DataColumn("PACIENTE", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPACIENTE);
+                this.columnCENTRO = new global::System.Data.DataColumn("CENTRO", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCENTRO);
+                this.columnVACUNA = new global::System.Data.DataColumn("VACUNA", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnVACUNA);
+                this.columnDOSIS = new global::System.Data.DataColumn("DOSIS", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDOSIS);
+                this.columnFVACUNACION = new global::System.Data.DataColumn("FVACUNACION", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnFVACUNACION);
+                this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
+                                this.columnCODIGO}, true));
+                this.columnCODIGO.AutoIncrement = true;
+                this.columnCODIGO.AllowDBNull = false;
+                this.columnCODIGO.ReadOnly = true;
+                this.columnCODIGO.Unique = true;
+                this.columnPACIENTE.AllowDBNull = false;
+                this.columnPACIENTE.MaxLength = 60;
+                this.columnCENTRO.MaxLength = 30;
+                this.columnVACUNA.AllowDBNull = false;
+                this.columnVACUNA.MaxLength = 20;
+                this.columnDOSIS.AllowDBNull = false;
+                this.columnDOSIS.MaxLength = 20;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public P_BUSCAR_VACUNACIONRow NewP_BUSCAR_VACUNACIONRow() {
+                return ((P_BUSCAR_VACUNACIONRow)(this.NewRow()));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
+                return new P_BUSCAR_VACUNACIONRow(builder);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override global::System.Type GetRowType() {
+                return typeof(P_BUSCAR_VACUNACIONRow);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanged(e);
+                if ((this.P_BUSCAR_VACUNACIONRowChanged != null)) {
+                    this.P_BUSCAR_VACUNACIONRowChanged(this, new P_BUSCAR_VACUNACIONRowChangeEvent(((P_BUSCAR_VACUNACIONRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanging(e);
+                if ((this.P_BUSCAR_VACUNACIONRowChanging != null)) {
+                    this.P_BUSCAR_VACUNACIONRowChanging(this, new P_BUSCAR_VACUNACIONRowChangeEvent(((P_BUSCAR_VACUNACIONRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleted(e);
+                if ((this.P_BUSCAR_VACUNACIONRowDeleted != null)) {
+                    this.P_BUSCAR_VACUNACIONRowDeleted(this, new P_BUSCAR_VACUNACIONRowChangeEvent(((P_BUSCAR_VACUNACIONRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleting(e);
+                if ((this.P_BUSCAR_VACUNACIONRowDeleting != null)) {
+                    this.P_BUSCAR_VACUNACIONRowDeleting(this, new P_BUSCAR_VACUNACIONRowChangeEvent(((P_BUSCAR_VACUNACIONRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void RemoveP_BUSCAR_VACUNACIONRow(P_BUSCAR_VACUNACIONRow row) {
+                this.Rows.Remove(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
+                global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
+                global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
+                VacunacionDataSet ds = new VacunacionDataSet();
+                global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
+                any1.Namespace = "http://www.w3.org/2001/XMLSchema";
+                any1.MinOccurs = new decimal(0);
+                any1.MaxOccurs = decimal.MaxValue;
+                any1.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any1);
+                global::System.Xml.Schema.XmlSchemaAny any2 = new global::System.Xml.Schema.XmlSchemaAny();
+                any2.Namespace = "urn:schemas-microsoft-com:xml-diffgram-v1";
+                any2.MinOccurs = new decimal(1);
+                any2.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any2);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute1 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute1.Name = "namespace";
+                attribute1.FixedValue = ds.Namespace;
+                type.Attributes.Add(attribute1);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute2.Name = "tableTypeName";
+                attribute2.FixedValue = "P_BUSCAR_VACUNACIONDataTable";
+                type.Attributes.Add(attribute2);
+                type.Particle = sequence;
+                global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
+                if (xs.Contains(dsSchema.TargetNamespace)) {
+                    global::System.IO.MemoryStream s1 = new global::System.IO.MemoryStream();
+                    global::System.IO.MemoryStream s2 = new global::System.IO.MemoryStream();
+                    try {
+                        global::System.Xml.Schema.XmlSchema schema = null;
+                        dsSchema.Write(s1);
+                        for (global::System.Collections.IEnumerator schemas = xs.Schemas(dsSchema.TargetNamespace).GetEnumerator(); schemas.MoveNext(); ) {
+                            schema = ((global::System.Xml.Schema.XmlSchema)(schemas.Current));
+                            s2.SetLength(0);
+                            schema.Write(s2);
+                            if ((s1.Length == s2.Length)) {
+                                s1.Position = 0;
+                                s2.Position = 0;
+                                for (; ((s1.Position != s1.Length) 
+                                            && (s1.ReadByte() == s2.ReadByte())); ) {
+                                    ;
+                                }
+                                if ((s1.Position == s1.Length)) {
+                                    return type;
+                                }
+                            }
+                        }
+                    }
+                    finally {
+                        if ((s1 != null)) {
+                            s1.Close();
+                        }
+                        if ((s2 != null)) {
+                            s2.Close();
+                        }
+                    }
+                }
+                xs.Add(dsSchema);
+                return type;
+            }
+        }
+        
+        /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
         public partial class CentrosVacunasRow : global::System.Data.DataRow {
@@ -3887,6 +5251,17 @@ namespace Presentacion {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string Numero_Lotes {
+                get {
+                    return ((string)(this[this.tableCentrosVacunas.Numero_LotesColumn]));
+                }
+                set {
+                    this[this.tableCentrosVacunas.Numero_LotesColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public decimal Cen_CantidadLotes {
                 get {
                     return ((decimal)(this[this.tableCentrosVacunas.Cen_CantidadLotesColumn]));
@@ -3898,9 +5273,25 @@ namespace Presentacion {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public System.DateTime Cen_VencimientoLotes {
+                get {
+                    return ((global::System.DateTime)(this[this.tableCentrosVacunas.Cen_VencimientoLotesColumn]));
+                }
+                set {
+                    this[this.tableCentrosVacunas.Cen_VencimientoLotesColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public string Cen_Descripcion {
                 get {
-                    return ((string)(this[this.tableCentrosVacunas.Cen_DescripcionColumn]));
+                    try {
+                        return ((string)(this[this.tableCentrosVacunas.Cen_DescripcionColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Cen_Descripcion\' in table \'CentrosVacunas\' is DBNull.", e);
+                    }
                 }
                 set {
                     this[this.tableCentrosVacunas.Cen_DescripcionColumn] = value;
@@ -3911,7 +5302,12 @@ namespace Presentacion {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public string Cen_Direccion {
                 get {
-                    return ((string)(this[this.tableCentrosVacunas.Cen_DireccionColumn]));
+                    try {
+                        return ((string)(this[this.tableCentrosVacunas.Cen_DireccionColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Cen_Direccion\' in table \'CentrosVacunas\' is DBNull.", e);
+                    }
                 }
                 set {
                     this[this.tableCentrosVacunas.Cen_DireccionColumn] = value;
@@ -3927,6 +5323,30 @@ namespace Presentacion {
                 set {
                     this.SetParentRow(value, this.Table.ParentRelations["FK_CentrosVacunas_Provincias"]);
                 }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsCen_DescripcionNull() {
+                return this.IsNull(this.tableCentrosVacunas.Cen_DescripcionColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetCen_DescripcionNull() {
+                this[this.tableCentrosVacunas.Cen_DescripcionColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsCen_DireccionNull() {
+                return this.IsNull(this.tableCentrosVacunas.Cen_DireccionColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetCen_DireccionNull() {
+                this[this.tableCentrosVacunas.Cen_DireccionColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -4278,7 +5698,12 @@ namespace Presentacion {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public System.DateTime Vac_Fecha {
                 get {
-                    return ((global::System.DateTime)(this[this.tableVacunaciones.Vac_FechaColumn]));
+                    try {
+                        return ((global::System.DateTime)(this[this.tableVacunaciones.Vac_FechaColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Vac_Fecha\' in table \'Vacunaciones\' is DBNull.", e);
+                    }
                 }
                 set {
                     this[this.tableVacunaciones.Vac_FechaColumn] = value;
@@ -4327,6 +5752,18 @@ namespace Presentacion {
                 set {
                     this.SetParentRow(value, this.Table.ParentRelations["FK_Vacunaciones_Vacunas"]);
                 }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsVac_FechaNull() {
+                return this.IsNull(this.tableVacunaciones.Vac_FechaColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetVac_FechaNull() {
+                this[this.tableVacunaciones.Vac_FechaColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -4466,56 +5903,186 @@ namespace Presentacion {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public int Cen_Codigo {
+            public int CODIGO {
                 get {
-                    return ((int)(this[this.tableP_BUSCAR_CENTRO.Cen_CodigoColumn]));
+                    return ((int)(this[this.tableP_BUSCAR_CENTRO.CODIGOColumn]));
                 }
                 set {
-                    this[this.tableP_BUSCAR_CENTRO.Cen_CodigoColumn] = value;
+                    this[this.tableP_BUSCAR_CENTRO.CODIGOColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public int Cen_Provincia {
+            public string PROVINCIA {
                 get {
-                    return ((int)(this[this.tableP_BUSCAR_CENTRO.Cen_ProvinciaColumn]));
+                    return ((string)(this[this.tableP_BUSCAR_CENTRO.PROVINCIAColumn]));
                 }
                 set {
-                    this[this.tableP_BUSCAR_CENTRO.Cen_ProvinciaColumn] = value;
+                    this[this.tableP_BUSCAR_CENTRO.PROVINCIAColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public decimal Cen_CantidadLotes {
+            public string NUMLOTE {
                 get {
-                    return ((decimal)(this[this.tableP_BUSCAR_CENTRO.Cen_CantidadLotesColumn]));
+                    return ((string)(this[this.tableP_BUSCAR_CENTRO.NUMLOTEColumn]));
                 }
                 set {
-                    this[this.tableP_BUSCAR_CENTRO.Cen_CantidadLotesColumn] = value;
+                    this[this.tableP_BUSCAR_CENTRO.NUMLOTEColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string Cen_Descripcion {
+            public decimal CANTIDAD {
                 get {
-                    return ((string)(this[this.tableP_BUSCAR_CENTRO.Cen_DescripcionColumn]));
+                    return ((decimal)(this[this.tableP_BUSCAR_CENTRO.CANTIDADColumn]));
                 }
                 set {
-                    this[this.tableP_BUSCAR_CENTRO.Cen_DescripcionColumn] = value;
+                    this[this.tableP_BUSCAR_CENTRO.CANTIDADColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string Cen_Direccion {
+            public System.DateTime VENCIMIENTO {
                 get {
-                    return ((string)(this[this.tableP_BUSCAR_CENTRO.Cen_DireccionColumn]));
+                    return ((global::System.DateTime)(this[this.tableP_BUSCAR_CENTRO.VENCIMIENTOColumn]));
                 }
                 set {
-                    this[this.tableP_BUSCAR_CENTRO.Cen_DireccionColumn] = value;
+                    this[this.tableP_BUSCAR_CENTRO.VENCIMIENTOColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string CENTRO {
+                get {
+                    try {
+                        return ((string)(this[this.tableP_BUSCAR_CENTRO.CENTROColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'CENTRO\' in table \'P_BUSCAR_CENTRO\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableP_BUSCAR_CENTRO.CENTROColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string DIRECCION {
+                get {
+                    try {
+                        return ((string)(this[this.tableP_BUSCAR_CENTRO.DIRECCIONColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'DIRECCION\' in table \'P_BUSCAR_CENTRO\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableP_BUSCAR_CENTRO.DIRECCIONColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsCENTRONull() {
+                return this.IsNull(this.tableP_BUSCAR_CENTRO.CENTROColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetCENTRONull() {
+                this[this.tableP_BUSCAR_CENTRO.CENTROColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsDIRECCIONNull() {
+                return this.IsNull(this.tableP_BUSCAR_CENTRO.DIRECCIONColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetDIRECCIONNull() {
+                this[this.tableP_BUSCAR_CENTRO.DIRECCIONColumn] = global::System.Convert.DBNull;
+            }
+        }
+        
+        /// <summary>
+        ///Represents strongly named DataRow class.
+        ///</summary>
+        public partial class P_BUSCAR_DOSISRow : global::System.Data.DataRow {
+            
+            private P_BUSCAR_DOSISDataTable tableP_BUSCAR_DOSIS;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            internal P_BUSCAR_DOSISRow(global::System.Data.DataRowBuilder rb) : 
+                    base(rb) {
+                this.tableP_BUSCAR_DOSIS = ((P_BUSCAR_DOSISDataTable)(this.Table));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public int Id_Dosis {
+                get {
+                    return ((int)(this[this.tableP_BUSCAR_DOSIS.Id_DosisColumn]));
+                }
+                set {
+                    this[this.tableP_BUSCAR_DOSIS.Id_DosisColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string Descripcion {
+                get {
+                    return ((string)(this[this.tableP_BUSCAR_DOSIS.DescripcionColumn]));
+                }
+                set {
+                    this[this.tableP_BUSCAR_DOSIS.DescripcionColumn] = value;
+                }
+            }
+        }
+        
+        /// <summary>
+        ///Represents strongly named DataRow class.
+        ///</summary>
+        public partial class P_BUSCAR_LABORATORIORow : global::System.Data.DataRow {
+            
+            private P_BUSCAR_LABORATORIODataTable tableP_BUSCAR_LABORATORIO;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            internal P_BUSCAR_LABORATORIORow(global::System.Data.DataRowBuilder rb) : 
+                    base(rb) {
+                this.tableP_BUSCAR_LABORATORIO = ((P_BUSCAR_LABORATORIODataTable)(this.Table));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public int Lab_Codigo {
+                get {
+                    return ((int)(this[this.tableP_BUSCAR_LABORATORIO.Lab_CodigoColumn]));
+                }
+                set {
+                    this[this.tableP_BUSCAR_LABORATORIO.Lab_CodigoColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string Lab_Descripcion {
+                get {
+                    return ((string)(this[this.tableP_BUSCAR_LABORATORIO.Lab_DescripcionColumn]));
+                }
+                set {
+                    this[this.tableP_BUSCAR_LABORATORIO.Lab_DescripcionColumn] = value;
                 }
             }
         }
@@ -4632,6 +6199,43 @@ namespace Presentacion {
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
+        public partial class P_BUSCAR_PROVINCIARow : global::System.Data.DataRow {
+            
+            private P_BUSCAR_PROVINCIADataTable tableP_BUSCAR_PROVINCIA;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            internal P_BUSCAR_PROVINCIARow(global::System.Data.DataRowBuilder rb) : 
+                    base(rb) {
+                this.tableP_BUSCAR_PROVINCIA = ((P_BUSCAR_PROVINCIADataTable)(this.Table));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public int Prv_Codigo {
+                get {
+                    return ((int)(this[this.tableP_BUSCAR_PROVINCIA.Prv_CodigoColumn]));
+                }
+                set {
+                    this[this.tableP_BUSCAR_PROVINCIA.Prv_CodigoColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string Prv_Descripcion {
+                get {
+                    return ((string)(this[this.tableP_BUSCAR_PROVINCIA.Prv_DescripcionColumn]));
+                }
+                set {
+                    this[this.tableP_BUSCAR_PROVINCIA.Prv_DescripcionColumn] = value;
+                }
+            }
+        }
+        
+        /// <summary>
+        ///Represents strongly named DataRow class.
+        ///</summary>
         public partial class P_BUSCAR_VACUNARow : global::System.Data.DataRow {
             
             private P_BUSCAR_VACUNADataTable tableP_BUSCAR_VACUNA;
@@ -4645,85 +6249,200 @@ namespace Presentacion {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public int V_Codigo {
+            public int CODIGO {
                 get {
-                    return ((int)(this[this.tableP_BUSCAR_VACUNA.V_CodigoColumn]));
+                    return ((int)(this[this.tableP_BUSCAR_VACUNA.CODIGOColumn]));
                 }
                 set {
-                    this[this.tableP_BUSCAR_VACUNA.V_CodigoColumn] = value;
+                    this[this.tableP_BUSCAR_VACUNA.CODIGOColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public int V_Laboratorio {
+            public string LABORATORIO {
                 get {
-                    return ((int)(this[this.tableP_BUSCAR_VACUNA.V_LaboratorioColumn]));
+                    return ((string)(this[this.tableP_BUSCAR_VACUNA.LABORATORIOColumn]));
                 }
                 set {
-                    this[this.tableP_BUSCAR_VACUNA.V_LaboratorioColumn] = value;
+                    this[this.tableP_BUSCAR_VACUNA.LABORATORIOColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string V_Marca {
+            public string MARCA {
                 get {
-                    return ((string)(this[this.tableP_BUSCAR_VACUNA.V_MarcaColumn]));
+                    return ((string)(this[this.tableP_BUSCAR_VACUNA.MARCAColumn]));
                 }
                 set {
-                    this[this.tableP_BUSCAR_VACUNA.V_MarcaColumn] = value;
+                    this[this.tableP_BUSCAR_VACUNA.MARCAColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public System.DateTime V_Expiracion {
+            public System.DateTime EXPIRACION {
                 get {
-                    return ((global::System.DateTime)(this[this.tableP_BUSCAR_VACUNA.V_ExpiracionColumn]));
+                    return ((global::System.DateTime)(this[this.tableP_BUSCAR_VACUNA.EXPIRACIONColumn]));
                 }
                 set {
-                    this[this.tableP_BUSCAR_VACUNA.V_ExpiracionColumn] = value;
+                    this[this.tableP_BUSCAR_VACUNA.EXPIRACIONColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string V_Lote {
+            public string LOTE {
                 get {
-                    return ((string)(this[this.tableP_BUSCAR_VACUNA.V_LoteColumn]));
+                    return ((string)(this[this.tableP_BUSCAR_VACUNA.LOTEColumn]));
                 }
                 set {
-                    this[this.tableP_BUSCAR_VACUNA.V_LoteColumn] = value;
+                    this[this.tableP_BUSCAR_VACUNA.LOTEColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public decimal V_Cantidad {
+            public decimal CANTIDAD {
                 get {
                     try {
-                        return ((decimal)(this[this.tableP_BUSCAR_VACUNA.V_CantidadColumn]));
+                        return ((decimal)(this[this.tableP_BUSCAR_VACUNA.CANTIDADColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'V_Cantidad\' in table \'P_BUSCAR_VACUNA\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'CANTIDAD\' in table \'P_BUSCAR_VACUNA\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableP_BUSCAR_VACUNA.V_CantidadColumn] = value;
+                    this[this.tableP_BUSCAR_VACUNA.CANTIDADColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool IsV_CantidadNull() {
-                return this.IsNull(this.tableP_BUSCAR_VACUNA.V_CantidadColumn);
+            public bool IsCANTIDADNull() {
+                return this.IsNull(this.tableP_BUSCAR_VACUNA.CANTIDADColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void SetV_CantidadNull() {
-                this[this.tableP_BUSCAR_VACUNA.V_CantidadColumn] = global::System.Convert.DBNull;
+            public void SetCANTIDADNull() {
+                this[this.tableP_BUSCAR_VACUNA.CANTIDADColumn] = global::System.Convert.DBNull;
+            }
+        }
+        
+        /// <summary>
+        ///Represents strongly named DataRow class.
+        ///</summary>
+        public partial class P_BUSCAR_VACUNACIONRow : global::System.Data.DataRow {
+            
+            private P_BUSCAR_VACUNACIONDataTable tableP_BUSCAR_VACUNACION;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            internal P_BUSCAR_VACUNACIONRow(global::System.Data.DataRowBuilder rb) : 
+                    base(rb) {
+                this.tableP_BUSCAR_VACUNACION = ((P_BUSCAR_VACUNACIONDataTable)(this.Table));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public int CODIGO {
+                get {
+                    return ((int)(this[this.tableP_BUSCAR_VACUNACION.CODIGOColumn]));
+                }
+                set {
+                    this[this.tableP_BUSCAR_VACUNACION.CODIGOColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string PACIENTE {
+                get {
+                    return ((string)(this[this.tableP_BUSCAR_VACUNACION.PACIENTEColumn]));
+                }
+                set {
+                    this[this.tableP_BUSCAR_VACUNACION.PACIENTEColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string CENTRO {
+                get {
+                    try {
+                        return ((string)(this[this.tableP_BUSCAR_VACUNACION.CENTROColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'CENTRO\' in table \'P_BUSCAR_VACUNACION\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableP_BUSCAR_VACUNACION.CENTROColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string VACUNA {
+                get {
+                    return ((string)(this[this.tableP_BUSCAR_VACUNACION.VACUNAColumn]));
+                }
+                set {
+                    this[this.tableP_BUSCAR_VACUNACION.VACUNAColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string DOSIS {
+                get {
+                    return ((string)(this[this.tableP_BUSCAR_VACUNACION.DOSISColumn]));
+                }
+                set {
+                    this[this.tableP_BUSCAR_VACUNACION.DOSISColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public System.DateTime FVACUNACION {
+                get {
+                    try {
+                        return ((global::System.DateTime)(this[this.tableP_BUSCAR_VACUNACION.FVACUNACIONColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'FVACUNACION\' in table \'P_BUSCAR_VACUNACION\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableP_BUSCAR_VACUNACION.FVACUNACIONColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsCENTRONull() {
+                return this.IsNull(this.tableP_BUSCAR_VACUNACION.CENTROColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetCENTRONull() {
+                this[this.tableP_BUSCAR_VACUNACION.CENTROColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsFVACUNACIONNull() {
+                return this.IsNull(this.tableP_BUSCAR_VACUNACION.FVACUNACIONColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetFVACUNACIONNull() {
+                this[this.tableP_BUSCAR_VACUNACION.FVACUNACIONColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -5003,6 +6722,74 @@ namespace Presentacion {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        public class P_BUSCAR_DOSISRowChangeEvent : global::System.EventArgs {
+            
+            private P_BUSCAR_DOSISRow eventRow;
+            
+            private global::System.Data.DataRowAction eventAction;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public P_BUSCAR_DOSISRowChangeEvent(P_BUSCAR_DOSISRow row, global::System.Data.DataRowAction action) {
+                this.eventRow = row;
+                this.eventAction = action;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public P_BUSCAR_DOSISRow Row {
+                get {
+                    return this.eventRow;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataRowAction Action {
+                get {
+                    return this.eventAction;
+                }
+            }
+        }
+        
+        /// <summary>
+        ///Row event argument class
+        ///</summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        public class P_BUSCAR_LABORATORIORowChangeEvent : global::System.EventArgs {
+            
+            private P_BUSCAR_LABORATORIORow eventRow;
+            
+            private global::System.Data.DataRowAction eventAction;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public P_BUSCAR_LABORATORIORowChangeEvent(P_BUSCAR_LABORATORIORow row, global::System.Data.DataRowAction action) {
+                this.eventRow = row;
+                this.eventAction = action;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public P_BUSCAR_LABORATORIORow Row {
+                get {
+                    return this.eventRow;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataRowAction Action {
+                get {
+                    return this.eventAction;
+                }
+            }
+        }
+        
+        /// <summary>
+        ///Row event argument class
+        ///</summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         public class P_BUSCAR_PACIENTERowChangeEvent : global::System.EventArgs {
             
             private P_BUSCAR_PACIENTERow eventRow;
@@ -5037,6 +6824,40 @@ namespace Presentacion {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        public class P_BUSCAR_PROVINCIARowChangeEvent : global::System.EventArgs {
+            
+            private P_BUSCAR_PROVINCIARow eventRow;
+            
+            private global::System.Data.DataRowAction eventAction;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public P_BUSCAR_PROVINCIARowChangeEvent(P_BUSCAR_PROVINCIARow row, global::System.Data.DataRowAction action) {
+                this.eventRow = row;
+                this.eventAction = action;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public P_BUSCAR_PROVINCIARow Row {
+                get {
+                    return this.eventRow;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataRowAction Action {
+                get {
+                    return this.eventAction;
+                }
+            }
+        }
+        
+        /// <summary>
+        ///Row event argument class
+        ///</summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         public class P_BUSCAR_VACUNARowChangeEvent : global::System.EventArgs {
             
             private P_BUSCAR_VACUNARow eventRow;
@@ -5053,6 +6874,40 @@ namespace Presentacion {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public P_BUSCAR_VACUNARow Row {
+                get {
+                    return this.eventRow;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataRowAction Action {
+                get {
+                    return this.eventAction;
+                }
+            }
+        }
+        
+        /// <summary>
+        ///Row event argument class
+        ///</summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        public class P_BUSCAR_VACUNACIONRowChangeEvent : global::System.EventArgs {
+            
+            private P_BUSCAR_VACUNACIONRow eventRow;
+            
+            private global::System.Data.DataRowAction eventAction;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public P_BUSCAR_VACUNACIONRowChangeEvent(P_BUSCAR_VACUNACIONRow row, global::System.Data.DataRowAction action) {
+                this.eventRow = row;
+                this.eventAction = action;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public P_BUSCAR_VACUNACIONRow Row {
                 get {
                     return this.eventRow;
                 }
@@ -5194,41 +7049,55 @@ namespace Presentacion.VacunacionDataSetTableAdapters {
             tableMapping.DataSetTable = "CentrosVacunas";
             tableMapping.ColumnMappings.Add("Cen_Codigo", "Cen_Codigo");
             tableMapping.ColumnMappings.Add("Cen_Provincia", "Cen_Provincia");
+            tableMapping.ColumnMappings.Add("Numero_Lotes", "Numero_Lotes");
             tableMapping.ColumnMappings.Add("Cen_CantidadLotes", "Cen_CantidadLotes");
+            tableMapping.ColumnMappings.Add("Cen_VencimientoLotes", "Cen_VencimientoLotes");
             tableMapping.ColumnMappings.Add("Cen_Descripcion", "Cen_Descripcion");
             tableMapping.ColumnMappings.Add("Cen_Direccion", "Cen_Direccion");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [dbo].[CentrosVacunas] WHERE (([Cen_Codigo] = @Original_Cen_Codigo) AND ([Cen_Provincia] = @Original_Cen_Provincia) AND ([Cen_CantidadLotes] = @Original_Cen_CantidadLotes) AND ([Cen_Descripcion] = @Original_Cen_Descripcion) AND ([Cen_Direccion] = @Original_Cen_Direccion))";
+            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [dbo].[CentrosVacunas] WHERE (([Cen_Codigo] = @Original_Cen_Codigo) AND ([Cen_Provincia] = @Original_Cen_Provincia) AND ([Numero_Lotes] = @Original_Numero_Lotes) AND ([Cen_CantidadLotes] = @Original_Cen_CantidadLotes) AND ([Cen_VencimientoLotes] = @Original_Cen_VencimientoLotes) AND ((@IsNull_Cen_Descripcion = 1 AND [Cen_Descripcion] IS NULL) OR ([Cen_Descripcion] = @Original_Cen_Descripcion)) AND ((@IsNull_Cen_Direccion = 1 AND [Cen_Direccion] IS NULL) OR ([Cen_Direccion] = @Original_Cen_Direccion)))";
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Cen_Codigo", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Cen_Codigo", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Cen_Provincia", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Cen_Provincia", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Numero_Lotes", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Numero_Lotes", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Cen_CantidadLotes", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 8, 0, "Cen_CantidadLotes", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Cen_VencimientoLotes", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Cen_VencimientoLotes", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Cen_Descripcion", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Cen_Descripcion", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Cen_Descripcion", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Cen_Descripcion", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Cen_Direccion", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Cen_Direccion", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Cen_Direccion", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Cen_Direccion", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = @"INSERT INTO [dbo].[CentrosVacunas] ([Cen_Provincia], [Cen_CantidadLotes], [Cen_Descripcion], [Cen_Direccion]) VALUES (@Cen_Provincia, @Cen_CantidadLotes, @Cen_Descripcion, @Cen_Direccion);
-SELECT Cen_Codigo, Cen_Provincia, Cen_CantidadLotes, Cen_Descripcion, Cen_Direccion FROM CentrosVacunas WHERE (Cen_Codigo = SCOPE_IDENTITY())";
+            this._adapter.InsertCommand.CommandText = @"INSERT INTO [dbo].[CentrosVacunas] ([Cen_Provincia], [Numero_Lotes], [Cen_CantidadLotes], [Cen_VencimientoLotes], [Cen_Descripcion], [Cen_Direccion]) VALUES (@Cen_Provincia, @Numero_Lotes, @Cen_CantidadLotes, @Cen_VencimientoLotes, @Cen_Descripcion, @Cen_Direccion);
+SELECT Cen_Codigo, Cen_Provincia, Numero_Lotes, Cen_CantidadLotes, Cen_VencimientoLotes, Cen_Descripcion, Cen_Direccion FROM CentrosVacunas WHERE (Cen_Codigo = SCOPE_IDENTITY())";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Cen_Provincia", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Cen_Provincia", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Numero_Lotes", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Numero_Lotes", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Cen_CantidadLotes", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 8, 0, "Cen_CantidadLotes", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Cen_VencimientoLotes", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Cen_VencimientoLotes", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Cen_Descripcion", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Cen_Descripcion", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Cen_Direccion", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Cen_Direccion", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[CentrosVacunas] SET [Cen_Provincia] = @Cen_Provincia, [Cen_CantidadLotes] = @Cen_CantidadLotes, [Cen_Descripcion] = @Cen_Descripcion, [Cen_Direccion] = @Cen_Direccion WHERE (([Cen_Codigo] = @Original_Cen_Codigo) AND ([Cen_Provincia] = @Original_Cen_Provincia) AND ([Cen_CantidadLotes] = @Original_Cen_CantidadLotes) AND ([Cen_Descripcion] = @Original_Cen_Descripcion) AND ([Cen_Direccion] = @Original_Cen_Direccion));
-SELECT Cen_Codigo, Cen_Provincia, Cen_CantidadLotes, Cen_Descripcion, Cen_Direccion FROM CentrosVacunas WHERE (Cen_Codigo = @Cen_Codigo)";
+            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[CentrosVacunas] SET [Cen_Provincia] = @Cen_Provincia, [Numero_Lotes] = @Numero_Lotes, [Cen_CantidadLotes] = @Cen_CantidadLotes, [Cen_VencimientoLotes] = @Cen_VencimientoLotes, [Cen_Descripcion] = @Cen_Descripcion, [Cen_Direccion] = @Cen_Direccion WHERE (([Cen_Codigo] = @Original_Cen_Codigo) AND ([Cen_Provincia] = @Original_Cen_Provincia) AND ([Numero_Lotes] = @Original_Numero_Lotes) AND ([Cen_CantidadLotes] = @Original_Cen_CantidadLotes) AND ([Cen_VencimientoLotes] = @Original_Cen_VencimientoLotes) AND ((@IsNull_Cen_Descripcion = 1 AND [Cen_Descripcion] IS NULL) OR ([Cen_Descripcion] = @Original_Cen_Descripcion)) AND ((@IsNull_Cen_Direccion = 1 AND [Cen_Direccion] IS NULL) OR ([Cen_Direccion] = @Original_Cen_Direccion)));
+SELECT Cen_Codigo, Cen_Provincia, Numero_Lotes, Cen_CantidadLotes, Cen_VencimientoLotes, Cen_Descripcion, Cen_Direccion FROM CentrosVacunas WHERE (Cen_Codigo = @Cen_Codigo)";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Cen_Provincia", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Cen_Provincia", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Numero_Lotes", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Numero_Lotes", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Cen_CantidadLotes", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 8, 0, "Cen_CantidadLotes", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Cen_VencimientoLotes", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Cen_VencimientoLotes", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Cen_Descripcion", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Cen_Descripcion", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Cen_Direccion", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Cen_Direccion", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Cen_Codigo", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Cen_Codigo", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Cen_Provincia", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Cen_Provincia", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Numero_Lotes", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Numero_Lotes", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Cen_CantidadLotes", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 8, 0, "Cen_CantidadLotes", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Cen_VencimientoLotes", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Cen_VencimientoLotes", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Cen_Descripcion", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Cen_Descripcion", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Cen_Descripcion", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Cen_Descripcion", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Cen_Direccion", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Cen_Direccion", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Cen_Direccion", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Cen_Direccion", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Cen_Codigo", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "Cen_Codigo", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
@@ -5246,8 +7115,8 @@ SELECT Cen_Codigo, Cen_Provincia, Cen_CantidadLotes, Cen_Descripcion, Cen_Direcc
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT Cen_Codigo, Cen_Provincia, Cen_CantidadLotes, Cen_Descripcion, Cen_Direcci" +
-                "on FROM dbo.CentrosVacunas";
+            this._commandCollection[0].CommandText = "SELECT Cen_Codigo, Cen_Provincia, Numero_Lotes, Cen_CantidadLotes, Cen_Vencimient" +
+                "oLotes, Cen_Descripcion, Cen_Direccion FROM dbo.CentrosVacunas";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -5308,21 +7177,32 @@ SELECT Cen_Codigo, Cen_Provincia, Cen_CantidadLotes, Cen_Descripcion, Cen_Direcc
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(int Original_Cen_Codigo, int Original_Cen_Provincia, decimal Original_Cen_CantidadLotes, string Original_Cen_Descripcion, string Original_Cen_Direccion) {
+        public virtual int Delete(int Original_Cen_Codigo, int Original_Cen_Provincia, string Original_Numero_Lotes, decimal Original_Cen_CantidadLotes, System.DateTime Original_Cen_VencimientoLotes, string Original_Cen_Descripcion, string Original_Cen_Direccion) {
             this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_Cen_Codigo));
             this.Adapter.DeleteCommand.Parameters[1].Value = ((int)(Original_Cen_Provincia));
-            this.Adapter.DeleteCommand.Parameters[2].Value = ((decimal)(Original_Cen_CantidadLotes));
-            if ((Original_Cen_Descripcion == null)) {
-                throw new global::System.ArgumentNullException("Original_Cen_Descripcion");
+            if ((Original_Numero_Lotes == null)) {
+                throw new global::System.ArgumentNullException("Original_Numero_Lotes");
             }
             else {
-                this.Adapter.DeleteCommand.Parameters[3].Value = ((string)(Original_Cen_Descripcion));
+                this.Adapter.DeleteCommand.Parameters[2].Value = ((string)(Original_Numero_Lotes));
+            }
+            this.Adapter.DeleteCommand.Parameters[3].Value = ((decimal)(Original_Cen_CantidadLotes));
+            this.Adapter.DeleteCommand.Parameters[4].Value = ((System.DateTime)(Original_Cen_VencimientoLotes));
+            if ((Original_Cen_Descripcion == null)) {
+                this.Adapter.DeleteCommand.Parameters[5].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[6].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[5].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[6].Value = ((string)(Original_Cen_Descripcion));
             }
             if ((Original_Cen_Direccion == null)) {
-                throw new global::System.ArgumentNullException("Original_Cen_Direccion");
+                this.Adapter.DeleteCommand.Parameters[7].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[8].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.DeleteCommand.Parameters[4].Value = ((string)(Original_Cen_Direccion));
+                this.Adapter.DeleteCommand.Parameters[7].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[8].Value = ((string)(Original_Cen_Direccion));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
             if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -5344,20 +7224,27 @@ SELECT Cen_Codigo, Cen_Provincia, Cen_CantidadLotes, Cen_Descripcion, Cen_Direcc
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(int Cen_Provincia, decimal Cen_CantidadLotes, string Cen_Descripcion, string Cen_Direccion) {
+        public virtual int Insert(int Cen_Provincia, string Numero_Lotes, decimal Cen_CantidadLotes, System.DateTime Cen_VencimientoLotes, string Cen_Descripcion, string Cen_Direccion) {
             this.Adapter.InsertCommand.Parameters[0].Value = ((int)(Cen_Provincia));
-            this.Adapter.InsertCommand.Parameters[1].Value = ((decimal)(Cen_CantidadLotes));
-            if ((Cen_Descripcion == null)) {
-                throw new global::System.ArgumentNullException("Cen_Descripcion");
+            if ((Numero_Lotes == null)) {
+                throw new global::System.ArgumentNullException("Numero_Lotes");
             }
             else {
-                this.Adapter.InsertCommand.Parameters[2].Value = ((string)(Cen_Descripcion));
+                this.Adapter.InsertCommand.Parameters[1].Value = ((string)(Numero_Lotes));
+            }
+            this.Adapter.InsertCommand.Parameters[2].Value = ((decimal)(Cen_CantidadLotes));
+            this.Adapter.InsertCommand.Parameters[3].Value = ((System.DateTime)(Cen_VencimientoLotes));
+            if ((Cen_Descripcion == null)) {
+                this.Adapter.InsertCommand.Parameters[4].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[4].Value = ((string)(Cen_Descripcion));
             }
             if ((Cen_Direccion == null)) {
-                throw new global::System.ArgumentNullException("Cen_Direccion");
+                this.Adapter.InsertCommand.Parameters[5].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[3].Value = ((string)(Cen_Direccion));
+                this.Adapter.InsertCommand.Parameters[5].Value = ((string)(Cen_Direccion));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
             if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -5379,37 +7266,55 @@ SELECT Cen_Codigo, Cen_Provincia, Cen_CantidadLotes, Cen_Descripcion, Cen_Direcc
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(int Cen_Provincia, decimal Cen_CantidadLotes, string Cen_Descripcion, string Cen_Direccion, int Original_Cen_Codigo, int Original_Cen_Provincia, decimal Original_Cen_CantidadLotes, string Original_Cen_Descripcion, string Original_Cen_Direccion, int Cen_Codigo) {
+        public virtual int Update(int Cen_Provincia, string Numero_Lotes, decimal Cen_CantidadLotes, System.DateTime Cen_VencimientoLotes, string Cen_Descripcion, string Cen_Direccion, int Original_Cen_Codigo, int Original_Cen_Provincia, string Original_Numero_Lotes, decimal Original_Cen_CantidadLotes, System.DateTime Original_Cen_VencimientoLotes, string Original_Cen_Descripcion, string Original_Cen_Direccion, int Cen_Codigo) {
             this.Adapter.UpdateCommand.Parameters[0].Value = ((int)(Cen_Provincia));
-            this.Adapter.UpdateCommand.Parameters[1].Value = ((decimal)(Cen_CantidadLotes));
-            if ((Cen_Descripcion == null)) {
-                throw new global::System.ArgumentNullException("Cen_Descripcion");
+            if ((Numero_Lotes == null)) {
+                throw new global::System.ArgumentNullException("Numero_Lotes");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[2].Value = ((string)(Cen_Descripcion));
+                this.Adapter.UpdateCommand.Parameters[1].Value = ((string)(Numero_Lotes));
+            }
+            this.Adapter.UpdateCommand.Parameters[2].Value = ((decimal)(Cen_CantidadLotes));
+            this.Adapter.UpdateCommand.Parameters[3].Value = ((System.DateTime)(Cen_VencimientoLotes));
+            if ((Cen_Descripcion == null)) {
+                this.Adapter.UpdateCommand.Parameters[4].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[4].Value = ((string)(Cen_Descripcion));
             }
             if ((Cen_Direccion == null)) {
-                throw new global::System.ArgumentNullException("Cen_Direccion");
+                this.Adapter.UpdateCommand.Parameters[5].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[3].Value = ((string)(Cen_Direccion));
+                this.Adapter.UpdateCommand.Parameters[5].Value = ((string)(Cen_Direccion));
             }
-            this.Adapter.UpdateCommand.Parameters[4].Value = ((int)(Original_Cen_Codigo));
-            this.Adapter.UpdateCommand.Parameters[5].Value = ((int)(Original_Cen_Provincia));
-            this.Adapter.UpdateCommand.Parameters[6].Value = ((decimal)(Original_Cen_CantidadLotes));
+            this.Adapter.UpdateCommand.Parameters[6].Value = ((int)(Original_Cen_Codigo));
+            this.Adapter.UpdateCommand.Parameters[7].Value = ((int)(Original_Cen_Provincia));
+            if ((Original_Numero_Lotes == null)) {
+                throw new global::System.ArgumentNullException("Original_Numero_Lotes");
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[8].Value = ((string)(Original_Numero_Lotes));
+            }
+            this.Adapter.UpdateCommand.Parameters[9].Value = ((decimal)(Original_Cen_CantidadLotes));
+            this.Adapter.UpdateCommand.Parameters[10].Value = ((System.DateTime)(Original_Cen_VencimientoLotes));
             if ((Original_Cen_Descripcion == null)) {
-                throw new global::System.ArgumentNullException("Original_Cen_Descripcion");
+                this.Adapter.UpdateCommand.Parameters[11].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[12].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[7].Value = ((string)(Original_Cen_Descripcion));
+                this.Adapter.UpdateCommand.Parameters[11].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[12].Value = ((string)(Original_Cen_Descripcion));
             }
             if ((Original_Cen_Direccion == null)) {
-                throw new global::System.ArgumentNullException("Original_Cen_Direccion");
+                this.Adapter.UpdateCommand.Parameters[13].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[14].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[8].Value = ((string)(Original_Cen_Direccion));
+                this.Adapter.UpdateCommand.Parameters[13].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[14].Value = ((string)(Original_Cen_Direccion));
             }
-            this.Adapter.UpdateCommand.Parameters[9].Value = ((int)(Cen_Codigo));
+            this.Adapter.UpdateCommand.Parameters[15].Value = ((int)(Cen_Codigo));
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
             if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -5430,8 +7335,8 @@ SELECT Cen_Codigo, Cen_Provincia, Cen_CantidadLotes, Cen_Descripcion, Cen_Direcc
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(int Cen_Provincia, decimal Cen_CantidadLotes, string Cen_Descripcion, string Cen_Direccion, int Original_Cen_Codigo, int Original_Cen_Provincia, decimal Original_Cen_CantidadLotes, string Original_Cen_Descripcion, string Original_Cen_Direccion) {
-            return this.Update(Cen_Provincia, Cen_CantidadLotes, Cen_Descripcion, Cen_Direccion, Original_Cen_Codigo, Original_Cen_Provincia, Original_Cen_CantidadLotes, Original_Cen_Descripcion, Original_Cen_Direccion, Original_Cen_Codigo);
+        public virtual int Update(int Cen_Provincia, string Numero_Lotes, decimal Cen_CantidadLotes, System.DateTime Cen_VencimientoLotes, string Cen_Descripcion, string Cen_Direccion, int Original_Cen_Codigo, int Original_Cen_Provincia, string Original_Numero_Lotes, decimal Original_Cen_CantidadLotes, System.DateTime Original_Cen_VencimientoLotes, string Original_Cen_Descripcion, string Original_Cen_Direccion) {
+            return this.Update(Cen_Provincia, Numero_Lotes, Cen_CantidadLotes, Cen_VencimientoLotes, Cen_Descripcion, Cen_Direccion, Original_Cen_Codigo, Original_Cen_Provincia, Original_Numero_Lotes, Original_Cen_CantidadLotes, Original_Cen_VencimientoLotes, Original_Cen_Descripcion, Original_Cen_Direccion, Original_Cen_Codigo);
         }
     }
     
@@ -6969,13 +8874,14 @@ SELECT Pac_Codigo, Pac_Cedula, Pac_Nombre, Pac_Apellido, Pac_FNacimiento, Pac_Se
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [dbo].[Vacunaciones] WHERE (([Vac_Codigo] = @Original_Vac_Codigo) AND ([Vac_Paciente] = @Original_Vac_Paciente) AND ([Vac_Centro] = @Original_Vac_Centro) AND ([Vac_Vacuna] = @Original_Vac_Vacuna) AND ([Vac_Dosis] = @Original_Vac_Dosis) AND ([Vac_Fecha] = @Original_Vac_Fecha))";
+            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [dbo].[Vacunaciones] WHERE (([Vac_Codigo] = @Original_Vac_Codigo) AND ([Vac_Paciente] = @Original_Vac_Paciente) AND ([Vac_Centro] = @Original_Vac_Centro) AND ([Vac_Vacuna] = @Original_Vac_Vacuna) AND ([Vac_Dosis] = @Original_Vac_Dosis) AND ((@IsNull_Vac_Fecha = 1 AND [Vac_Fecha] IS NULL) OR ([Vac_Fecha] = @Original_Vac_Fecha)))";
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Vac_Codigo", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Vac_Codigo", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Vac_Paciente", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Vac_Paciente", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Vac_Centro", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Vac_Centro", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Vac_Vacuna", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Vac_Vacuna", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Vac_Dosis", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Vac_Dosis", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Vac_Fecha", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Vac_Fecha", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Vac_Fecha", global::System.Data.SqlDbType.Date, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Vac_Fecha", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
@@ -6989,7 +8895,7 @@ SELECT Vac_Codigo, Vac_Paciente, Vac_Centro, Vac_Vacuna, Vac_Dosis, Vac_Fecha FR
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Vac_Fecha", global::System.Data.SqlDbType.Date, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Vac_Fecha", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[Vacunaciones] SET [Vac_Paciente] = @Vac_Paciente, [Vac_Centro] = @Vac_Centro, [Vac_Vacuna] = @Vac_Vacuna, [Vac_Dosis] = @Vac_Dosis, [Vac_Fecha] = @Vac_Fecha WHERE (([Vac_Codigo] = @Original_Vac_Codigo) AND ([Vac_Paciente] = @Original_Vac_Paciente) AND ([Vac_Centro] = @Original_Vac_Centro) AND ([Vac_Vacuna] = @Original_Vac_Vacuna) AND ([Vac_Dosis] = @Original_Vac_Dosis) AND ([Vac_Fecha] = @Original_Vac_Fecha));
+            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[Vacunaciones] SET [Vac_Paciente] = @Vac_Paciente, [Vac_Centro] = @Vac_Centro, [Vac_Vacuna] = @Vac_Vacuna, [Vac_Dosis] = @Vac_Dosis, [Vac_Fecha] = @Vac_Fecha WHERE (([Vac_Codigo] = @Original_Vac_Codigo) AND ([Vac_Paciente] = @Original_Vac_Paciente) AND ([Vac_Centro] = @Original_Vac_Centro) AND ([Vac_Vacuna] = @Original_Vac_Vacuna) AND ([Vac_Dosis] = @Original_Vac_Dosis) AND ((@IsNull_Vac_Fecha = 1 AND [Vac_Fecha] IS NULL) OR ([Vac_Fecha] = @Original_Vac_Fecha)));
 SELECT Vac_Codigo, Vac_Paciente, Vac_Centro, Vac_Vacuna, Vac_Dosis, Vac_Fecha FROM Vacunaciones WHERE (Vac_Codigo = @Vac_Codigo)";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Vac_Paciente", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Vac_Paciente", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -7002,6 +8908,7 @@ SELECT Vac_Codigo, Vac_Paciente, Vac_Centro, Vac_Vacuna, Vac_Dosis, Vac_Fecha FR
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Vac_Centro", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Vac_Centro", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Vac_Vacuna", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Vac_Vacuna", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Vac_Dosis", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Vac_Dosis", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Vac_Fecha", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Vac_Fecha", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Vac_Fecha", global::System.Data.SqlDbType.Date, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Vac_Fecha", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Vac_Codigo", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "Vac_Codigo", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
@@ -7081,7 +8988,7 @@ SELECT Vac_Codigo, Vac_Paciente, Vac_Centro, Vac_Vacuna, Vac_Dosis, Vac_Fecha FR
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(int Original_Vac_Codigo, string Original_Vac_Paciente, int Original_Vac_Centro, int Original_Vac_Vacuna, int Original_Vac_Dosis, System.DateTime Original_Vac_Fecha) {
+        public virtual int Delete(int Original_Vac_Codigo, string Original_Vac_Paciente, int Original_Vac_Centro, int Original_Vac_Vacuna, int Original_Vac_Dosis, global::System.Nullable<global::System.DateTime> Original_Vac_Fecha) {
             this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_Vac_Codigo));
             if ((Original_Vac_Paciente == null)) {
                 throw new global::System.ArgumentNullException("Original_Vac_Paciente");
@@ -7092,7 +8999,14 @@ SELECT Vac_Codigo, Vac_Paciente, Vac_Centro, Vac_Vacuna, Vac_Dosis, Vac_Fecha FR
             this.Adapter.DeleteCommand.Parameters[2].Value = ((int)(Original_Vac_Centro));
             this.Adapter.DeleteCommand.Parameters[3].Value = ((int)(Original_Vac_Vacuna));
             this.Adapter.DeleteCommand.Parameters[4].Value = ((int)(Original_Vac_Dosis));
-            this.Adapter.DeleteCommand.Parameters[5].Value = ((System.DateTime)(Original_Vac_Fecha));
+            if ((Original_Vac_Fecha.HasValue == true)) {
+                this.Adapter.DeleteCommand.Parameters[5].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[6].Value = ((System.DateTime)(Original_Vac_Fecha.Value));
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[5].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[6].Value = global::System.DBNull.Value;
+            }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
             if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -7113,7 +9027,7 @@ SELECT Vac_Codigo, Vac_Paciente, Vac_Centro, Vac_Vacuna, Vac_Dosis, Vac_Fecha FR
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(string Vac_Paciente, int Vac_Centro, int Vac_Vacuna, int Vac_Dosis, System.DateTime Vac_Fecha) {
+        public virtual int Insert(string Vac_Paciente, int Vac_Centro, int Vac_Vacuna, int Vac_Dosis, global::System.Nullable<global::System.DateTime> Vac_Fecha) {
             if ((Vac_Paciente == null)) {
                 throw new global::System.ArgumentNullException("Vac_Paciente");
             }
@@ -7123,7 +9037,12 @@ SELECT Vac_Codigo, Vac_Paciente, Vac_Centro, Vac_Vacuna, Vac_Dosis, Vac_Fecha FR
             this.Adapter.InsertCommand.Parameters[1].Value = ((int)(Vac_Centro));
             this.Adapter.InsertCommand.Parameters[2].Value = ((int)(Vac_Vacuna));
             this.Adapter.InsertCommand.Parameters[3].Value = ((int)(Vac_Dosis));
-            this.Adapter.InsertCommand.Parameters[4].Value = ((System.DateTime)(Vac_Fecha));
+            if ((Vac_Fecha.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[4].Value = ((System.DateTime)(Vac_Fecha.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[4].Value = global::System.DBNull.Value;
+            }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
             if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -7144,7 +9063,7 @@ SELECT Vac_Codigo, Vac_Paciente, Vac_Centro, Vac_Vacuna, Vac_Dosis, Vac_Fecha FR
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(string Vac_Paciente, int Vac_Centro, int Vac_Vacuna, int Vac_Dosis, System.DateTime Vac_Fecha, int Original_Vac_Codigo, string Original_Vac_Paciente, int Original_Vac_Centro, int Original_Vac_Vacuna, int Original_Vac_Dosis, System.DateTime Original_Vac_Fecha, int Vac_Codigo) {
+        public virtual int Update(string Vac_Paciente, int Vac_Centro, int Vac_Vacuna, int Vac_Dosis, global::System.Nullable<global::System.DateTime> Vac_Fecha, int Original_Vac_Codigo, string Original_Vac_Paciente, int Original_Vac_Centro, int Original_Vac_Vacuna, int Original_Vac_Dosis, global::System.Nullable<global::System.DateTime> Original_Vac_Fecha, int Vac_Codigo) {
             if ((Vac_Paciente == null)) {
                 throw new global::System.ArgumentNullException("Vac_Paciente");
             }
@@ -7154,7 +9073,12 @@ SELECT Vac_Codigo, Vac_Paciente, Vac_Centro, Vac_Vacuna, Vac_Dosis, Vac_Fecha FR
             this.Adapter.UpdateCommand.Parameters[1].Value = ((int)(Vac_Centro));
             this.Adapter.UpdateCommand.Parameters[2].Value = ((int)(Vac_Vacuna));
             this.Adapter.UpdateCommand.Parameters[3].Value = ((int)(Vac_Dosis));
-            this.Adapter.UpdateCommand.Parameters[4].Value = ((System.DateTime)(Vac_Fecha));
+            if ((Vac_Fecha.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[4].Value = ((System.DateTime)(Vac_Fecha.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[4].Value = global::System.DBNull.Value;
+            }
             this.Adapter.UpdateCommand.Parameters[5].Value = ((int)(Original_Vac_Codigo));
             if ((Original_Vac_Paciente == null)) {
                 throw new global::System.ArgumentNullException("Original_Vac_Paciente");
@@ -7165,8 +9089,15 @@ SELECT Vac_Codigo, Vac_Paciente, Vac_Centro, Vac_Vacuna, Vac_Dosis, Vac_Fecha FR
             this.Adapter.UpdateCommand.Parameters[7].Value = ((int)(Original_Vac_Centro));
             this.Adapter.UpdateCommand.Parameters[8].Value = ((int)(Original_Vac_Vacuna));
             this.Adapter.UpdateCommand.Parameters[9].Value = ((int)(Original_Vac_Dosis));
-            this.Adapter.UpdateCommand.Parameters[10].Value = ((System.DateTime)(Original_Vac_Fecha));
-            this.Adapter.UpdateCommand.Parameters[11].Value = ((int)(Vac_Codigo));
+            if ((Original_Vac_Fecha.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[10].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[11].Value = ((System.DateTime)(Original_Vac_Fecha.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[10].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[11].Value = global::System.DBNull.Value;
+            }
+            this.Adapter.UpdateCommand.Parameters[12].Value = ((int)(Vac_Codigo));
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
             if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -7187,7 +9118,7 @@ SELECT Vac_Codigo, Vac_Paciente, Vac_Centro, Vac_Vacuna, Vac_Dosis, Vac_Fecha FR
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(string Vac_Paciente, int Vac_Centro, int Vac_Vacuna, int Vac_Dosis, System.DateTime Vac_Fecha, int Original_Vac_Codigo, string Original_Vac_Paciente, int Original_Vac_Centro, int Original_Vac_Vacuna, int Original_Vac_Dosis, System.DateTime Original_Vac_Fecha) {
+        public virtual int Update(string Vac_Paciente, int Vac_Centro, int Vac_Vacuna, int Vac_Dosis, global::System.Nullable<global::System.DateTime> Vac_Fecha, int Original_Vac_Codigo, string Original_Vac_Paciente, int Original_Vac_Centro, int Original_Vac_Vacuna, int Original_Vac_Dosis, global::System.Nullable<global::System.DateTime> Original_Vac_Fecha) {
             return this.Update(Vac_Paciente, Vac_Centro, Vac_Vacuna, Vac_Dosis, Vac_Fecha, Original_Vac_Codigo, Original_Vac_Paciente, Original_Vac_Centro, Original_Vac_Vacuna, Original_Vac_Dosis, Original_Vac_Fecha, Original_Vac_Codigo);
         }
     }
@@ -7330,7 +9261,7 @@ SELECT Vac_Codigo, Vac_Paciente, Vac_Centro, Vac_Vacuna, Vac_Dosis, Vac_Fecha FR
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_V_Expiracion", global::System.Data.SqlDbType.Date, 0, global::System.Data.ParameterDirection.Input, 0, 0, "V_Expiracion", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_V_Lote", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "V_Lote", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_V_Cantidad", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "V_Cantidad", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_V_Cantidad", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 3, 0, "V_Cantidad", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_V_Cantidad", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 8, 0, "V_Cantidad", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
             this._adapter.InsertCommand.CommandText = @"INSERT INTO [dbo].[Vacunas] ([V_Laboratorio], [V_Marca], [V_Expiracion], [V_Lote], [V_Cantidad]) VALUES (@V_Laboratorio, @V_Marca, @V_Expiracion, @V_Lote, @V_Cantidad);
@@ -7340,7 +9271,7 @@ SELECT V_Codigo, V_Laboratorio, V_Marca, V_Expiracion, V_Lote, V_Cantidad FROM V
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@V_Marca", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "V_Marca", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@V_Expiracion", global::System.Data.SqlDbType.Date, 0, global::System.Data.ParameterDirection.Input, 0, 0, "V_Expiracion", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@V_Lote", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "V_Lote", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@V_Cantidad", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 3, 0, "V_Cantidad", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@V_Cantidad", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 8, 0, "V_Cantidad", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
             this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[Vacunas] SET [V_Laboratorio] = @V_Laboratorio, [V_Marca] = @V_Marca, [V_Expiracion] = @V_Expiracion, [V_Lote] = @V_Lote, [V_Cantidad] = @V_Cantidad WHERE (([V_Codigo] = @Original_V_Codigo) AND ([V_Laboratorio] = @Original_V_Laboratorio) AND ([V_Marca] = @Original_V_Marca) AND ([V_Expiracion] = @Original_V_Expiracion) AND ([V_Lote] = @Original_V_Lote) AND ((@IsNull_V_Cantidad = 1 AND [V_Cantidad] IS NULL) OR ([V_Cantidad] = @Original_V_Cantidad)));
@@ -7350,14 +9281,14 @@ SELECT V_Codigo, V_Laboratorio, V_Marca, V_Expiracion, V_Lote, V_Cantidad FROM V
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@V_Marca", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "V_Marca", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@V_Expiracion", global::System.Data.SqlDbType.Date, 0, global::System.Data.ParameterDirection.Input, 0, 0, "V_Expiracion", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@V_Lote", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "V_Lote", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@V_Cantidad", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 3, 0, "V_Cantidad", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@V_Cantidad", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 8, 0, "V_Cantidad", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_V_Codigo", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "V_Codigo", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_V_Laboratorio", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "V_Laboratorio", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_V_Marca", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "V_Marca", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_V_Expiracion", global::System.Data.SqlDbType.Date, 0, global::System.Data.ParameterDirection.Input, 0, 0, "V_Expiracion", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_V_Lote", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "V_Lote", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_V_Cantidad", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "V_Cantidad", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_V_Cantidad", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 3, 0, "V_Cantidad", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_V_Cantidad", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 8, 0, "V_Cantidad", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@V_Codigo", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "V_Codigo", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
@@ -7712,11 +9643,13 @@ SELECT V_Codigo, V_Laboratorio, V_Marca, V_Expiracion, V_Lote, V_Cantidad FROM V
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
             tableMapping.DataSetTable = "P_BUSCAR_CENTRO";
-            tableMapping.ColumnMappings.Add("Cen_Codigo", "Cen_Codigo");
-            tableMapping.ColumnMappings.Add("Cen_Provincia", "Cen_Provincia");
-            tableMapping.ColumnMappings.Add("Cen_CantidadLotes", "Cen_CantidadLotes");
-            tableMapping.ColumnMappings.Add("Cen_Descripcion", "Cen_Descripcion");
-            tableMapping.ColumnMappings.Add("Cen_Direccion", "Cen_Direccion");
+            tableMapping.ColumnMappings.Add("CODIGO", "CODIGO");
+            tableMapping.ColumnMappings.Add("PROVINCIA", "PROVINCIA");
+            tableMapping.ColumnMappings.Add("NUMLOTE", "NUMLOTE");
+            tableMapping.ColumnMappings.Add("CANTIDAD", "CANTIDAD");
+            tableMapping.ColumnMappings.Add("VENCIMIENTO", "VENCIMIENTO");
+            tableMapping.ColumnMappings.Add("CENTRO", "CENTRO");
+            tableMapping.ColumnMappings.Add("DIRECCION", "DIRECCION");
             this._adapter.TableMappings.Add(tableMapping);
         }
         
@@ -7736,21 +9669,14 @@ SELECT V_Codigo, V_Laboratorio, V_Marca, V_Expiracion, V_Lote, V_Cantidad FROM V
             this._commandCollection[0].CommandText = "dbo.P_BUSCAR_CENTRO";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.StoredProcedure;
             this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@BUSCAR", global::System.Data.SqlDbType.NVarChar, 20, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(VacunacionDataSet.P_BUSCAR_CENTRODataTable dataTable, string BUSCAR) {
+        public virtual int Fill(VacunacionDataSet.P_BUSCAR_CENTRODataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            if ((BUSCAR == null)) {
-                this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.SelectCommand.Parameters[1].Value = ((string)(BUSCAR));
-            }
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
             }
@@ -7762,15 +9688,347 @@ SELECT V_Codigo, V_Laboratorio, V_Marca, V_Expiracion, V_Lote, V_Cantidad FROM V
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual VacunacionDataSet.P_BUSCAR_CENTRODataTable GetData(string BUSCAR) {
+        public virtual VacunacionDataSet.P_BUSCAR_CENTRODataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            if ((BUSCAR == null)) {
-                this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.SelectCommand.Parameters[1].Value = ((string)(BUSCAR));
-            }
             VacunacionDataSet.P_BUSCAR_CENTRODataTable dataTable = new VacunacionDataSet.P_BUSCAR_CENTRODataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+    }
+    
+    /// <summary>
+    ///Represents the connection and commands used to retrieve and save data.
+    ///</summary>
+    [global::System.ComponentModel.DesignerCategoryAttribute("code")]
+    [global::System.ComponentModel.ToolboxItem(true)]
+    [global::System.ComponentModel.DataObjectAttribute(true)]
+    [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
+        ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+    [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+    public partial class P_BUSCAR_DOSISTableAdapter : global::System.ComponentModel.Component {
+        
+        private global::System.Data.SqlClient.SqlDataAdapter _adapter;
+        
+        private global::System.Data.SqlClient.SqlConnection _connection;
+        
+        private global::System.Data.SqlClient.SqlTransaction _transaction;
+        
+        private global::System.Data.SqlClient.SqlCommand[] _commandCollection;
+        
+        private bool _clearBeforeFill;
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        public P_BUSCAR_DOSISTableAdapter() {
+            this.ClearBeforeFill = true;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        protected internal global::System.Data.SqlClient.SqlDataAdapter Adapter {
+            get {
+                if ((this._adapter == null)) {
+                    this.InitAdapter();
+                }
+                return this._adapter;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        internal global::System.Data.SqlClient.SqlConnection Connection {
+            get {
+                if ((this._connection == null)) {
+                    this.InitConnection();
+                }
+                return this._connection;
+            }
+            set {
+                this._connection = value;
+                if ((this.Adapter.InsertCommand != null)) {
+                    this.Adapter.InsertCommand.Connection = value;
+                }
+                if ((this.Adapter.DeleteCommand != null)) {
+                    this.Adapter.DeleteCommand.Connection = value;
+                }
+                if ((this.Adapter.UpdateCommand != null)) {
+                    this.Adapter.UpdateCommand.Connection = value;
+                }
+                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
+                    if ((this.CommandCollection[i] != null)) {
+                        ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[i])).Connection = value;
+                    }
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        internal global::System.Data.SqlClient.SqlTransaction Transaction {
+            get {
+                return this._transaction;
+            }
+            set {
+                this._transaction = value;
+                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
+                    this.CommandCollection[i].Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.DeleteCommand != null))) {
+                    this.Adapter.DeleteCommand.Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.InsertCommand != null))) {
+                    this.Adapter.InsertCommand.Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.UpdateCommand != null))) {
+                    this.Adapter.UpdateCommand.Transaction = this._transaction;
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        protected global::System.Data.SqlClient.SqlCommand[] CommandCollection {
+            get {
+                if ((this._commandCollection == null)) {
+                    this.InitCommandCollection();
+                }
+                return this._commandCollection;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        public bool ClearBeforeFill {
+            get {
+                return this._clearBeforeFill;
+            }
+            set {
+                this._clearBeforeFill = value;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        private void InitAdapter() {
+            this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
+            global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
+            tableMapping.SourceTable = "Table";
+            tableMapping.DataSetTable = "P_BUSCAR_DOSIS";
+            tableMapping.ColumnMappings.Add("Id_Dosis", "Id_Dosis");
+            tableMapping.ColumnMappings.Add("Descripcion", "Descripcion");
+            this._adapter.TableMappings.Add(tableMapping);
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        private void InitConnection() {
+            this._connection = new global::System.Data.SqlClient.SqlConnection();
+            this._connection.ConnectionString = global::Presentacion.Properties.Settings.Default.VacunacionConnectionString;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        private void InitCommandCollection() {
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
+            this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[0].Connection = this.Connection;
+            this._commandCollection[0].CommandText = "dbo.P_BUSCAR_DOSIS";
+            this._commandCollection[0].CommandType = global::System.Data.CommandType.StoredProcedure;
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
+        public virtual int Fill(VacunacionDataSet.P_BUSCAR_DOSISDataTable dataTable) {
+            this.Adapter.SelectCommand = this.CommandCollection[0];
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
+        public virtual VacunacionDataSet.P_BUSCAR_DOSISDataTable GetData() {
+            this.Adapter.SelectCommand = this.CommandCollection[0];
+            VacunacionDataSet.P_BUSCAR_DOSISDataTable dataTable = new VacunacionDataSet.P_BUSCAR_DOSISDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+    }
+    
+    /// <summary>
+    ///Represents the connection and commands used to retrieve and save data.
+    ///</summary>
+    [global::System.ComponentModel.DesignerCategoryAttribute("code")]
+    [global::System.ComponentModel.ToolboxItem(true)]
+    [global::System.ComponentModel.DataObjectAttribute(true)]
+    [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
+        ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+    [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+    public partial class P_BUSCAR_LABORATORIOTableAdapter : global::System.ComponentModel.Component {
+        
+        private global::System.Data.SqlClient.SqlDataAdapter _adapter;
+        
+        private global::System.Data.SqlClient.SqlConnection _connection;
+        
+        private global::System.Data.SqlClient.SqlTransaction _transaction;
+        
+        private global::System.Data.SqlClient.SqlCommand[] _commandCollection;
+        
+        private bool _clearBeforeFill;
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        public P_BUSCAR_LABORATORIOTableAdapter() {
+            this.ClearBeforeFill = true;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        protected internal global::System.Data.SqlClient.SqlDataAdapter Adapter {
+            get {
+                if ((this._adapter == null)) {
+                    this.InitAdapter();
+                }
+                return this._adapter;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        internal global::System.Data.SqlClient.SqlConnection Connection {
+            get {
+                if ((this._connection == null)) {
+                    this.InitConnection();
+                }
+                return this._connection;
+            }
+            set {
+                this._connection = value;
+                if ((this.Adapter.InsertCommand != null)) {
+                    this.Adapter.InsertCommand.Connection = value;
+                }
+                if ((this.Adapter.DeleteCommand != null)) {
+                    this.Adapter.DeleteCommand.Connection = value;
+                }
+                if ((this.Adapter.UpdateCommand != null)) {
+                    this.Adapter.UpdateCommand.Connection = value;
+                }
+                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
+                    if ((this.CommandCollection[i] != null)) {
+                        ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[i])).Connection = value;
+                    }
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        internal global::System.Data.SqlClient.SqlTransaction Transaction {
+            get {
+                return this._transaction;
+            }
+            set {
+                this._transaction = value;
+                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
+                    this.CommandCollection[i].Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.DeleteCommand != null))) {
+                    this.Adapter.DeleteCommand.Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.InsertCommand != null))) {
+                    this.Adapter.InsertCommand.Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.UpdateCommand != null))) {
+                    this.Adapter.UpdateCommand.Transaction = this._transaction;
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        protected global::System.Data.SqlClient.SqlCommand[] CommandCollection {
+            get {
+                if ((this._commandCollection == null)) {
+                    this.InitCommandCollection();
+                }
+                return this._commandCollection;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        public bool ClearBeforeFill {
+            get {
+                return this._clearBeforeFill;
+            }
+            set {
+                this._clearBeforeFill = value;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        private void InitAdapter() {
+            this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
+            global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
+            tableMapping.SourceTable = "Table";
+            tableMapping.DataSetTable = "P_BUSCAR_LABORATORIO";
+            tableMapping.ColumnMappings.Add("Lab_Codigo", "Lab_Codigo");
+            tableMapping.ColumnMappings.Add("Lab_Descripcion", "Lab_Descripcion");
+            this._adapter.TableMappings.Add(tableMapping);
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        private void InitConnection() {
+            this._connection = new global::System.Data.SqlClient.SqlConnection();
+            this._connection.ConnectionString = global::Presentacion.Properties.Settings.Default.VacunacionConnectionString;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        private void InitCommandCollection() {
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
+            this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[0].Connection = this.Connection;
+            this._commandCollection[0].CommandText = "dbo.P_BUSCAR_LABORATORIO";
+            this._commandCollection[0].CommandType = global::System.Data.CommandType.StoredProcedure;
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
+        public virtual int Fill(VacunacionDataSet.P_BUSCAR_LABORATORIODataTable dataTable) {
+            this.Adapter.SelectCommand = this.CommandCollection[0];
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
+        public virtual VacunacionDataSet.P_BUSCAR_LABORATORIODataTable GetData() {
+            this.Adapter.SelectCommand = this.CommandCollection[0];
+            VacunacionDataSet.P_BUSCAR_LABORATORIODataTable dataTable = new VacunacionDataSet.P_BUSCAR_LABORATORIODataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -7972,6 +10230,175 @@ SELECT V_Codigo, V_Laboratorio, V_Marca, V_Expiracion, V_Lote, V_Cantidad FROM V
     [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+    public partial class P_BUSCAR_PROVINCIATableAdapter : global::System.ComponentModel.Component {
+        
+        private global::System.Data.SqlClient.SqlDataAdapter _adapter;
+        
+        private global::System.Data.SqlClient.SqlConnection _connection;
+        
+        private global::System.Data.SqlClient.SqlTransaction _transaction;
+        
+        private global::System.Data.SqlClient.SqlCommand[] _commandCollection;
+        
+        private bool _clearBeforeFill;
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        public P_BUSCAR_PROVINCIATableAdapter() {
+            this.ClearBeforeFill = true;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        protected internal global::System.Data.SqlClient.SqlDataAdapter Adapter {
+            get {
+                if ((this._adapter == null)) {
+                    this.InitAdapter();
+                }
+                return this._adapter;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        internal global::System.Data.SqlClient.SqlConnection Connection {
+            get {
+                if ((this._connection == null)) {
+                    this.InitConnection();
+                }
+                return this._connection;
+            }
+            set {
+                this._connection = value;
+                if ((this.Adapter.InsertCommand != null)) {
+                    this.Adapter.InsertCommand.Connection = value;
+                }
+                if ((this.Adapter.DeleteCommand != null)) {
+                    this.Adapter.DeleteCommand.Connection = value;
+                }
+                if ((this.Adapter.UpdateCommand != null)) {
+                    this.Adapter.UpdateCommand.Connection = value;
+                }
+                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
+                    if ((this.CommandCollection[i] != null)) {
+                        ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[i])).Connection = value;
+                    }
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        internal global::System.Data.SqlClient.SqlTransaction Transaction {
+            get {
+                return this._transaction;
+            }
+            set {
+                this._transaction = value;
+                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
+                    this.CommandCollection[i].Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.DeleteCommand != null))) {
+                    this.Adapter.DeleteCommand.Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.InsertCommand != null))) {
+                    this.Adapter.InsertCommand.Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.UpdateCommand != null))) {
+                    this.Adapter.UpdateCommand.Transaction = this._transaction;
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        protected global::System.Data.SqlClient.SqlCommand[] CommandCollection {
+            get {
+                if ((this._commandCollection == null)) {
+                    this.InitCommandCollection();
+                }
+                return this._commandCollection;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        public bool ClearBeforeFill {
+            get {
+                return this._clearBeforeFill;
+            }
+            set {
+                this._clearBeforeFill = value;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        private void InitAdapter() {
+            this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
+            global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
+            tableMapping.SourceTable = "Table";
+            tableMapping.DataSetTable = "P_BUSCAR_PROVINCIA";
+            tableMapping.ColumnMappings.Add("Prv_Codigo", "Prv_Codigo");
+            tableMapping.ColumnMappings.Add("Prv_Descripcion", "Prv_Descripcion");
+            this._adapter.TableMappings.Add(tableMapping);
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        private void InitConnection() {
+            this._connection = new global::System.Data.SqlClient.SqlConnection();
+            this._connection.ConnectionString = global::Presentacion.Properties.Settings.Default.VacunacionConnectionString;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        private void InitCommandCollection() {
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
+            this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[0].Connection = this.Connection;
+            this._commandCollection[0].CommandText = "dbo.P_BUSCAR_PROVINCIA";
+            this._commandCollection[0].CommandType = global::System.Data.CommandType.StoredProcedure;
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
+        public virtual int Fill(VacunacionDataSet.P_BUSCAR_PROVINCIADataTable dataTable) {
+            this.Adapter.SelectCommand = this.CommandCollection[0];
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
+        public virtual VacunacionDataSet.P_BUSCAR_PROVINCIADataTable GetData() {
+            this.Adapter.SelectCommand = this.CommandCollection[0];
+            VacunacionDataSet.P_BUSCAR_PROVINCIADataTable dataTable = new VacunacionDataSet.P_BUSCAR_PROVINCIADataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+    }
+    
+    /// <summary>
+    ///Represents the connection and commands used to retrieve and save data.
+    ///</summary>
+    [global::System.ComponentModel.DesignerCategoryAttribute("code")]
+    [global::System.ComponentModel.ToolboxItem(true)]
+    [global::System.ComponentModel.DataObjectAttribute(true)]
+    [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
+        ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+    [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
     public partial class P_BUSCAR_VACUNATableAdapter : global::System.ComponentModel.Component {
         
         private global::System.Data.SqlClient.SqlDataAdapter _adapter;
@@ -8084,12 +10511,12 @@ SELECT V_Codigo, V_Laboratorio, V_Marca, V_Expiracion, V_Lote, V_Cantidad FROM V
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
             tableMapping.DataSetTable = "P_BUSCAR_VACUNA";
-            tableMapping.ColumnMappings.Add("V_Codigo", "V_Codigo");
-            tableMapping.ColumnMappings.Add("V_Laboratorio", "V_Laboratorio");
-            tableMapping.ColumnMappings.Add("V_Marca", "V_Marca");
-            tableMapping.ColumnMappings.Add("V_Expiracion", "V_Expiracion");
-            tableMapping.ColumnMappings.Add("V_Lote", "V_Lote");
-            tableMapping.ColumnMappings.Add("V_Cantidad", "V_Cantidad");
+            tableMapping.ColumnMappings.Add("CODIGO", "CODIGO");
+            tableMapping.ColumnMappings.Add("LABORATORIO", "LABORATORIO");
+            tableMapping.ColumnMappings.Add("MARCA", "MARCA");
+            tableMapping.ColumnMappings.Add("EXPIRACION", "EXPIRACION");
+            tableMapping.ColumnMappings.Add("LOTE", "LOTE");
+            tableMapping.ColumnMappings.Add("CANTIDAD", "CANTIDAD");
             this._adapter.TableMappings.Add(tableMapping);
         }
         
@@ -8109,21 +10536,14 @@ SELECT V_Codigo, V_Laboratorio, V_Marca, V_Expiracion, V_Lote, V_Cantidad FROM V
             this._commandCollection[0].CommandText = "dbo.P_BUSCAR_VACUNA";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.StoredProcedure;
             this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@BUSCAR", global::System.Data.SqlDbType.NVarChar, 20, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(VacunacionDataSet.P_BUSCAR_VACUNADataTable dataTable, string BUSCAR) {
+        public virtual int Fill(VacunacionDataSet.P_BUSCAR_VACUNADataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            if ((BUSCAR == null)) {
-                this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.SelectCommand.Parameters[1].Value = ((string)(BUSCAR));
-            }
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
             }
@@ -8135,15 +10555,182 @@ SELECT V_Codigo, V_Laboratorio, V_Marca, V_Expiracion, V_Lote, V_Cantidad FROM V
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual VacunacionDataSet.P_BUSCAR_VACUNADataTable GetData(string BUSCAR) {
+        public virtual VacunacionDataSet.P_BUSCAR_VACUNADataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            if ((BUSCAR == null)) {
-                this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.SelectCommand.Parameters[1].Value = ((string)(BUSCAR));
-            }
             VacunacionDataSet.P_BUSCAR_VACUNADataTable dataTable = new VacunacionDataSet.P_BUSCAR_VACUNADataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+    }
+    
+    /// <summary>
+    ///Represents the connection and commands used to retrieve and save data.
+    ///</summary>
+    [global::System.ComponentModel.DesignerCategoryAttribute("code")]
+    [global::System.ComponentModel.ToolboxItem(true)]
+    [global::System.ComponentModel.DataObjectAttribute(true)]
+    [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
+        ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+    [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+    public partial class P_BUSCAR_VACUNACIONTableAdapter : global::System.ComponentModel.Component {
+        
+        private global::System.Data.SqlClient.SqlDataAdapter _adapter;
+        
+        private global::System.Data.SqlClient.SqlConnection _connection;
+        
+        private global::System.Data.SqlClient.SqlTransaction _transaction;
+        
+        private global::System.Data.SqlClient.SqlCommand[] _commandCollection;
+        
+        private bool _clearBeforeFill;
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        public P_BUSCAR_VACUNACIONTableAdapter() {
+            this.ClearBeforeFill = true;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        protected internal global::System.Data.SqlClient.SqlDataAdapter Adapter {
+            get {
+                if ((this._adapter == null)) {
+                    this.InitAdapter();
+                }
+                return this._adapter;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        internal global::System.Data.SqlClient.SqlConnection Connection {
+            get {
+                if ((this._connection == null)) {
+                    this.InitConnection();
+                }
+                return this._connection;
+            }
+            set {
+                this._connection = value;
+                if ((this.Adapter.InsertCommand != null)) {
+                    this.Adapter.InsertCommand.Connection = value;
+                }
+                if ((this.Adapter.DeleteCommand != null)) {
+                    this.Adapter.DeleteCommand.Connection = value;
+                }
+                if ((this.Adapter.UpdateCommand != null)) {
+                    this.Adapter.UpdateCommand.Connection = value;
+                }
+                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
+                    if ((this.CommandCollection[i] != null)) {
+                        ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[i])).Connection = value;
+                    }
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        internal global::System.Data.SqlClient.SqlTransaction Transaction {
+            get {
+                return this._transaction;
+            }
+            set {
+                this._transaction = value;
+                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
+                    this.CommandCollection[i].Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.DeleteCommand != null))) {
+                    this.Adapter.DeleteCommand.Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.InsertCommand != null))) {
+                    this.Adapter.InsertCommand.Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.UpdateCommand != null))) {
+                    this.Adapter.UpdateCommand.Transaction = this._transaction;
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        protected global::System.Data.SqlClient.SqlCommand[] CommandCollection {
+            get {
+                if ((this._commandCollection == null)) {
+                    this.InitCommandCollection();
+                }
+                return this._commandCollection;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        public bool ClearBeforeFill {
+            get {
+                return this._clearBeforeFill;
+            }
+            set {
+                this._clearBeforeFill = value;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        private void InitAdapter() {
+            this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
+            global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
+            tableMapping.SourceTable = "Table";
+            tableMapping.DataSetTable = "P_BUSCAR_VACUNACION";
+            tableMapping.ColumnMappings.Add("CODIGO", "CODIGO");
+            tableMapping.ColumnMappings.Add("PACIENTE", "PACIENTE");
+            tableMapping.ColumnMappings.Add("CENTRO", "CENTRO");
+            tableMapping.ColumnMappings.Add("VACUNA", "VACUNA");
+            tableMapping.ColumnMappings.Add("DOSIS", "DOSIS");
+            tableMapping.ColumnMappings.Add("FVACUNACION", "FVACUNACION");
+            this._adapter.TableMappings.Add(tableMapping);
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        private void InitConnection() {
+            this._connection = new global::System.Data.SqlClient.SqlConnection();
+            this._connection.ConnectionString = global::Presentacion.Properties.Settings.Default.VacunacionConnectionString;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        private void InitCommandCollection() {
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
+            this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[0].Connection = this.Connection;
+            this._commandCollection[0].CommandText = "dbo.P_BUSCAR_VACUNACION";
+            this._commandCollection[0].CommandType = global::System.Data.CommandType.StoredProcedure;
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
+        public virtual int Fill(VacunacionDataSet.P_BUSCAR_VACUNACIONDataTable dataTable) {
+            this.Adapter.SelectCommand = this.CommandCollection[0];
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
+        public virtual VacunacionDataSet.P_BUSCAR_VACUNACIONDataTable GetData() {
+            this.Adapter.SelectCommand = this.CommandCollection[0];
+            VacunacionDataSet.P_BUSCAR_VACUNACIONDataTable dataTable = new VacunacionDataSet.P_BUSCAR_VACUNACIONDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -8176,7 +10763,7 @@ SELECT V_Codigo, V_Laboratorio, V_Marca, V_Expiracion, V_Lote, V_Cantidad FROM V
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitCommandCollection() {
-            this._commandCollection = new global::System.Data.IDbCommand[9];
+            this._commandCollection = new global::System.Data.IDbCommand[11];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[0])).Connection = new global::System.Data.SqlClient.SqlConnection(global::Presentacion.Properties.Settings.Default.VacunacionConnectionString);
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[0])).CommandText = "dbo.P_EDITAR_CENTRO";
@@ -8184,7 +10771,9 @@ SELECT V_Codigo, V_Laboratorio, V_Marca, V_Expiracion, V_Lote, V_Cantidad FROM V
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[0])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[0])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ID", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[0])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@PROVINCIA", global::System.Data.SqlDbType.NVarChar, 25, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[0])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@NUMEROLOTES", global::System.Data.SqlDbType.NVarChar, 15, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[0])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@CANTIDAD", global::System.Data.SqlDbType.Decimal, 5, global::System.Data.ParameterDirection.Input, 8, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[0])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@VENCIMIENTO", global::System.Data.SqlDbType.DateTime, 8, global::System.Data.ParameterDirection.Input, 23, 3, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[0])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@DESCRIPCION", global::System.Data.SqlDbType.NVarChar, 60, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[0])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@DIRECCION", global::System.Data.SqlDbType.NVarChar, 60, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[1] = new global::System.Data.SqlClient.SqlCommand();
@@ -8200,69 +10789,90 @@ SELECT V_Codigo, V_Laboratorio, V_Marca, V_Expiracion, V_Lote, V_Cantidad FROM V
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[1])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@DIRECCION", global::System.Data.SqlDbType.NVarChar, 60, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[2] = new global::System.Data.SqlClient.SqlCommand();
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[2])).Connection = new global::System.Data.SqlClient.SqlConnection(global::Presentacion.Properties.Settings.Default.VacunacionConnectionString);
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[2])).CommandText = "dbo.P_EDITAR_VACUNAS";
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[2])).CommandText = "dbo.P_EDITAR_VACUNACION";
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[2])).CommandType = global::System.Data.CommandType.StoredProcedure;
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[2])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[2])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ID", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[2])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@LABORATORIO", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[2])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@MARCA", global::System.Data.SqlDbType.VarChar, 20, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[2])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@EXPIRACION", global::System.Data.SqlDbType.DateTime, 8, global::System.Data.ParameterDirection.Input, 23, 3, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[2])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@LOTE", global::System.Data.SqlDbType.VarChar, 10, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[2])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@CANTIDAD", global::System.Data.SqlDbType.Decimal, 5, global::System.Data.ParameterDirection.Input, 3, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[2])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@PACIENTE", global::System.Data.SqlDbType.VarChar, 11, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[2])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@CENTRO", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[2])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@VACUNA", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[2])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@DOSIS", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[3] = new global::System.Data.SqlClient.SqlCommand();
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[3])).Connection = new global::System.Data.SqlClient.SqlConnection(global::Presentacion.Properties.Settings.Default.VacunacionConnectionString);
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[3])).CommandText = "dbo.P_ELIMINAR_CENTRO";
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[3])).CommandText = "dbo.P_EDITAR_VACUNAS";
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[3])).CommandType = global::System.Data.CommandType.StoredProcedure;
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[3])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[3])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ID", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[3])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@LABORATORIO", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[3])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@MARCA", global::System.Data.SqlDbType.VarChar, 20, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[3])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@EXPIRACION", global::System.Data.SqlDbType.DateTime, 8, global::System.Data.ParameterDirection.Input, 23, 3, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[3])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@LOTE", global::System.Data.SqlDbType.VarChar, 10, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[3])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@CANTIDAD", global::System.Data.SqlDbType.Decimal, 5, global::System.Data.ParameterDirection.Input, 3, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[4] = new global::System.Data.SqlClient.SqlCommand();
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[4])).Connection = new global::System.Data.SqlClient.SqlConnection(global::Presentacion.Properties.Settings.Default.VacunacionConnectionString);
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[4])).CommandText = "dbo.P_ELIMINAR_PACIENTE";
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[4])).CommandText = "dbo.P_ELIMINAR_CENTRO";
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[4])).CommandType = global::System.Data.CommandType.StoredProcedure;
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[4])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[4])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@CEDULA", global::System.Data.SqlDbType.NVarChar, 11, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[4])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ID", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[5] = new global::System.Data.SqlClient.SqlCommand();
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[5])).Connection = new global::System.Data.SqlClient.SqlConnection(global::Presentacion.Properties.Settings.Default.VacunacionConnectionString);
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[5])).CommandText = "dbo.P_ELIMINAR_VACUNA";
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[5])).CommandText = "dbo.P_ELIMINAR_PACIENTE";
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[5])).CommandType = global::System.Data.CommandType.StoredProcedure;
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[5])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[5])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ID", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[5])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@CEDULA", global::System.Data.SqlDbType.NVarChar, 11, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[6] = new global::System.Data.SqlClient.SqlCommand();
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[6])).Connection = new global::System.Data.SqlClient.SqlConnection(global::Presentacion.Properties.Settings.Default.VacunacionConnectionString);
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[6])).CommandText = "dbo.P_INSERTAR_CENTRO";
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[6])).CommandText = "dbo.P_ELIMINAR_VACUNA";
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[6])).CommandType = global::System.Data.CommandType.StoredProcedure;
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[6])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[6])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@PROVINCIA", global::System.Data.SqlDbType.NVarChar, 25, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[6])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@CANTIDAD", global::System.Data.SqlDbType.Decimal, 5, global::System.Data.ParameterDirection.Input, 8, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[6])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@DESCRIPCION", global::System.Data.SqlDbType.NVarChar, 60, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[6])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@DIRECCION", global::System.Data.SqlDbType.NVarChar, 60, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[6])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ID", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[7] = new global::System.Data.SqlClient.SqlCommand();
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[7])).Connection = new global::System.Data.SqlClient.SqlConnection(global::Presentacion.Properties.Settings.Default.VacunacionConnectionString);
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[7])).CommandText = "dbo.P_INSERTAR_PACIENTE";
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[7])).CommandText = "dbo.P_INSERTAR_CENTRO";
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[7])).CommandType = global::System.Data.CommandType.StoredProcedure;
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[7])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[7])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@CEDULA", global::System.Data.SqlDbType.NVarChar, 11, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[7])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@NOMBRE", global::System.Data.SqlDbType.NVarChar, 60, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[7])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@APELLIDO", global::System.Data.SqlDbType.NVarChar, 60, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[7])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@FNACIMIENTO", global::System.Data.SqlDbType.Date, 3, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[7])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@SEXO", global::System.Data.SqlDbType.NVarChar, 1, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[7])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@PROVINCIA", global::System.Data.SqlDbType.NVarChar, 25, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[7])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@NUMEROLOTES", global::System.Data.SqlDbType.NVarChar, 15, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[7])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@CANTIDAD", global::System.Data.SqlDbType.Decimal, 5, global::System.Data.ParameterDirection.Input, 8, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[7])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@VENCIMIENTO", global::System.Data.SqlDbType.DateTime, 8, global::System.Data.ParameterDirection.Input, 23, 3, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[7])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@DESCRIPCION", global::System.Data.SqlDbType.NVarChar, 60, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[7])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@DIRECCION", global::System.Data.SqlDbType.NVarChar, 60, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[8] = new global::System.Data.SqlClient.SqlCommand();
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[8])).Connection = new global::System.Data.SqlClient.SqlConnection(global::Presentacion.Properties.Settings.Default.VacunacionConnectionString);
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[8])).CommandText = "dbo.P_INSERTAR_VACUNAS";
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[8])).CommandText = "dbo.P_INSERTAR_PACIENTE";
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[8])).CommandType = global::System.Data.CommandType.StoredProcedure;
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[8])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[8])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@LABORATORIO", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[8])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@MARCA", global::System.Data.SqlDbType.VarChar, 20, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[8])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@EXPIRACION", global::System.Data.SqlDbType.DateTime, 8, global::System.Data.ParameterDirection.Input, 23, 3, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[8])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@LOTE", global::System.Data.SqlDbType.VarChar, 10, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[8])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@CANTIDAD", global::System.Data.SqlDbType.Decimal, 5, global::System.Data.ParameterDirection.Input, 3, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[8])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@CEDULA", global::System.Data.SqlDbType.NVarChar, 11, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[8])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@NOMBRE", global::System.Data.SqlDbType.NVarChar, 60, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[8])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@APELLIDO", global::System.Data.SqlDbType.NVarChar, 60, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[8])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@FNACIMIENTO", global::System.Data.SqlDbType.Date, 3, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[8])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@SEXO", global::System.Data.SqlDbType.NVarChar, 1, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[8])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@DIRECCION", global::System.Data.SqlDbType.NVarChar, 60, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[9] = new global::System.Data.SqlClient.SqlCommand();
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[9])).Connection = new global::System.Data.SqlClient.SqlConnection(global::Presentacion.Properties.Settings.Default.VacunacionConnectionString);
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[9])).CommandText = "dbo.P_INSERTAR_VACUNACION";
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[9])).CommandType = global::System.Data.CommandType.StoredProcedure;
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[9])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[9])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@PACIENTE", global::System.Data.SqlDbType.VarChar, 11, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[9])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@CENTRO", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[9])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@VACUNA", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[9])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@DOSIS", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[10] = new global::System.Data.SqlClient.SqlCommand();
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[10])).Connection = new global::System.Data.SqlClient.SqlConnection(global::Presentacion.Properties.Settings.Default.VacunacionConnectionString);
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[10])).CommandText = "dbo.P_INSERTAR_VACUNAS";
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[10])).CommandType = global::System.Data.CommandType.StoredProcedure;
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[10])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[10])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@LABORATORIO", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[10])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@MARCA", global::System.Data.SqlDbType.VarChar, 20, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[10])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@EXPIRACION", global::System.Data.SqlDbType.DateTime, 8, global::System.Data.ParameterDirection.Input, 23, 3, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[10])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@LOTE", global::System.Data.SqlDbType.VarChar, 10, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[10])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@CANTIDAD", global::System.Data.SqlDbType.Decimal, 5, global::System.Data.ParameterDirection.Input, 3, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int P_EDITAR_CENTRO(global::System.Nullable<int> ID, string PROVINCIA, global::System.Nullable<decimal> CANTIDAD, string DESCRIPCION, string DIRECCION) {
+        public virtual int P_EDITAR_CENTRO(global::System.Nullable<int> ID, string PROVINCIA, string NUMEROLOTES, global::System.Nullable<decimal> CANTIDAD, global::System.Nullable<global::System.DateTime> VENCIMIENTO, string DESCRIPCION, string DIRECCION) {
             global::System.Data.SqlClient.SqlCommand command = ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[0]));
             if ((ID.HasValue == true)) {
                 command.Parameters[1].Value = ((int)(ID.Value));
@@ -8276,23 +10886,35 @@ SELECT V_Codigo, V_Laboratorio, V_Marca, V_Expiracion, V_Lote, V_Cantidad FROM V
             else {
                 command.Parameters[2].Value = ((string)(PROVINCIA));
             }
-            if ((CANTIDAD.HasValue == true)) {
-                command.Parameters[3].Value = ((decimal)(CANTIDAD.Value));
-            }
-            else {
+            if ((NUMEROLOTES == null)) {
                 command.Parameters[3].Value = global::System.DBNull.Value;
             }
-            if ((DESCRIPCION == null)) {
+            else {
+                command.Parameters[3].Value = ((string)(NUMEROLOTES));
+            }
+            if ((CANTIDAD.HasValue == true)) {
+                command.Parameters[4].Value = ((decimal)(CANTIDAD.Value));
+            }
+            else {
                 command.Parameters[4].Value = global::System.DBNull.Value;
             }
-            else {
-                command.Parameters[4].Value = ((string)(DESCRIPCION));
+            if ((VENCIMIENTO.HasValue == true)) {
+                command.Parameters[5].Value = ((System.DateTime)(VENCIMIENTO.Value));
             }
-            if ((DIRECCION == null)) {
+            else {
                 command.Parameters[5].Value = global::System.DBNull.Value;
             }
+            if ((DESCRIPCION == null)) {
+                command.Parameters[6].Value = global::System.DBNull.Value;
+            }
             else {
-                command.Parameters[5].Value = ((string)(DIRECCION));
+                command.Parameters[6].Value = ((string)(DESCRIPCION));
+            }
+            if ((DIRECCION == null)) {
+                command.Parameters[7].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[7].Value = ((string)(DIRECCION));
             }
             global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
             if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -8372,8 +10994,60 @@ SELECT V_Codigo, V_Laboratorio, V_Marca, V_Expiracion, V_Lote, V_Cantidad FROM V
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int P_EDITAR_VACUNAS(global::System.Nullable<int> ID, global::System.Nullable<int> LABORATORIO, string MARCA, global::System.Nullable<global::System.DateTime> EXPIRACION, string LOTE, global::System.Nullable<decimal> CANTIDAD) {
+        public virtual int P_EDITAR_VACUNACION(global::System.Nullable<int> ID, string PACIENTE, global::System.Nullable<int> CENTRO, global::System.Nullable<int> VACUNA, global::System.Nullable<int> DOSIS) {
             global::System.Data.SqlClient.SqlCommand command = ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[2]));
+            if ((ID.HasValue == true)) {
+                command.Parameters[1].Value = ((int)(ID.Value));
+            }
+            else {
+                command.Parameters[1].Value = global::System.DBNull.Value;
+            }
+            if ((PACIENTE == null)) {
+                command.Parameters[2].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[2].Value = ((string)(PACIENTE));
+            }
+            if ((CENTRO.HasValue == true)) {
+                command.Parameters[3].Value = ((int)(CENTRO.Value));
+            }
+            else {
+                command.Parameters[3].Value = global::System.DBNull.Value;
+            }
+            if ((VACUNA.HasValue == true)) {
+                command.Parameters[4].Value = ((int)(VACUNA.Value));
+            }
+            else {
+                command.Parameters[4].Value = global::System.DBNull.Value;
+            }
+            if ((DOSIS.HasValue == true)) {
+                command.Parameters[5].Value = ((int)(DOSIS.Value));
+            }
+            else {
+                command.Parameters[5].Value = global::System.DBNull.Value;
+            }
+            global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
+            if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                command.Connection.Open();
+            }
+            int returnValue;
+            try {
+                returnValue = command.ExecuteNonQuery();
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    command.Connection.Close();
+                }
+            }
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int P_EDITAR_VACUNAS(global::System.Nullable<int> ID, global::System.Nullable<int> LABORATORIO, string MARCA, global::System.Nullable<global::System.DateTime> EXPIRACION, string LOTE, global::System.Nullable<decimal> CANTIDAD) {
+            global::System.Data.SqlClient.SqlCommand command = ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[3]));
             if ((ID.HasValue == true)) {
                 command.Parameters[1].Value = ((int)(ID.Value));
             }
@@ -8431,7 +11105,7 @@ SELECT V_Codigo, V_Laboratorio, V_Marca, V_Expiracion, V_Lote, V_Cantidad FROM V
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         public virtual int P_ELIMINAR_CENTRO(global::System.Nullable<int> ID) {
-            global::System.Data.SqlClient.SqlCommand command = ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[3]));
+            global::System.Data.SqlClient.SqlCommand command = ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[4]));
             if ((ID.HasValue == true)) {
                 command.Parameters[1].Value = ((int)(ID.Value));
             }
@@ -8459,7 +11133,7 @@ SELECT V_Codigo, V_Laboratorio, V_Marca, V_Expiracion, V_Lote, V_Cantidad FROM V
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         public virtual int P_ELIMINAR_PACIENTE(string CEDULA) {
-            global::System.Data.SqlClient.SqlCommand command = ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[4]));
+            global::System.Data.SqlClient.SqlCommand command = ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[5]));
             if ((CEDULA == null)) {
                 command.Parameters[1].Value = global::System.DBNull.Value;
             }
@@ -8487,7 +11161,7 @@ SELECT V_Codigo, V_Laboratorio, V_Marca, V_Expiracion, V_Lote, V_Cantidad FROM V
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         public virtual int P_ELIMINAR_VACUNA(global::System.Nullable<int> ID) {
-            global::System.Data.SqlClient.SqlCommand command = ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[5]));
+            global::System.Data.SqlClient.SqlCommand command = ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[6]));
             if ((ID.HasValue == true)) {
                 command.Parameters[1].Value = ((int)(ID.Value));
             }
@@ -8514,31 +11188,43 @@ SELECT V_Codigo, V_Laboratorio, V_Marca, V_Expiracion, V_Lote, V_Cantidad FROM V
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int P_INSERTAR_CENTRO(string PROVINCIA, global::System.Nullable<decimal> CANTIDAD, string DESCRIPCION, string DIRECCION) {
-            global::System.Data.SqlClient.SqlCommand command = ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[6]));
+        public virtual int P_INSERTAR_CENTRO(string PROVINCIA, string NUMEROLOTES, global::System.Nullable<decimal> CANTIDAD, global::System.Nullable<global::System.DateTime> VENCIMIENTO, string DESCRIPCION, string DIRECCION) {
+            global::System.Data.SqlClient.SqlCommand command = ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[7]));
             if ((PROVINCIA == null)) {
                 command.Parameters[1].Value = global::System.DBNull.Value;
             }
             else {
                 command.Parameters[1].Value = ((string)(PROVINCIA));
             }
-            if ((CANTIDAD.HasValue == true)) {
-                command.Parameters[2].Value = ((decimal)(CANTIDAD.Value));
-            }
-            else {
+            if ((NUMEROLOTES == null)) {
                 command.Parameters[2].Value = global::System.DBNull.Value;
             }
-            if ((DESCRIPCION == null)) {
+            else {
+                command.Parameters[2].Value = ((string)(NUMEROLOTES));
+            }
+            if ((CANTIDAD.HasValue == true)) {
+                command.Parameters[3].Value = ((decimal)(CANTIDAD.Value));
+            }
+            else {
                 command.Parameters[3].Value = global::System.DBNull.Value;
             }
-            else {
-                command.Parameters[3].Value = ((string)(DESCRIPCION));
+            if ((VENCIMIENTO.HasValue == true)) {
+                command.Parameters[4].Value = ((System.DateTime)(VENCIMIENTO.Value));
             }
-            if ((DIRECCION == null)) {
+            else {
                 command.Parameters[4].Value = global::System.DBNull.Value;
             }
+            if ((DESCRIPCION == null)) {
+                command.Parameters[5].Value = global::System.DBNull.Value;
+            }
             else {
-                command.Parameters[4].Value = ((string)(DIRECCION));
+                command.Parameters[5].Value = ((string)(DESCRIPCION));
+            }
+            if ((DIRECCION == null)) {
+                command.Parameters[6].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[6].Value = ((string)(DIRECCION));
             }
             global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
             if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -8561,7 +11247,7 @@ SELECT V_Codigo, V_Laboratorio, V_Marca, V_Expiracion, V_Lote, V_Cantidad FROM V
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         public virtual int P_INSERTAR_PACIENTE(string CEDULA, string NOMBRE, string APELLIDO, global::System.Nullable<global::System.DateTime> FNACIMIENTO, string SEXO, string DIRECCION) {
-            global::System.Data.SqlClient.SqlCommand command = ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[7]));
+            global::System.Data.SqlClient.SqlCommand command = ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[8]));
             if ((CEDULA == null)) {
                 command.Parameters[1].Value = global::System.DBNull.Value;
             }
@@ -8618,8 +11304,54 @@ SELECT V_Codigo, V_Laboratorio, V_Marca, V_Expiracion, V_Lote, V_Cantidad FROM V
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int P_INSERTAR_VACUNACION(string PACIENTE, global::System.Nullable<int> CENTRO, global::System.Nullable<int> VACUNA, global::System.Nullable<int> DOSIS) {
+            global::System.Data.SqlClient.SqlCommand command = ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[9]));
+            if ((PACIENTE == null)) {
+                command.Parameters[1].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[1].Value = ((string)(PACIENTE));
+            }
+            if ((CENTRO.HasValue == true)) {
+                command.Parameters[2].Value = ((int)(CENTRO.Value));
+            }
+            else {
+                command.Parameters[2].Value = global::System.DBNull.Value;
+            }
+            if ((VACUNA.HasValue == true)) {
+                command.Parameters[3].Value = ((int)(VACUNA.Value));
+            }
+            else {
+                command.Parameters[3].Value = global::System.DBNull.Value;
+            }
+            if ((DOSIS.HasValue == true)) {
+                command.Parameters[4].Value = ((int)(DOSIS.Value));
+            }
+            else {
+                command.Parameters[4].Value = global::System.DBNull.Value;
+            }
+            global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
+            if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                command.Connection.Open();
+            }
+            int returnValue;
+            try {
+                returnValue = command.ExecuteNonQuery();
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    command.Connection.Close();
+                }
+            }
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         public virtual int P_INSERTAR_VACUNAS(global::System.Nullable<int> LABORATORIO, string MARCA, global::System.Nullable<global::System.DateTime> EXPIRACION, string LOTE, global::System.Nullable<decimal> CANTIDAD) {
-            global::System.Data.SqlClient.SqlCommand command = ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[8]));
+            global::System.Data.SqlClient.SqlCommand command = ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[10]));
             if ((LABORATORIO.HasValue == true)) {
                 command.Parameters[1].Value = ((int)(LABORATORIO.Value));
             }

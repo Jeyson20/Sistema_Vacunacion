@@ -8,17 +8,23 @@ namespace CapaEntidades
 {
     public class E_Vacunas
     {
-        public int V_Codigo { get; set; }
+        private int _v_Codigo;
 
-        public int V_Laboratorio { get; set; }
+        private int _v_Laboratorio;
 
-        public string V_Marca { get; set; }
+        private string _v_Marca;
 
-        public DateTime V_Expiracion { get; set; }
+        private DateTime _v_Expiracion;
 
-        public string V_Lote { get; set; }
+        private string _v_Lote;
 
-        public decimal? V_Cantidad { get; set; }
+        private decimal? _v_Cantidad;
 
+        public int V_Codigo { get => _v_Codigo; set => _v_Codigo = value; }
+        public int V_Laboratorio { get => _v_Laboratorio; set => _v_Laboratorio = value; }
+        public string V_Marca { get => _v_Marca; set => _v_Marca = value; }
+        public DateTime V_Expiracion { get => _v_Expiracion; set => _v_Expiracion = value; }
+        public string V_Lote { get => _v_Lote; set => _v_Lote = value; }
+        public decimal? V_Cantidad { get => _v_Cantidad; set => _v_Cantidad = value; }
     }
 }

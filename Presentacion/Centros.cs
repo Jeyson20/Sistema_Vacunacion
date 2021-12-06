@@ -22,6 +22,7 @@ namespace Presentacion
             InitializeComponent();
            
             mostrarBuscarTabla();
+            mostrarProvincias();
         }
         public void mostrarBuscarTabla()
         {
@@ -29,17 +30,25 @@ namespace Presentacion
             tablacentros.DataSource = objnegocio.ListadoCentros();
         }
 
+        public void mostrarProvincias()
+        {
+            N_Provincias objnegocio = new N_Provincias();
+            cmbProvincias.DataSource = objnegocio.ListadoProvincias();
+            cmbProvincias.ValueMember = "Prv_Codigo";
+            cmbProvincias.DisplayMember = "Prv_Descripcion";
+        }
+
         private void Limpiarcajas()
         {
             Editarse = false;
             txtId.Text = "";
-            txtProvincia.Text = "";
+            cmbProvincias.Text = "";
             txtLote.Text = "";
             txtCantidad.Text = "";
             dateTimePicker1.Text = "";
             txtDescripcion.Text = "";
             txtDireccion.Text = "";
-            txtProvincia.Focus();
+            cmbProvincias.Focus();
 
         }
 
@@ -50,7 +59,7 @@ namespace Presentacion
             {
                 try
                 {
-                    ObjEntidad.Cen_Provincia = Convert.ToInt32(txtProvincia.Text);
+                    ObjEntidad.Cen_Provincia = Convert.ToInt32(cmbProvincias.SelectedValue);
                     ObjEntidad.Numero_Lotes = txtLote.Text;
                     ObjEntidad.Cen_CantidadLotes = Convert.ToInt32(txtCantidad.Text);
                     ObjEntidad.Vencimiento = Convert.ToDateTime(dateTimePicker1.Text);
@@ -59,6 +68,7 @@ namespace Presentacion
 
                     ObjNegocio.InsertandoCentros(ObjEntidad);
                     MessageBox.Show("Se ha Guardado el registro");
+                    mostrarProvincias();
                     mostrarBuscarTabla();
                     Limpiarcajas();
                 }
@@ -72,7 +82,7 @@ namespace Presentacion
                 try
                 {
                     ObjEntidad.Cen_Codigo = Convert.ToInt32(txtId.Text);
-                    ObjEntidad.Cen_Provincia = Convert.ToInt32(txtProvincia.Text);
+                    ObjEntidad.Cen_Provincia = Convert.ToInt32(cmbProvincias.SelectedValue.ToString());
                     ObjEntidad.Numero_Lotes = txtLote.Text;
                     ObjEntidad.Cen_CantidadLotes = Convert.ToInt32(txtCantidad.Text);
                     ObjEntidad.Vencimiento = Convert.ToDateTime(dateTimePicker1.Text);
@@ -83,6 +93,7 @@ namespace Presentacion
 
                     MessageBox.Show("Se ha Editado el registro");
                     mostrarBuscarTabla();
+                    mostrarProvincias();
                     Limpiarcajas();
                     Editarse = false;
                 }
@@ -99,7 +110,7 @@ namespace Presentacion
             {
                 Editarse = true;
                 txtId.Text = tablacentros.CurrentRow.Cells[0].Value.ToString();
-                txtProvincia.Text = tablacentros.CurrentRow.Cells[1].Value.ToString();
+                cmbProvincias.Text = tablacentros.CurrentRow.Cells[1].Value.ToString();
                 txtLote.Text = tablacentros.CurrentRow.Cells[2].Value.ToString();
                 txtCantidad.Text = tablacentros.CurrentRow.Cells[3].Value.ToString();
                 dateTimePicker1.Value = Convert.ToDateTime(tablacentros.CurrentRow.Cells[4].Value.ToString());
@@ -120,6 +131,7 @@ namespace Presentacion
                 ObjNegocio.EliminandoCentros(ObjEntidad);
 
                 MessageBox.Show("Se elimino correctamente");
+                mostrarProvincias();
                 mostrarBuscarTabla();
                 Limpiarcajas();
             }
@@ -131,15 +143,14 @@ namespace Presentacion
         }
         private void btnImprimir_Click(object sender, EventArgs e)
         {
-            Form reporte = new ReporteCentros();
+            Form reporte = new ReportesCentros();
             reporte.Show();
         }
 
         private void Centros_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'vacunacionDataSet1.CentrosVacunas' table. You can move, or remove it, as needed.
-            this.centrosVacunasTableAdapter.Fill(this.vacunacionDataSet1.CentrosVacunas);
-            // TODO: This line of code loads data into the 'vacunacionDataSet.CentrosVacunas' table. You can move, or remove it, as needed.
+            // TODO: This line of code loads data into the 'vacunacionDataSet.P_BUSCAR_CENTRO' table. You can move, or remove it, as needed.
+            this.p_BUSCAR_CENTROTableAdapter.Fill(this.vacunacionDataSet.P_BUSCAR_CENTRO);
             mostrarBuscarTabla();
 
 

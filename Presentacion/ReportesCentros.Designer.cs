@@ -1,7 +1,7 @@
 ﻿
 namespace Presentacion
 {
-    partial class ReporteVacunas
+    partial class ReportesCentros
     {
         /// <summary>
         /// Required designer variable.
@@ -32,52 +32,51 @@ namespace Presentacion
             this.components = new System.ComponentModel.Container();
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
-            this.VacunacionDataSet1 = new Presentacion.VacunacionDataSet1();
-            this.VacunasBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.VacunasTableAdapter = new Presentacion.VacunacionDataSet1TableAdapters.VacunasTableAdapter();
-            ((System.ComponentModel.ISupportInitialize)(this.VacunacionDataSet1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.VacunasBindingSource)).BeginInit();
+            this.VacunacionDataSet = new Presentacion.VacunacionDataSet();
+            this.P_BUSCAR_CENTROBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.P_BUSCAR_CENTROTableAdapter = new Presentacion.VacunacionDataSetTableAdapters.P_BUSCAR_CENTROTableAdapter();
+            ((System.ComponentModel.ISupportInitialize)(this.VacunacionDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.P_BUSCAR_CENTROBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // reportViewer1
             // 
             this.reportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
             reportDataSource1.Name = "DataSet1";
-            reportDataSource1.Value = this.VacunasBindingSource;
+            reportDataSource1.Value = this.P_BUSCAR_CENTROBindingSource;
             this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
-            this.reportViewer1.LocalReport.ReportEmbeddedResource = "Presentacion.Reportes.ReportVacunas.rdlc";
+            this.reportViewer1.LocalReport.ReportEmbeddedResource = "Presentacion.Reportes.Report1.rdlc";
             this.reportViewer1.Location = new System.Drawing.Point(0, 0);
             this.reportViewer1.Name = "reportViewer1";
             this.reportViewer1.ServerReport.BearerToken = null;
-            this.reportViewer1.Size = new System.Drawing.Size(804, 537);
+            this.reportViewer1.Size = new System.Drawing.Size(800, 450);
             this.reportViewer1.TabIndex = 0;
             // 
-            // VacunacionDataSet1
+            // VacunacionDataSet
             // 
-            this.VacunacionDataSet1.DataSetName = "VacunacionDataSet1";
-            this.VacunacionDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.VacunacionDataSet.DataSetName = "VacunacionDataSet";
+            this.VacunacionDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // VacunasBindingSource
+            // P_BUSCAR_CENTROBindingSource
             // 
-            this.VacunasBindingSource.DataMember = "Vacunas";
-            this.VacunasBindingSource.DataSource = this.VacunacionDataSet1;
+            this.P_BUSCAR_CENTROBindingSource.DataMember = "P_BUSCAR_CENTRO";
+            this.P_BUSCAR_CENTROBindingSource.DataSource = this.VacunacionDataSet;
             // 
-            // VacunasTableAdapter
+            // P_BUSCAR_CENTROTableAdapter
             // 
-            this.VacunasTableAdapter.ClearBeforeFill = true;
+            this.P_BUSCAR_CENTROTableAdapter.ClearBeforeFill = true;
             // 
-            // ReporteVacunas
+            // ReportesCentros
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(804, 537);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.reportViewer1);
-            this.Name = "ReporteVacunas";
-            this.Text = "ReporteVacunas";
-            this.Load += new System.EventHandler(this.ReporteVacunas_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.VacunacionDataSet1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.VacunasBindingSource)).EndInit();
+            this.Name = "ReportesCentros";
+            this.Text = "ReportesCentros";
+            this.Load += new System.EventHandler(this.ReportesCentros_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.VacunacionDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.P_BUSCAR_CENTROBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -85,8 +84,8 @@ namespace Presentacion
         #endregion
 
         private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
-        private System.Windows.Forms.BindingSource VacunasBindingSource;
-        private VacunacionDataSet1 VacunacionDataSet1;
-        private VacunacionDataSet1TableAdapters.VacunasTableAdapter VacunasTableAdapter;
+        private System.Windows.Forms.BindingSource P_BUSCAR_CENTROBindingSource;
+        private VacunacionDataSet VacunacionDataSet;
+        private VacunacionDataSetTableAdapters.P_BUSCAR_CENTROTableAdapter P_BUSCAR_CENTROTableAdapter;
     }
 }

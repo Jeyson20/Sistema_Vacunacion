@@ -1,7 +1,7 @@
 ﻿
 namespace Presentacion
 {
-    partial class ReportePacientes
+    partial class ReportesPacientes
     {
         /// <summary>
         /// Required designer variable.
@@ -45,7 +45,7 @@ namespace Presentacion
             reportDataSource1.Name = "DataSet1";
             reportDataSource1.Value = this.PacientesBindingSource;
             this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
-            this.reportViewer1.LocalReport.ReportEmbeddedResource = "Presentacion.Reportes.Report3.rdlc";
+            this.reportViewer1.LocalReport.ReportEmbeddedResource = "Presentacion.Reportes.Report2.rdlc";
             this.reportViewer1.Location = new System.Drawing.Point(0, 0);
             this.reportViewer1.Name = "reportViewer1";
             this.reportViewer1.ServerReport.BearerToken = null;
@@ -66,15 +66,15 @@ namespace Presentacion
             // 
             this.PacientesTableAdapter.ClearBeforeFill = true;
             // 
-            // ReportePacientes
+            // ReportesPacientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(804, 537);
             this.Controls.Add(this.reportViewer1);
-            this.Name = "ReportePacientes";
-            this.Text = "ReportePacientes";
-            this.Load += new System.EventHandler(this.ReportePacientes_Load);
+            this.Name = "ReportesPacientes";
+            this.Text = "ReportesPacientes";
+            this.Load += new System.EventHandler(this.ReportesPacientes_Load);
             ((System.ComponentModel.ISupportInitialize)(this.VacunacionDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PacientesBindingSource)).EndInit();
             this.ResumeLayout(false);

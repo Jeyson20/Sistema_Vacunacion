@@ -45,11 +45,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CENTS.cs" />
+    <Compile Include="D_Dosis.cs" />
+    <Compile Include="D_Laboratorio.cs" />
     <Compile Include="D_Pacientes.cs" />
     <Compile Include="D_Centros.cs" />
+    <Compile Include="D_Provincias.cs" />
     <Compile Include="D_Vacunaciones.cs" />
     <Compile Include="D_Vacunas.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VACUs.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CapaEntidades\CapaEntidades.csproj">

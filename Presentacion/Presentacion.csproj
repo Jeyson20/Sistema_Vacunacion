@@ -84,34 +84,35 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ReporteCentros.cs">
+    <Compile Include="ReportesCentros.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ReporteCentros.Designer.cs">
-      <DependentUpon>ReporteCentros.cs</DependentUpon>
+    <Compile Include="ReportesCentros.Designer.cs">
+      <DependentUpon>ReportesCentros.cs</DependentUpon>
     </Compile>
-    <Compile Include="ReportePacientes.cs">
+    <Compile Include="ReportesPacientes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ReportePacientes.Designer.cs">
-      <DependentUpon>ReportePacientes.cs</DependentUpon>
+    <Compile Include="ReportesPacientes.Designer.cs">
+      <DependentUpon>ReportesPacientes.cs</DependentUpon>
     </Compile>
-    <Compile Include="ReporteVacunas.cs">
+    <Compile Include="ReportesVacunaciones.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ReporteVacunas.Designer.cs">
-      <DependentUpon>ReporteVacunas.cs</DependentUpon>
+    <Compile Include="ReportesVacunaciones.Designer.cs">
+      <DependentUpon>ReportesVacunaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportesVacunas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportesVacunas.Designer.cs">
+      <DependentUpon>ReportesVacunas.cs</DependentUpon>
     </Compile>
     <Compile Include="SqlServerTypes\Loader.cs" />
     <Compile Include="VacunacionDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>VacunacionDataSet.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="VacunacionDataSet1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>VacunacionDataSet1.xsd</DependentUpon>
     </Compile>
     <Compile Include="Vacunaciones.cs">
       <SubType>Form</SubType>
@@ -144,18 +145,22 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="ReportePacientes.resx">
-      <DependentUpon>ReportePacientes.cs</DependentUpon>
+    <EmbeddedResource Include="ReportesCentros.resx">
+      <DependentUpon>ReportesCentros.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ReportesPacientes.resx">
+      <DependentUpon>ReportesPacientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportesVacunaciones.resx">
+      <DependentUpon>ReportesVacunaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportesVacunas.resx">
+      <DependentUpon>ReportesVacunas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\ReportVacunacion.rdlc" />
     <EmbeddedResource Include="Reportes\ReportVacunas.rdlc" />
     <EmbeddedResource Include="Reportes\Report1.rdlc" />
-    <EmbeddedResource Include="ReporteCentros.resx">
-      <DependentUpon>ReporteCentros.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Reportes\Report3.rdlc" />
-    <EmbeddedResource Include="ReporteVacunas.resx">
-      <DependentUpon>ReporteVacunas.cs</DependentUpon>
-    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Report2.rdlc" />
     <EmbeddedResource Include="Vacunaciones.resx">
       <DependentUpon>Vacunaciones.cs</DependentUpon>
     </EmbeddedResource>
@@ -182,17 +187,6 @@
     </None>
     <None Include="VacunacionDataSet.xss">
       <DependentUpon>VacunacionDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="VacunacionDataSet1.xsc">
-      <DependentUpon>VacunacionDataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="VacunacionDataSet1.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>VacunacionDataSet1.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="VacunacionDataSet1.xss">
-      <DependentUpon>VacunacionDataSet1.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>

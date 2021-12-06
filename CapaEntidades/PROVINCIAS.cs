@@ -8,9 +8,10 @@ namespace CapaEntidades
 {
     public class Provincias
     {
-        public int Prv_Codigo { get; set; }
+        private int _prv_Codigo;
+        private string _prv_Descripcion;
 
-        public string Prv_Descripcion { get; set; }
-
+        public int Prv_Codigo { get => _prv_Codigo; set => _prv_Codigo = value; }
+        public string Prv_Descripcion { get => _prv_Descripcion; set => _prv_Descripcion = value; }
     }
 }

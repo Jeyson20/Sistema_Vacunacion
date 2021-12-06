@@ -10,17 +10,17 @@ using System.Windows.Forms;
 
 namespace Presentacion
 {
-    public partial class ReporteCentros : Form
+    public partial class ReportesPacientes : Form
     {
-        public ReporteCentros()
+        public ReportesPacientes()
         {
             InitializeComponent();
         }
 
-        private void ReporteCentros_Load(object sender, EventArgs e)
+        private void ReportesPacientes_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'VacunacionDataSet.CentrosVacunas' table. You can move, or remove it, as needed.
-            this.CentrosVacunasTableAdapter.Fill(this.VacunacionDataSet.CentrosVacunas);
+            // TODO: This line of code loads data into the 'VacunacionDataSet.Pacientes' table. You can move, or remove it, as needed.
+            this.PacientesTableAdapter.Fill(this.VacunacionDataSet.Pacientes);
 
             this.reportViewer1.RefreshReport();
         }

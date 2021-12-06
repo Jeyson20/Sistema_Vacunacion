@@ -26,6 +26,7 @@ namespace Presentacion
         {
             // TODO: This line of code loads data into the 'vacunacionDataSet.Pacientes' table. You can move, or remove it, as needed.
             this.pacientesTableAdapter.Fill(this.vacunacionDataSet.Pacientes);
+
         }
         public void mostrarBuscarTabla(string buscar)
         {
@@ -115,7 +116,7 @@ namespace Presentacion
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Form reporte = new ReportePacientes();
+            Form reporte = new ReportesPacientes();
             reporte.Show();
         }
 

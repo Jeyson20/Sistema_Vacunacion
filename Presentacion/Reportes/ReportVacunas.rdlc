@@ -6,22 +6,22 @@
         <TablixBody>
           <TablixColumns>
             <TablixColumn>
-              <Width>3.39506cm</Width>
+              <Width>3.44357cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>3.39506cm</Width>
+              <Width>3.44357cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>3.39506cm</Width>
+              <Width>3.44357cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>3.39506cm</Width>
+              <Width>3.44357cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>3.39506cm</Width>
+              <Width>3.44357cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>3.39506cm</Width>
+              <Width>3.44357cm</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
@@ -245,14 +245,14 @@
               <TablixCells>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="V_Codigo">
+                    <Textbox Name="CODIGO">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!V_Codigo.Value</Value>
+                              <Value>=Fields!CODIGO.Value</Value>
                               <Style />
                             </TextRun>
                           </TextRuns>
@@ -261,7 +261,7 @@
                           </Style>
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>V_Codigo</rd:DefaultName>
+                      <rd:DefaultName>CODIGO</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
@@ -277,14 +277,14 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="V_Laboratorio">
+                    <Textbox Name="LABORATORIO">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!V_Laboratorio.Value</Value>
+                              <Value>=Fields!LABORATORIO.Value</Value>
                               <Style />
                             </TextRun>
                           </TextRuns>
@@ -293,7 +293,7 @@
                           </Style>
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>V_Laboratorio</rd:DefaultName>
+                      <rd:DefaultName>LABORATORIO</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
@@ -309,14 +309,14 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="V_Marca">
+                    <Textbox Name="MARCA">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!V_Marca.Value</Value>
+                              <Value>=Fields!MARCA.Value</Value>
                               <Style />
                             </TextRun>
                           </TextRuns>
@@ -325,7 +325,7 @@
                           </Style>
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>V_Marca</rd:DefaultName>
+                      <rd:DefaultName>MARCA</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
@@ -341,14 +341,14 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="V_Expiracion">
+                    <Textbox Name="EXPIRACION">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!V_Expiracion.Value</Value>
+                              <Value>=Fields!EXPIRACION.Value</Value>
                               <Style />
                             </TextRun>
                           </TextRuns>
@@ -357,7 +357,7 @@
                           </Style>
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>V_Expiracion</rd:DefaultName>
+                      <rd:DefaultName>EXPIRACION</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
@@ -373,14 +373,14 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="V_Lote">
+                    <Textbox Name="LOTE">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!V_Lote.Value</Value>
+                              <Value>=Fields!LOTE.Value</Value>
                               <Style />
                             </TextRun>
                           </TextRuns>
@@ -389,7 +389,7 @@
                           </Style>
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>V_Lote</rd:DefaultName>
+                      <rd:DefaultName>LOTE</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
@@ -405,14 +405,14 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="V_Cantidad">
+                    <Textbox Name="CANTIDAD">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!V_Cantidad.Value</Value>
+                              <Value>=Fields!CANTIDAD.Value</Value>
                               <Style />
                             </TextRun>
                           </TextRuns>
@@ -421,7 +421,7 @@
                           </Style>
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>V_Cantidad</rd:DefaultName>
+                      <rd:DefaultName>CANTIDAD</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
@@ -460,10 +460,10 @@
           </TablixMembers>
         </TablixRowHierarchy>
         <DataSetName>DataSet1</DataSetName>
-        <Top>0.17639cm</Top>
-        <Left>0.28849cm</Left>
+        <Top>0.10583cm</Top>
+        <Left>0.31495cm</Left>
         <Height>1.2cm</Height>
-        <Width>20.37039cm</Width>
+        <Width>20.66142cm</Width>
         <Style>
           <Border>
             <Style>None</Style>
@@ -471,7 +471,7 @@
         </Style>
       </Tablix>
     </ReportItems>
-    <Height>13.76389mm</Height>
+    <Height>13.0583mm</Height>
     <Style>
       <Border>
         <Style>Dashed</Style>
@@ -481,7 +481,7 @@
       </TopBorder>
     </Style>
   </Body>
-  <Width>210mm</Width>
+  <Width>212.6745mm</Width>
   <Page>
     <PageHeader>
       <Height>1.81391cm</Height>
@@ -614,53 +614,53 @@
   </Page>
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
-    <DataSource Name="VacunacionDataSet1">
+    <DataSource Name="VacunacionDataSet">
       <ConnectionProperties>
         <DataProvider>System.Data.DataSet</DataProvider>
         <ConnectString>/* Local Connection */</ConnectString>
       </ConnectionProperties>
-      <rd:DataSourceID>00b14dd6-cddd-4e48-b9ef-ac3d2b0668ad</rd:DataSourceID>
+      <rd:DataSourceID>db68dffc-6e5e-4926-8592-9770dcd1196e</rd:DataSourceID>
     </DataSource>
   </DataSources>
   <DataSets>
     <DataSet Name="DataSet1">
       <Query>
-        <DataSourceName>VacunacionDataSet1</DataSourceName>
+        <DataSourceName>VacunacionDataSet</DataSourceName>
         <CommandText>/* Local Query */</CommandText>
       </Query>
       <Fields>
-        <Field Name="V_Codigo">
-          <DataField>V_Codigo</DataField>
+        <Field Name="CODIGO">
+          <DataField>CODIGO</DataField>
           <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
-        <Field Name="V_Laboratorio">
-          <DataField>V_Laboratorio</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="V_Marca">
-          <DataField>V_Marca</DataField>
+        <Field Name="LABORATORIO">
+          <DataField>LABORATORIO</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="V_Expiracion">
-          <DataField>V_Expiracion</DataField>
+        <Field Name="MARCA">
+          <DataField>MARCA</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="EXPIRACION">
+          <DataField>EXPIRACION</DataField>
           <rd:TypeName>System.DateTime</rd:TypeName>
         </Field>
-        <Field Name="V_Lote">
-          <DataField>V_Lote</DataField>
+        <Field Name="LOTE">
+          <DataField>LOTE</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="V_Cantidad">
-          <DataField>V_Cantidad</DataField>
+        <Field Name="CANTIDAD">
+          <DataField>CANTIDAD</DataField>
           <rd:TypeName>System.Decimal</rd:TypeName>
         </Field>
       </Fields>
       <rd:DataSetInfo>
-        <rd:DataSetName>VacunacionDataSet1</rd:DataSetName>
-        <rd:SchemaPath>C:\Users\Nomar\Desktop\Vacuna\Presentacion\VacunacionDataSet1.xsd</rd:SchemaPath>
-        <rd:TableName>Vacunas</rd:TableName>
+        <rd:DataSetName>VacunacionDataSet</rd:DataSetName>
+        <rd:SchemaPath>C:\Users\Nomar\Desktop\Vacuna\Presentacion\VacunacionDataSet.xsd</rd:SchemaPath>
+        <rd:TableName>P_BUSCAR_VACUNA</rd:TableName>
         <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
         <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
-        <rd:TableAdapterName>VacunasTableAdapter</rd:TableAdapterName>
+        <rd:TableAdapterName>P_BUSCAR_VACUNATableAdapter</rd:TableAdapterName>
       </rd:DataSetInfo>
     </DataSet>
   </DataSets>

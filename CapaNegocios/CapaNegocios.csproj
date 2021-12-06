@@ -46,10 +46,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CENT.cs" />
     <Compile Include="N_Centros.cs" />
+    <Compile Include="N_dosis.cs" />
+    <Compile Include="N_Laboratorio.cs" />
     <Compile Include="N_Pacientes.cs" />
+    <Compile Include="N_Provincias.cs" />
+    <Compile Include="N_Vacunaciones.cs" />
     <Compile Include="N_Vacunas.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VACU.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CapaDatos\CapaDatos.csproj">

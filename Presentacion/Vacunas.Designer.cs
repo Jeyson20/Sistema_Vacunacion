@@ -32,21 +32,19 @@ namespace Presentacion
             this.components = new System.ComponentModel.Container();
             this.label2 = new System.Windows.Forms.Label();
             this.tablacentros = new System.Windows.Forms.DataGridView();
-            this.vCodigoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.vLaboratorioDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.vMarcaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.vExpiracionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.vLoteDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.vCantidadDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.vacunasBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.vacunacionDataSet1 = new Presentacion.VacunacionDataSet1();
-            this.vacunasTableAdapter = new Presentacion.VacunacionDataSet1TableAdapters.VacunasTableAdapter();
+            this.cODIGODataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lABORATORIODataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.mARCADataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.eXPIRACIONDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lOTEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cANTIDADDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pBUSCARVACUNABindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.vacunacionDataSet = new Presentacion.VacunacionDataSet();
             this.label6 = new System.Windows.Forms.Label();
             this.txtCantidad = new System.Windows.Forms.TextBox();
             this.txtMarca = new System.Windows.Forms.TextBox();
             this.txtId = new System.Windows.Forms.TextBox();
             this.txtLote = new System.Windows.Forms.TextBox();
-            this.txtLaboratorio = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -57,9 +55,11 @@ namespace Presentacion
             this.btnEditar = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnGuardar = new System.Windows.Forms.Button();
+            this.p_BUSCAR_VACUNATableAdapter = new Presentacion.VacunacionDataSetTableAdapters.P_BUSCAR_VACUNATableAdapter();
+            this.cmbLaboratorio = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.tablacentros)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.vacunasBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.vacunacionDataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBUSCARVACUNABindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vacunacionDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // label2
@@ -80,76 +80,73 @@ namespace Presentacion
             this.tablacentros.BackgroundColor = System.Drawing.Color.White;
             this.tablacentros.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.tablacentros.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.vCodigoDataGridViewTextBoxColumn,
-            this.vLaboratorioDataGridViewTextBoxColumn,
-            this.vMarcaDataGridViewTextBoxColumn,
-            this.vExpiracionDataGridViewTextBoxColumn,
-            this.vLoteDataGridViewTextBoxColumn,
-            this.vCantidadDataGridViewTextBoxColumn});
-            this.tablacentros.DataSource = this.vacunasBindingSource;
+            this.cODIGODataGridViewTextBoxColumn,
+            this.lABORATORIODataGridViewTextBoxColumn,
+            this.mARCADataGridViewTextBoxColumn,
+            this.eXPIRACIONDataGridViewTextBoxColumn,
+            this.lOTEDataGridViewTextBoxColumn,
+            this.cANTIDADDataGridViewTextBoxColumn});
+            this.tablacentros.DataSource = this.pBUSCARVACUNABindingSource;
             this.tablacentros.Location = new System.Drawing.Point(45, 111);
             this.tablacentros.Name = "tablacentros";
             this.tablacentros.ReadOnly = true;
             this.tablacentros.Size = new System.Drawing.Size(725, 162);
             this.tablacentros.TabIndex = 44;
             // 
-            // vCodigoDataGridViewTextBoxColumn
+            // cODIGODataGridViewTextBoxColumn
             // 
-            this.vCodigoDataGridViewTextBoxColumn.DataPropertyName = "V_Codigo";
-            this.vCodigoDataGridViewTextBoxColumn.HeaderText = "CODIGO";
-            this.vCodigoDataGridViewTextBoxColumn.Name = "vCodigoDataGridViewTextBoxColumn";
-            this.vCodigoDataGridViewTextBoxColumn.ReadOnly = true;
+            this.cODIGODataGridViewTextBoxColumn.DataPropertyName = "CODIGO";
+            this.cODIGODataGridViewTextBoxColumn.HeaderText = "CODIGO";
+            this.cODIGODataGridViewTextBoxColumn.Name = "cODIGODataGridViewTextBoxColumn";
+            this.cODIGODataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // vLaboratorioDataGridViewTextBoxColumn
+            // lABORATORIODataGridViewTextBoxColumn
             // 
-            this.vLaboratorioDataGridViewTextBoxColumn.DataPropertyName = "V_Laboratorio";
-            this.vLaboratorioDataGridViewTextBoxColumn.HeaderText = "LABORATORIO";
-            this.vLaboratorioDataGridViewTextBoxColumn.Name = "vLaboratorioDataGridViewTextBoxColumn";
-            this.vLaboratorioDataGridViewTextBoxColumn.ReadOnly = true;
+            this.lABORATORIODataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.lABORATORIODataGridViewTextBoxColumn.DataPropertyName = "LABORATORIO";
+            this.lABORATORIODataGridViewTextBoxColumn.HeaderText = "LABORATORIO";
+            this.lABORATORIODataGridViewTextBoxColumn.Name = "lABORATORIODataGridViewTextBoxColumn";
+            this.lABORATORIODataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // vMarcaDataGridViewTextBoxColumn
+            // mARCADataGridViewTextBoxColumn
             // 
-            this.vMarcaDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.vMarcaDataGridViewTextBoxColumn.DataPropertyName = "V_Marca";
-            this.vMarcaDataGridViewTextBoxColumn.HeaderText = "MARCA";
-            this.vMarcaDataGridViewTextBoxColumn.Name = "vMarcaDataGridViewTextBoxColumn";
-            this.vMarcaDataGridViewTextBoxColumn.ReadOnly = true;
+            this.mARCADataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.mARCADataGridViewTextBoxColumn.DataPropertyName = "MARCA";
+            this.mARCADataGridViewTextBoxColumn.HeaderText = "MARCA";
+            this.mARCADataGridViewTextBoxColumn.Name = "mARCADataGridViewTextBoxColumn";
+            this.mARCADataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // vExpiracionDataGridViewTextBoxColumn
+            // eXPIRACIONDataGridViewTextBoxColumn
             // 
-            this.vExpiracionDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.vExpiracionDataGridViewTextBoxColumn.DataPropertyName = "V_Expiracion";
-            this.vExpiracionDataGridViewTextBoxColumn.HeaderText = "FECHA DE EXPIRACION";
-            this.vExpiracionDataGridViewTextBoxColumn.Name = "vExpiracionDataGridViewTextBoxColumn";
-            this.vExpiracionDataGridViewTextBoxColumn.ReadOnly = true;
+            this.eXPIRACIONDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.eXPIRACIONDataGridViewTextBoxColumn.DataPropertyName = "EXPIRACION";
+            this.eXPIRACIONDataGridViewTextBoxColumn.HeaderText = "EXPIRACION";
+            this.eXPIRACIONDataGridViewTextBoxColumn.Name = "eXPIRACIONDataGridViewTextBoxColumn";
+            this.eXPIRACIONDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // vLoteDataGridViewTextBoxColumn
+            // lOTEDataGridViewTextBoxColumn
             // 
-            this.vLoteDataGridViewTextBoxColumn.DataPropertyName = "V_Lote";
-            this.vLoteDataGridViewTextBoxColumn.HeaderText = "LOTE";
-            this.vLoteDataGridViewTextBoxColumn.Name = "vLoteDataGridViewTextBoxColumn";
-            this.vLoteDataGridViewTextBoxColumn.ReadOnly = true;
+            this.lOTEDataGridViewTextBoxColumn.DataPropertyName = "LOTE";
+            this.lOTEDataGridViewTextBoxColumn.HeaderText = "LOTE";
+            this.lOTEDataGridViewTextBoxColumn.Name = "lOTEDataGridViewTextBoxColumn";
+            this.lOTEDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // vCantidadDataGridViewTextBoxColumn
+            // cANTIDADDataGridViewTextBoxColumn
             // 
-            this.vCantidadDataGridViewTextBoxColumn.DataPropertyName = "V_Cantidad";
-            this.vCantidadDataGridViewTextBoxColumn.HeaderText = "CANTIDAD";
-            this.vCantidadDataGridViewTextBoxColumn.Name = "vCantidadDataGridViewTextBoxColumn";
-            this.vCantidadDataGridViewTextBoxColumn.ReadOnly = true;
+            this.cANTIDADDataGridViewTextBoxColumn.DataPropertyName = "CANTIDAD";
+            this.cANTIDADDataGridViewTextBoxColumn.HeaderText = "CANTIDAD";
+            this.cANTIDADDataGridViewTextBoxColumn.Name = "cANTIDADDataGridViewTextBoxColumn";
+            this.cANTIDADDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // vacunasBindingSource
+            // pBUSCARVACUNABindingSource
             // 
-            this.vacunasBindingSource.DataMember = "Vacunas";
-            this.vacunasBindingSource.DataSource = this.vacunacionDataSet1;
+            this.pBUSCARVACUNABindingSource.DataMember = "P_BUSCAR_VACUNA";
+            this.pBUSCARVACUNABindingSource.DataSource = this.vacunacionDataSet;
             // 
-            // vacunacionDataSet1
+            // vacunacionDataSet
             // 
-            this.vacunacionDataSet1.DataSetName = "VacunacionDataSet1";
-            this.vacunacionDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // vacunasTableAdapter
-            // 
-            this.vacunasTableAdapter.ClearBeforeFill = true;
+            this.vacunacionDataSet.DataSetName = "VacunacionDataSet";
+            this.vacunacionDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // label6
             // 
@@ -193,14 +190,6 @@ namespace Presentacion
             this.txtLote.Name = "txtLote";
             this.txtLote.Size = new System.Drawing.Size(117, 26);
             this.txtLote.TabIndex = 50;
-            // 
-            // txtLaboratorio
-            // 
-            this.txtLaboratorio.Location = new System.Drawing.Point(167, 353);
-            this.txtLaboratorio.Multiline = true;
-            this.txtLaboratorio.Name = "txtLaboratorio";
-            this.txtLaboratorio.Size = new System.Drawing.Size(174, 26);
-            this.txtLaboratorio.TabIndex = 49;
             // 
             // label3
             // 
@@ -299,12 +288,25 @@ namespace Presentacion
             this.btnGuardar.UseVisualStyleBackColor = true;
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
+            // p_BUSCAR_VACUNATableAdapter
+            // 
+            this.p_BUSCAR_VACUNATableAdapter.ClearBeforeFill = true;
+            // 
+            // cmbLaboratorio
+            // 
+            this.cmbLaboratorio.FormattingEnabled = true;
+            this.cmbLaboratorio.Location = new System.Drawing.Point(167, 349);
+            this.cmbLaboratorio.Name = "cmbLaboratorio";
+            this.cmbLaboratorio.Size = new System.Drawing.Size(172, 21);
+            this.cmbLaboratorio.TabIndex = 66;
+            // 
             // Vacunas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(820, 576);
+            this.Controls.Add(this.cmbLaboratorio);
             this.Controls.Add(this.btnImprimir);
             this.Controls.Add(this.btnEditar);
             this.Controls.Add(this.btnEliminar);
@@ -318,7 +320,6 @@ namespace Presentacion
             this.Controls.Add(this.txtMarca);
             this.Controls.Add(this.txtId);
             this.Controls.Add(this.txtLote);
-            this.Controls.Add(this.txtLaboratorio);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.tablacentros);
@@ -329,8 +330,8 @@ namespace Presentacion
             this.Text = "Vacunas";
             this.Load += new System.EventHandler(this.Vacunas_Load);
             ((System.ComponentModel.ISupportInitialize)(this.tablacentros)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.vacunasBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.vacunacionDataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBUSCARVACUNABindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vacunacionDataSet)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -340,21 +341,11 @@ namespace Presentacion
 
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DataGridView tablacentros;
-        private VacunacionDataSet1 vacunacionDataSet1;
-        private System.Windows.Forms.BindingSource vacunasBindingSource;
-        private VacunacionDataSet1TableAdapters.VacunasTableAdapter vacunasTableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn vCodigoDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn vLaboratorioDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn vMarcaDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn vExpiracionDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn vLoteDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn vCantidadDataGridViewTextBoxColumn;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txtCantidad;
         private System.Windows.Forms.TextBox txtMarca;
         private System.Windows.Forms.TextBox txtId;
         private System.Windows.Forms.TextBox txtLote;
-        private System.Windows.Forms.TextBox txtLaboratorio;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label1;
@@ -365,5 +356,15 @@ namespace Presentacion
         private System.Windows.Forms.Button btnEditar;
         private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.Button btnGuardar;
+        private VacunacionDataSet vacunacionDataSet;
+        private System.Windows.Forms.BindingSource pBUSCARVACUNABindingSource;
+        private VacunacionDataSetTableAdapters.P_BUSCAR_VACUNATableAdapter p_BUSCAR_VACUNATableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cODIGODataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn lABORATORIODataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn mARCADataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn eXPIRACIONDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn lOTEDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cANTIDADDataGridViewTextBoxColumn;
+        private System.Windows.Forms.ComboBox cmbLaboratorio;
     }
 }

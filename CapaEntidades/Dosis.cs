@@ -8,9 +8,11 @@ namespace CapaEntidades
 {
     public class Dosis
     {
-        public int Id_Dosis { get; set; }
+        private int _id_Dosis;
 
-        public string Descripcion { get; set; }
+        private string _descripcion;
 
+        public int Id_Dosis { get => _id_Dosis; set => _id_Dosis = value; }
+        public string Descripcion { get => _descripcion; set => _descripcion = value; }
     }
 }

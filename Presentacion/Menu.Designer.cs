@@ -30,19 +30,19 @@ namespace Presentacion
         private void InitializeComponent()
         {
             this.Header = new System.Windows.Forms.Panel();
-            this.Wrapper = new System.Windows.Forms.Panel();
-            this.SideBar = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.Logo = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.btnVacunaciones = new System.Windows.Forms.Button();
+            this.Wrapper = new System.Windows.Forms.Panel();
+            this.SideBar = new System.Windows.Forms.Panel();
             this.btnCentros = new System.Windows.Forms.Button();
             this.Pacientes = new System.Windows.Forms.Button();
             this.btnVacunas = new System.Windows.Forms.Button();
+            this.btnVacunaciones = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.Logo = new System.Windows.Forms.PictureBox();
             this.Header.SuspendLayout();
-            this.SideBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.SideBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Logo)).BeginInit();
             this.SuspendLayout();
             // 
@@ -56,30 +56,6 @@ namespace Presentacion
             this.Header.Name = "Header";
             this.Header.Size = new System.Drawing.Size(820, 55);
             this.Header.TabIndex = 0;
-            // 
-            // Wrapper
-            // 
-            this.Wrapper.BackColor = System.Drawing.Color.White;
-            this.Wrapper.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Wrapper.Location = new System.Drawing.Point(184, 0);
-            this.Wrapper.Name = "Wrapper";
-            this.Wrapper.Size = new System.Drawing.Size(820, 636);
-            this.Wrapper.TabIndex = 1;
-            // 
-            // SideBar
-            // 
-            this.SideBar.BackColor = System.Drawing.Color.Black;
-            this.SideBar.Controls.Add(this.btnCentros);
-            this.SideBar.Controls.Add(this.Pacientes);
-            this.SideBar.Controls.Add(this.btnVacunas);
-            this.SideBar.Controls.Add(this.btnVacunaciones);
-            this.SideBar.Controls.Add(this.label1);
-            this.SideBar.Controls.Add(this.Logo);
-            this.SideBar.Dock = System.Windows.Forms.DockStyle.Left;
-            this.SideBar.Location = new System.Drawing.Point(0, 0);
-            this.SideBar.Name = "SideBar";
-            this.SideBar.Size = new System.Drawing.Size(184, 636);
-            this.SideBar.TabIndex = 1;
             // 
             // label2
             // 
@@ -103,39 +79,29 @@ namespace Presentacion
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // Logo
+            // Wrapper
             // 
-            this.Logo.Image = global::Presentacion.Properties.Resources.logoUser;
-            this.Logo.Location = new System.Drawing.Point(16, 13);
-            this.Logo.Name = "Logo";
-            this.Logo.Size = new System.Drawing.Size(150, 100);
-            this.Logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.Logo.TabIndex = 1;
-            this.Logo.TabStop = false;
+            this.Wrapper.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.Wrapper.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Wrapper.Location = new System.Drawing.Point(184, 0);
+            this.Wrapper.Name = "Wrapper";
+            this.Wrapper.Size = new System.Drawing.Size(820, 636);
+            this.Wrapper.TabIndex = 1;
             // 
-            // label1
+            // SideBar
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(53, 124);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(69, 19);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "ADMIN";
-            // 
-            // btnVacunaciones
-            // 
-            this.btnVacunaciones.BackColor = System.Drawing.Color.Black;
-            this.btnVacunaciones.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVacunaciones.ForeColor = System.Drawing.Color.White;
-            this.btnVacunaciones.Location = new System.Drawing.Point(28, 164);
-            this.btnVacunaciones.Name = "btnVacunaciones";
-            this.btnVacunaciones.Size = new System.Drawing.Size(126, 39);
-            this.btnVacunaciones.TabIndex = 3;
-            this.btnVacunaciones.Text = "VACUNACION";
-            this.btnVacunaciones.UseVisualStyleBackColor = false;
-            this.btnVacunaciones.Click += new System.EventHandler(this.btnVacunaciones_Click);
+            this.SideBar.BackColor = System.Drawing.Color.Black;
+            this.SideBar.Controls.Add(this.btnCentros);
+            this.SideBar.Controls.Add(this.Pacientes);
+            this.SideBar.Controls.Add(this.btnVacunas);
+            this.SideBar.Controls.Add(this.btnVacunaciones);
+            this.SideBar.Controls.Add(this.label1);
+            this.SideBar.Controls.Add(this.Logo);
+            this.SideBar.Dock = System.Windows.Forms.DockStyle.Left;
+            this.SideBar.Location = new System.Drawing.Point(0, 0);
+            this.SideBar.Name = "SideBar";
+            this.SideBar.Size = new System.Drawing.Size(184, 636);
+            this.SideBar.TabIndex = 1;
             // 
             // btnCentros
             // 
@@ -176,6 +142,40 @@ namespace Presentacion
             this.btnVacunas.UseVisualStyleBackColor = false;
             this.btnVacunas.Click += new System.EventHandler(this.btnVacunas_Click);
             // 
+            // btnVacunaciones
+            // 
+            this.btnVacunaciones.BackColor = System.Drawing.Color.Black;
+            this.btnVacunaciones.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVacunaciones.ForeColor = System.Drawing.Color.White;
+            this.btnVacunaciones.Location = new System.Drawing.Point(28, 164);
+            this.btnVacunaciones.Name = "btnVacunaciones";
+            this.btnVacunaciones.Size = new System.Drawing.Size(126, 39);
+            this.btnVacunaciones.TabIndex = 3;
+            this.btnVacunaciones.Text = "VACUNACION";
+            this.btnVacunaciones.UseVisualStyleBackColor = false;
+            this.btnVacunaciones.Click += new System.EventHandler(this.btnVacunaciones_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(53, 124);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(69, 19);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "ADMIN";
+            // 
+            // Logo
+            // 
+            this.Logo.Image = global::Presentacion.Properties.Resources.logoUser;
+            this.Logo.Location = new System.Drawing.Point(16, 13);
+            this.Logo.Name = "Logo";
+            this.Logo.Size = new System.Drawing.Size(150, 100);
+            this.Logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Logo.TabIndex = 1;
+            this.Logo.TabStop = false;
+            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -190,9 +190,9 @@ namespace Presentacion
             this.Text = "Menu";
             this.Header.ResumeLayout(false);
             this.Header.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.SideBar.ResumeLayout(false);
             this.SideBar.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Logo)).EndInit();
             this.ResumeLayout(false);
 

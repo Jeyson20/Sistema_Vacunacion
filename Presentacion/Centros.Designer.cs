@@ -32,7 +32,6 @@ namespace Presentacion
             this.components = new System.ComponentModel.Container();
             this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.txtProvincia = new System.Windows.Forms.TextBox();
             this.txtDescripcion = new System.Windows.Forms.TextBox();
             this.txtId = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -45,26 +44,25 @@ namespace Presentacion
             this.btnImprimir = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.tablacentros = new System.Windows.Forms.DataGridView();
+            this.cODIGODataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pROVINCIADataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nUMLOTEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cANTIDADDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.vENCIMIENTODataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cENTRODataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dIRECCIONDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pBUSCARCENTROBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.vacunacionDataSet = new Presentacion.VacunacionDataSet();
             this.label6 = new System.Windows.Forms.Label();
             this.txtLote = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.vacunacionDataSet1 = new Presentacion.VacunacionDataSet1();
-            this.vacunacionDataSet1BindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.centrosVacunasBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.centrosVacunasTableAdapter = new Presentacion.VacunacionDataSet1TableAdapters.CentrosVacunasTableAdapter();
-            this.cenCodigoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cenProvinciaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.numeroLotesDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cenCantidadLotesDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cenVencimientoLotesDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cenDescripcionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cenDireccionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cmbProvincias = new System.Windows.Forms.ComboBox();
+            this.p_BUSCAR_CENTROTableAdapter = new Presentacion.VacunacionDataSetTableAdapters.P_BUSCAR_CENTROTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.tablacentros)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.vacunacionDataSet1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.vacunacionDataSet1BindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.centrosVacunasBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBUSCARCENTROBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vacunacionDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // label5
@@ -86,14 +84,6 @@ namespace Presentacion
             this.label3.Size = new System.Drawing.Size(99, 16);
             this.label3.TabIndex = 27;
             this.label3.Text = "DESCRIPCION";
-            // 
-            // txtProvincia
-            // 
-            this.txtProvincia.Location = new System.Drawing.Point(155, 347);
-            this.txtProvincia.Multiline = true;
-            this.txtProvincia.Name = "txtProvincia";
-            this.txtProvincia.Size = new System.Drawing.Size(174, 26);
-            this.txtProvincia.TabIndex = 29;
             // 
             // txtDescripcion
             // 
@@ -206,19 +196,81 @@ namespace Presentacion
             this.tablacentros.BackgroundColor = System.Drawing.Color.White;
             this.tablacentros.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.tablacentros.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.cenCodigoDataGridViewTextBoxColumn,
-            this.cenProvinciaDataGridViewTextBoxColumn,
-            this.numeroLotesDataGridViewTextBoxColumn,
-            this.cenCantidadLotesDataGridViewTextBoxColumn,
-            this.cenVencimientoLotesDataGridViewTextBoxColumn,
-            this.cenDescripcionDataGridViewTextBoxColumn,
-            this.cenDireccionDataGridViewTextBoxColumn});
-            this.tablacentros.DataSource = this.centrosVacunasBindingSource;
+            this.cODIGODataGridViewTextBoxColumn,
+            this.pROVINCIADataGridViewTextBoxColumn,
+            this.nUMLOTEDataGridViewTextBoxColumn,
+            this.cANTIDADDataGridViewTextBoxColumn,
+            this.vENCIMIENTODataGridViewTextBoxColumn,
+            this.cENTRODataGridViewTextBoxColumn,
+            this.dIRECCIONDataGridViewTextBoxColumn});
+            this.tablacentros.DataSource = this.pBUSCARCENTROBindingSource;
             this.tablacentros.Location = new System.Drawing.Point(38, 110);
             this.tablacentros.Name = "tablacentros";
             this.tablacentros.ReadOnly = true;
             this.tablacentros.Size = new System.Drawing.Size(725, 162);
             this.tablacentros.TabIndex = 43;
+            // 
+            // cODIGODataGridViewTextBoxColumn
+            // 
+            this.cODIGODataGridViewTextBoxColumn.DataPropertyName = "CODIGO";
+            this.cODIGODataGridViewTextBoxColumn.HeaderText = "CODIGO";
+            this.cODIGODataGridViewTextBoxColumn.Name = "cODIGODataGridViewTextBoxColumn";
+            this.cODIGODataGridViewTextBoxColumn.ReadOnly = true;
+            this.cODIGODataGridViewTextBoxColumn.Visible = false;
+            // 
+            // pROVINCIADataGridViewTextBoxColumn
+            // 
+            this.pROVINCIADataGridViewTextBoxColumn.DataPropertyName = "PROVINCIA";
+            this.pROVINCIADataGridViewTextBoxColumn.HeaderText = "PROVINCIA";
+            this.pROVINCIADataGridViewTextBoxColumn.Name = "pROVINCIADataGridViewTextBoxColumn";
+            this.pROVINCIADataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // nUMLOTEDataGridViewTextBoxColumn
+            // 
+            this.nUMLOTEDataGridViewTextBoxColumn.DataPropertyName = "NUMLOTE";
+            this.nUMLOTEDataGridViewTextBoxColumn.HeaderText = "NUMLOTE";
+            this.nUMLOTEDataGridViewTextBoxColumn.Name = "nUMLOTEDataGridViewTextBoxColumn";
+            this.nUMLOTEDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // cANTIDADDataGridViewTextBoxColumn
+            // 
+            this.cANTIDADDataGridViewTextBoxColumn.DataPropertyName = "CANTIDAD";
+            this.cANTIDADDataGridViewTextBoxColumn.HeaderText = "CANTIDAD";
+            this.cANTIDADDataGridViewTextBoxColumn.Name = "cANTIDADDataGridViewTextBoxColumn";
+            this.cANTIDADDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // vENCIMIENTODataGridViewTextBoxColumn
+            // 
+            this.vENCIMIENTODataGridViewTextBoxColumn.DataPropertyName = "VENCIMIENTO";
+            this.vENCIMIENTODataGridViewTextBoxColumn.HeaderText = "VENCIMIENTO";
+            this.vENCIMIENTODataGridViewTextBoxColumn.Name = "vENCIMIENTODataGridViewTextBoxColumn";
+            this.vENCIMIENTODataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // cENTRODataGridViewTextBoxColumn
+            // 
+            this.cENTRODataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.cENTRODataGridViewTextBoxColumn.DataPropertyName = "CENTRO";
+            this.cENTRODataGridViewTextBoxColumn.HeaderText = "CENTRO";
+            this.cENTRODataGridViewTextBoxColumn.Name = "cENTRODataGridViewTextBoxColumn";
+            this.cENTRODataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // dIRECCIONDataGridViewTextBoxColumn
+            // 
+            this.dIRECCIONDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dIRECCIONDataGridViewTextBoxColumn.DataPropertyName = "DIRECCION";
+            this.dIRECCIONDataGridViewTextBoxColumn.HeaderText = "DIRECCION";
+            this.dIRECCIONDataGridViewTextBoxColumn.Name = "dIRECCIONDataGridViewTextBoxColumn";
+            this.dIRECCIONDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // pBUSCARCENTROBindingSource
+            // 
+            this.pBUSCARCENTROBindingSource.DataMember = "P_BUSCAR_CENTRO";
+            this.pBUSCARCENTROBindingSource.DataSource = this.vacunacionDataSet;
+            // 
+            // vacunacionDataSet
+            // 
+            this.vacunacionDataSet.DataSetName = "VacunacionDataSet";
+            this.vacunacionDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // label6
             // 
@@ -265,84 +317,28 @@ namespace Presentacion
             this.dateTimePicker1.Size = new System.Drawing.Size(175, 20);
             this.dateTimePicker1.TabIndex = 48;
             // 
-            // vacunacionDataSet1
+            // cmbProvincias
             // 
-            this.vacunacionDataSet1.DataSetName = "VacunacionDataSet1";
-            this.vacunacionDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.cmbProvincias.BackColor = System.Drawing.Color.White;
+            this.cmbProvincias.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbProvincias.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmbProvincias.FormattingEnabled = true;
+            this.cmbProvincias.Location = new System.Drawing.Point(155, 347);
+            this.cmbProvincias.Name = "cmbProvincias";
+            this.cmbProvincias.Size = new System.Drawing.Size(174, 21);
+            this.cmbProvincias.TabIndex = 49;
             // 
-            // vacunacionDataSet1BindingSource
+            // p_BUSCAR_CENTROTableAdapter
             // 
-            this.vacunacionDataSet1BindingSource.DataSource = this.vacunacionDataSet1;
-            this.vacunacionDataSet1BindingSource.Position = 0;
-            // 
-            // centrosVacunasBindingSource
-            // 
-            this.centrosVacunasBindingSource.DataMember = "CentrosVacunas";
-            this.centrosVacunasBindingSource.DataSource = this.vacunacionDataSet1BindingSource;
-            // 
-            // centrosVacunasTableAdapter
-            // 
-            this.centrosVacunasTableAdapter.ClearBeforeFill = true;
-            // 
-            // cenCodigoDataGridViewTextBoxColumn
-            // 
-            this.cenCodigoDataGridViewTextBoxColumn.DataPropertyName = "Cen_Codigo";
-            this.cenCodigoDataGridViewTextBoxColumn.HeaderText = "Cen_Codigo";
-            this.cenCodigoDataGridViewTextBoxColumn.Name = "cenCodigoDataGridViewTextBoxColumn";
-            this.cenCodigoDataGridViewTextBoxColumn.ReadOnly = true;
-            this.cenCodigoDataGridViewTextBoxColumn.Visible = false;
-            // 
-            // cenProvinciaDataGridViewTextBoxColumn
-            // 
-            this.cenProvinciaDataGridViewTextBoxColumn.DataPropertyName = "Cen_Provincia";
-            this.cenProvinciaDataGridViewTextBoxColumn.HeaderText = "PROVINCIA";
-            this.cenProvinciaDataGridViewTextBoxColumn.Name = "cenProvinciaDataGridViewTextBoxColumn";
-            this.cenProvinciaDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // numeroLotesDataGridViewTextBoxColumn
-            // 
-            this.numeroLotesDataGridViewTextBoxColumn.DataPropertyName = "Numero_Lotes";
-            this.numeroLotesDataGridViewTextBoxColumn.HeaderText = "NUMERO LOTE";
-            this.numeroLotesDataGridViewTextBoxColumn.Name = "numeroLotesDataGridViewTextBoxColumn";
-            this.numeroLotesDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // cenCantidadLotesDataGridViewTextBoxColumn
-            // 
-            this.cenCantidadLotesDataGridViewTextBoxColumn.DataPropertyName = "Cen_CantidadLotes";
-            this.cenCantidadLotesDataGridViewTextBoxColumn.HeaderText = "CANTIDAD LOTE";
-            this.cenCantidadLotesDataGridViewTextBoxColumn.Name = "cenCantidadLotesDataGridViewTextBoxColumn";
-            this.cenCantidadLotesDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // cenVencimientoLotesDataGridViewTextBoxColumn
-            // 
-            this.cenVencimientoLotesDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.cenVencimientoLotesDataGridViewTextBoxColumn.DataPropertyName = "Cen_VencimientoLotes";
-            this.cenVencimientoLotesDataGridViewTextBoxColumn.HeaderText = "FECHA CADUCIDAD LOTE";
-            this.cenVencimientoLotesDataGridViewTextBoxColumn.Name = "cenVencimientoLotesDataGridViewTextBoxColumn";
-            this.cenVencimientoLotesDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // cenDescripcionDataGridViewTextBoxColumn
-            // 
-            this.cenDescripcionDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.cenDescripcionDataGridViewTextBoxColumn.DataPropertyName = "Cen_Descripcion";
-            this.cenDescripcionDataGridViewTextBoxColumn.HeaderText = "DESCRIPCION";
-            this.cenDescripcionDataGridViewTextBoxColumn.Name = "cenDescripcionDataGridViewTextBoxColumn";
-            this.cenDescripcionDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // cenDireccionDataGridViewTextBoxColumn
-            // 
-            this.cenDireccionDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.cenDireccionDataGridViewTextBoxColumn.DataPropertyName = "Cen_Direccion";
-            this.cenDireccionDataGridViewTextBoxColumn.HeaderText = "DIRECCION";
-            this.cenDireccionDataGridViewTextBoxColumn.Name = "cenDireccionDataGridViewTextBoxColumn";
-            this.cenDireccionDataGridViewTextBoxColumn.ReadOnly = true;
+            this.p_BUSCAR_CENTROTableAdapter.ClearBeforeFill = true;
             // 
             // Centros
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(820, 576);
+            this.Controls.Add(this.cmbProvincias);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.txtLote);
@@ -360,7 +356,6 @@ namespace Presentacion
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txtId);
             this.Controls.Add(this.txtDescripcion);
-            this.Controls.Add(this.txtProvincia);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label5);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -368,9 +363,8 @@ namespace Presentacion
             this.Text = "Centros";
             this.Load += new System.EventHandler(this.Centros_Load);
             ((System.ComponentModel.ISupportInitialize)(this.tablacentros)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.vacunacionDataSet1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.vacunacionDataSet1BindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.centrosVacunasBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBUSCARCENTROBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vacunacionDataSet)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -379,7 +373,6 @@ namespace Presentacion
         #endregion
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtProvincia;
         private System.Windows.Forms.TextBox txtDescripcion;
         private System.Windows.Forms.TextBox txtId;
         private System.Windows.Forms.Label label4;
@@ -397,16 +390,16 @@ namespace Presentacion
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.BindingSource vacunacionDataSet1BindingSource;
-        private VacunacionDataSet1 vacunacionDataSet1;
-        private System.Windows.Forms.BindingSource centrosVacunasBindingSource;
-        private VacunacionDataSet1TableAdapters.CentrosVacunasTableAdapter centrosVacunasTableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cenCodigoDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cenProvinciaDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn numeroLotesDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cenCantidadLotesDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cenVencimientoLotesDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cenDescripcionDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cenDireccionDataGridViewTextBoxColumn;
+        public System.Windows.Forms.ComboBox cmbProvincias;
+        private VacunacionDataSet vacunacionDataSet;
+        private System.Windows.Forms.BindingSource pBUSCARCENTROBindingSource;
+        private VacunacionDataSetTableAdapters.P_BUSCAR_CENTROTableAdapter p_BUSCAR_CENTROTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cODIGODataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn pROVINCIADataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nUMLOTEDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cANTIDADDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn vENCIMIENTODataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cENTRODataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dIRECCIONDataGridViewTextBoxColumn;
     }
 }

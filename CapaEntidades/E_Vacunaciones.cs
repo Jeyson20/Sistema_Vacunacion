@@ -8,17 +8,23 @@ namespace CapaEntidades
 {
     public class E_Vacunaciones
     {
-        public int Vac_Codigo { get; set; }
+        private int _vac_Codigo;
 
-        public string Vac_Paciente { get; set; }
+        private string _vac_Paciente;
 
-        public int Vac_Centro { get; set; }
+        private int _vac_Centro;
 
-        public int Vac_Vacuna { get; set; }
+        private int _vac_Vacuna;
 
-        public int Vac_Dosis { get; set; }
+        private int _vac_Dosis;
 
-        public DateTime Vac_Fecha { get; set; }
+        private DateTime _vac_Fecha;
 
+        public int Vac_Codigo { get => _vac_Codigo; set => _vac_Codigo = value; }
+        public string Vac_Paciente { get => _vac_Paciente; set => _vac_Paciente = value; }
+        public int Vac_Centro { get => _vac_Centro; set => _vac_Centro = value; }
+        public int Vac_Vacuna { get => _vac_Vacuna; set => _vac_Vacuna = value; }
+        public int Vac_Dosis { get => _vac_Dosis; set => _vac_Dosis = value; }
+        public DateTime Vac_Fecha { get => _vac_Fecha; set => _vac_Fecha = value; }
     }
 }
