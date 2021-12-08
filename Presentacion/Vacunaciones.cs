@@ -161,5 +161,11 @@ namespace Presentacion
             Form reporte = new ReportesVacunaciones();
             reporte.Show();
         }
+
+        private void btndosis_Click(object sender, EventArgs e)
+        {
+            Form reporte = new RSegunVacunacion();
+            reporte.Show();
+        }
     }
 }

@@ -108,11 +108,22 @@
     <Compile Include="ReportesVacunas.Designer.cs">
       <DependentUpon>ReportesVacunas.cs</DependentUpon>
     </Compile>
+    <Compile Include="RSegunVacunacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RSegunVacunacion.Designer.cs">
+      <DependentUpon>RSegunVacunacion.cs</DependentUpon>
+    </Compile>
     <Compile Include="SqlServerTypes\Loader.cs" />
     <Compile Include="VacunacionDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>VacunacionDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="VacunacionDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VacunacionDataSet1.xsd</DependentUpon>
     </Compile>
     <Compile Include="Vacunaciones.cs">
       <SubType>Form</SubType>
@@ -157,10 +168,14 @@
     <EmbeddedResource Include="ReportesVacunas.resx">
       <DependentUpon>ReportesVacunas.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\1ERA.rdlc" />
     <EmbeddedResource Include="Reportes\ReportVacunacion.rdlc" />
     <EmbeddedResource Include="Reportes\ReportVacunas.rdlc" />
     <EmbeddedResource Include="Reportes\Report1.rdlc" />
     <EmbeddedResource Include="Reportes\Report2.rdlc" />
+    <EmbeddedResource Include="RSegunVacunacion.resx">
+      <DependentUpon>RSegunVacunacion.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Vacunaciones.resx">
       <DependentUpon>Vacunaciones.cs</DependentUpon>
     </EmbeddedResource>
@@ -187,6 +202,17 @@
     </None>
     <None Include="VacunacionDataSet.xss">
       <DependentUpon>VacunacionDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="VacunacionDataSet1.xsc">
+      <DependentUpon>VacunacionDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="VacunacionDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>VacunacionDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="VacunacionDataSet1.xss">
+      <DependentUpon>VacunacionDataSet1.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>

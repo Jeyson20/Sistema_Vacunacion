@@ -31,6 +31,12 @@ namespace Presentacion
         {
             this.components = new System.ComponentModel.Container();
             this.tablaVacunacion = new System.Windows.Forms.DataGridView();
+            this.cODIGODataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pACIENTEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cENTRODataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.vACUNADataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dOSISDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fVACUNACIONDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pBUSCARVACUNACIONBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.vacunacionDataSet = new Presentacion.VacunacionDataSet();
             this.p_BUSCAR_VACUNACIONTableAdapter = new Presentacion.VacunacionDataSetTableAdapters.P_BUSCAR_VACUNACIONTableAdapter();
@@ -48,12 +54,7 @@ namespace Presentacion
             this.label5 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.cODIGODataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pACIENTEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cENTRODataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.vACUNADataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dOSISDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fVACUNACIONDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btndosis = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.tablaVacunacion)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBUSCARVACUNACIONBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.vacunacionDataSet)).BeginInit();
@@ -79,6 +80,51 @@ namespace Presentacion
             this.tablaVacunacion.ReadOnly = true;
             this.tablaVacunacion.Size = new System.Drawing.Size(588, 216);
             this.tablaVacunacion.TabIndex = 0;
+            // 
+            // cODIGODataGridViewTextBoxColumn
+            // 
+            this.cODIGODataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.cODIGODataGridViewTextBoxColumn.DataPropertyName = "CODIGO";
+            this.cODIGODataGridViewTextBoxColumn.HeaderText = "CODIGO";
+            this.cODIGODataGridViewTextBoxColumn.Name = "cODIGODataGridViewTextBoxColumn";
+            this.cODIGODataGridViewTextBoxColumn.ReadOnly = true;
+            this.cODIGODataGridViewTextBoxColumn.Visible = false;
+            // 
+            // pACIENTEDataGridViewTextBoxColumn
+            // 
+            this.pACIENTEDataGridViewTextBoxColumn.DataPropertyName = "PACIENTE";
+            this.pACIENTEDataGridViewTextBoxColumn.HeaderText = "PACIENTE";
+            this.pACIENTEDataGridViewTextBoxColumn.Name = "pACIENTEDataGridViewTextBoxColumn";
+            this.pACIENTEDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // cENTRODataGridViewTextBoxColumn
+            // 
+            this.cENTRODataGridViewTextBoxColumn.DataPropertyName = "CENTRO";
+            this.cENTRODataGridViewTextBoxColumn.HeaderText = "CENTRO";
+            this.cENTRODataGridViewTextBoxColumn.Name = "cENTRODataGridViewTextBoxColumn";
+            this.cENTRODataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // vACUNADataGridViewTextBoxColumn
+            // 
+            this.vACUNADataGridViewTextBoxColumn.DataPropertyName = "VACUNA";
+            this.vACUNADataGridViewTextBoxColumn.HeaderText = "VACUNA";
+            this.vACUNADataGridViewTextBoxColumn.Name = "vACUNADataGridViewTextBoxColumn";
+            this.vACUNADataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // dOSISDataGridViewTextBoxColumn
+            // 
+            this.dOSISDataGridViewTextBoxColumn.DataPropertyName = "DOSIS";
+            this.dOSISDataGridViewTextBoxColumn.HeaderText = "DOSIS";
+            this.dOSISDataGridViewTextBoxColumn.Name = "dOSISDataGridViewTextBoxColumn";
+            this.dOSISDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // fVACUNACIONDataGridViewTextBoxColumn
+            // 
+            this.fVACUNACIONDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.fVACUNACIONDataGridViewTextBoxColumn.DataPropertyName = "FVACUNACION";
+            this.fVACUNACIONDataGridViewTextBoxColumn.HeaderText = "FECHA VACUNACION";
+            this.fVACUNACIONDataGridViewTextBoxColumn.Name = "fVACUNACIONDataGridViewTextBoxColumn";
+            this.fVACUNACIONDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // pBUSCARVACUNACIONBindingSource
             // 
@@ -106,7 +152,7 @@ namespace Presentacion
             // 
             // btnLimpiar
             // 
-            this.btnLimpiar.Location = new System.Drawing.Point(371, 460);
+            this.btnLimpiar.Location = new System.Drawing.Point(350, 460);
             this.btnLimpiar.Name = "btnLimpiar";
             this.btnLimpiar.Size = new System.Drawing.Size(100, 40);
             this.btnLimpiar.TabIndex = 40;
@@ -115,7 +161,7 @@ namespace Presentacion
             // 
             // btnEditar
             // 
-            this.btnEditar.Location = new System.Drawing.Point(241, 460);
+            this.btnEditar.Location = new System.Drawing.Point(229, 460);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Size = new System.Drawing.Size(100, 40);
             this.btnEditar.TabIndex = 41;
@@ -125,9 +171,9 @@ namespace Presentacion
             // 
             // btnImprimir
             // 
-            this.btnImprimir.Location = new System.Drawing.Point(524, 460);
+            this.btnImprimir.Location = new System.Drawing.Point(472, 460);
             this.btnImprimir.Name = "btnImprimir";
-            this.btnImprimir.Size = new System.Drawing.Size(175, 40);
+            this.btnImprimir.Size = new System.Drawing.Size(103, 40);
             this.btnImprimir.TabIndex = 42;
             this.btnImprimir.Text = "IMPRIMIR";
             this.btnImprimir.UseVisualStyleBackColor = true;
@@ -236,50 +282,15 @@ namespace Presentacion
             this.label8.TabIndex = 61;
             this.label8.Text = "CENTRO";
             // 
-            // cODIGODataGridViewTextBoxColumn
+            // btndosis
             // 
-            this.cODIGODataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.cODIGODataGridViewTextBoxColumn.DataPropertyName = "CODIGO";
-            this.cODIGODataGridViewTextBoxColumn.HeaderText = "CODIGO";
-            this.cODIGODataGridViewTextBoxColumn.Name = "cODIGODataGridViewTextBoxColumn";
-            this.cODIGODataGridViewTextBoxColumn.ReadOnly = true;
-            this.cODIGODataGridViewTextBoxColumn.Visible = false;
-            // 
-            // pACIENTEDataGridViewTextBoxColumn
-            // 
-            this.pACIENTEDataGridViewTextBoxColumn.DataPropertyName = "PACIENTE";
-            this.pACIENTEDataGridViewTextBoxColumn.HeaderText = "PACIENTE";
-            this.pACIENTEDataGridViewTextBoxColumn.Name = "pACIENTEDataGridViewTextBoxColumn";
-            this.pACIENTEDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // cENTRODataGridViewTextBoxColumn
-            // 
-            this.cENTRODataGridViewTextBoxColumn.DataPropertyName = "CENTRO";
-            this.cENTRODataGridViewTextBoxColumn.HeaderText = "CENTRO";
-            this.cENTRODataGridViewTextBoxColumn.Name = "cENTRODataGridViewTextBoxColumn";
-            this.cENTRODataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // vACUNADataGridViewTextBoxColumn
-            // 
-            this.vACUNADataGridViewTextBoxColumn.DataPropertyName = "VACUNA";
-            this.vACUNADataGridViewTextBoxColumn.HeaderText = "VACUNA";
-            this.vACUNADataGridViewTextBoxColumn.Name = "vACUNADataGridViewTextBoxColumn";
-            this.vACUNADataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // dOSISDataGridViewTextBoxColumn
-            // 
-            this.dOSISDataGridViewTextBoxColumn.DataPropertyName = "DOSIS";
-            this.dOSISDataGridViewTextBoxColumn.HeaderText = "DOSIS";
-            this.dOSISDataGridViewTextBoxColumn.Name = "dOSISDataGridViewTextBoxColumn";
-            this.dOSISDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // fVACUNACIONDataGridViewTextBoxColumn
-            // 
-            this.fVACUNACIONDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.fVACUNACIONDataGridViewTextBoxColumn.DataPropertyName = "FVACUNACION";
-            this.fVACUNACIONDataGridViewTextBoxColumn.HeaderText = "FECHA VACUNACION";
-            this.fVACUNACIONDataGridViewTextBoxColumn.Name = "fVACUNACIONDataGridViewTextBoxColumn";
-            this.fVACUNACIONDataGridViewTextBoxColumn.ReadOnly = true;
+            this.btndosis.Location = new System.Drawing.Point(598, 460);
+            this.btndosis.Name = "btndosis";
+            this.btndosis.Size = new System.Drawing.Size(101, 40);
+            this.btndosis.TabIndex = 63;
+            this.btndosis.Text = "IMPRIMIR POR DOSIS";
+            this.btndosis.UseVisualStyleBackColor = true;
+            this.btndosis.Click += new System.EventHandler(this.btndosis_Click);
             // 
             // Vacunaciones
             // 
@@ -287,6 +298,7 @@ namespace Presentacion
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(820, 576);
+            this.Controls.Add(this.btndosis);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label5);
@@ -340,5 +352,6 @@ namespace Presentacion
         private System.Windows.Forms.DataGridViewTextBoxColumn vACUNADataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn dOSISDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn fVACUNACIONDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Button btndosis;
     }
 }
