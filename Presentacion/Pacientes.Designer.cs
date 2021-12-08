@@ -194,6 +194,7 @@ namespace Presentacion
             this.txtcedula.Name = "txtcedula";
             this.txtcedula.Size = new System.Drawing.Size(193, 26);
             this.txtcedula.TabIndex = 43;
+            this.txtcedula.TextChanged += new System.EventHandler(this.txtcedula_TextChanged);
             // 
             // label6
             // 

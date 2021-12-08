@@ -3,7 +3,9 @@ using CapaNegocios;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Configuration;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -76,12 +78,27 @@ namespace Presentacion
                     ObjEntidad.Fnacimiento = Convert.ToDateTime(dateTimePicker1.Text.ToUpper());
                     ObjEntidad.Sexo = checkSexo.Text.ToUpper();
                     ObjEntidad.Direccion = txtdireccion.Text.ToUpper();
+                    if (string.IsNullOrWhiteSpace(txtcedula.Text))
+                    {
+                        MessageBox.Show("Debe llenar la cedula");
+                        txtcedula.Clear();
 
-                    ObjNegocio.InsertandoPacientes(ObjEntidad);
+                    } else {
+                        if (ObjNegocio.ExisteCedula(txtcedula.Text) == txtcedula.Text)
+                        {
+                            MessageBox.Show("Ya existe esta cedula");
 
-                    MessageBox.Show("Se ha Guardado el registro");
-                    Limpiarcajas();
-                    mostrarBuscarTabla("");
+                        }else
+                        {
+                            ObjNegocio.InsertandoPacientes(ObjEntidad);
+
+                            MessageBox.Show("Se ha Guardado el registro");
+                            Limpiarcajas();
+                            mostrarBuscarTabla("");
+                        }
+                       
+                    }
+                    
                 }
                 catch (Exception ex)
                 {
@@ -92,6 +109,7 @@ namespace Presentacion
             {
                 try
                 {
+                    txtcedula.ReadOnly = true;
                     ObjEntidad.Cedula = txtcedula.Text;
                     ObjEntidad.Nombre = textnombre.Text;
                     ObjEntidad.Apellido = txtapellido.Text;
@@ -123,6 +141,12 @@ namespace Presentacion
         private void btnLimpiar_Click(object sender, EventArgs e)
         {
             Limpiarcajas();
+        }
+
+       
+        private void txtcedula_TextChanged(object sender, EventArgs e)
+        {
+            
         }
     }
 }
