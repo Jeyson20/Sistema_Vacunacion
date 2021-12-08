@@ -14,38 +14,21 @@ namespace CapaDatos
     {
         SqlConnection conexion = new SqlConnection(ConfigurationManager.ConnectionStrings["conectar"].ConnectionString);
 
-        public object ListarPacientes(string buscar)
+        public DataTable ListarPacientes()
         {
-            SqlDataReader LeerFilas;
+
+            DataTable dataTable = new DataTable();
+            SqlDataReader sqlDataReader;
             SqlCommand cmd = new SqlCommand("P_BUSCAR_PACIENTE", conexion);
             cmd.CommandType = CommandType.StoredProcedure;
             conexion.Open();
 
-            cmd.Parameters.AddWithValue("@BUSCAR",buscar);
-
-            LeerFilas = cmd.ExecuteReader();
-
-            List<E_Pacientes> Listar = new List<E_Pacientes>();
-
-            while(LeerFilas.Read())
-            {
-                Listar.Add(new E_Pacientes
-                {
-                    Idpaciente = LeerFilas.GetInt32(0),
-                    Cedula = LeerFilas.GetString(1),
-                    Nombre = LeerFilas.GetString(2),
-                    Apellido = LeerFilas.GetString(3),
-                    Fnacimiento = LeerFilas.GetDateTime(4),
-                    Sexo = LeerFilas.GetString(5),
-                    Direccion = LeerFilas.GetString(6)
-                });
-  
-            }
+            sqlDataReader = cmd.ExecuteReader();
+            dataTable.Load(sqlDataReader);
+            sqlDataReader.Close();
             conexion.Close();
-            LeerFilas.Close();
+            return dataTable;
 
-
-            return Listar;
         }
 
         public void InsertarPaciente(E_Pacientes pacientes)

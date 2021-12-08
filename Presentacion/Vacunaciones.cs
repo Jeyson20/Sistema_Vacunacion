@@ -25,7 +25,7 @@ namespace Presentacion
             mostrarTabla();
             mostrarCentros();
             mostrarDosis();
-            mostrarPacientes("");
+            mostrarPacientes();
             mostrarVacunas();
         }
 
@@ -35,10 +35,10 @@ namespace Presentacion
             tablaVacunacion.DataSource = objnegocio1.ListadoVacunaciones();
         }
 
-        public void mostrarPacientes(string buscar)
+        public void mostrarPacientes()
         {
             N_Pacientes objnegocio = new N_Pacientes();
-            cmbPaciente.DataSource = objnegocio.ListadoPacientes(buscar);
+            cmbPaciente.DataSource = objnegocio.ListadoPacientes();
             cmbPaciente.ValueMember = "Cedula";
             cmbPaciente.DisplayMember = "Nombre";
         }
@@ -102,7 +102,7 @@ namespace Presentacion
                     mostrarTabla();
                     mostrarCentros();
                     mostrarDosis();
-                    mostrarPacientes("");
+                    mostrarPacientes();
                     mostrarVacunas();
                     Limpiarcajas();
                 }
@@ -127,7 +127,7 @@ namespace Presentacion
                     mostrarTabla();
                     mostrarCentros();
                     mostrarDosis();
-                    mostrarPacientes("");
+                    mostrarPacientes();
                     mostrarVacunas();
 
                     Limpiarcajas();

@@ -8,6 +8,7 @@ using CapaEntidades;
 using CapaDatos;
 using System.Data.SqlClient;
 using System.Configuration;
+using System.Data;
 
 namespace CapaNegocios
 {
@@ -17,10 +18,10 @@ namespace CapaNegocios
         SqlConnection conexion = new SqlConnection(ConfigurationManager.ConnectionStrings["conectar"].ConnectionString);
 
 
-        public List<E_Pacientes>ListadoPacientes(string buscar)
+        public DataTable ListadoPacientes()
         {
 
-            return (List<E_Pacientes>)objDato.ListarPacientes(buscar);
+            return objDato.ListarPacientes();
 
         }
 

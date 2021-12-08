@@ -30,10 +30,10 @@ namespace Presentacion
             this.pacientesTableAdapter.Fill(this.vacunacionDataSet.Pacientes);
 
         }
-        public void mostrarBuscarTabla(string buscar)
+        public void mostrarBuscarTabla()
         {
             N_Pacientes objnegocio = new N_Pacientes();
-            tablaPacientes.DataSource = objnegocio.ListadoPacientes(buscar);
+            tablaPacientes.DataSource = objnegocio.ListadoPacientes();
         }
         private void Limpiarcajas()
         {
@@ -80,13 +80,13 @@ namespace Presentacion
                     ObjEntidad.Direccion = txtdireccion.Text.ToUpper();
                     if (string.IsNullOrWhiteSpace(txtcedula.Text))
                     {
-                        MessageBox.Show("Debe llenar la cedula");
+                        MessageBox.Show("La cedula es un campo obligatorio!");
                         txtcedula.Clear();
 
                     } else {
                         if (ObjNegocio.ExisteCedula(txtcedula.Text) == txtcedula.Text)
                         {
-                            MessageBox.Show("Ya existe esta cedula");
+                            MessageBox.Show("Ya existe esta cedula!!");
 
                         }else
                         {
@@ -94,7 +94,7 @@ namespace Presentacion
 
                             MessageBox.Show("Se ha Guardado el registro");
                             Limpiarcajas();
-                            mostrarBuscarTabla("");
+                            mostrarBuscarTabla();
                         }
                        
                     }
@@ -109,7 +109,7 @@ namespace Presentacion
             {
                 try
                 {
-                    txtcedula.ReadOnly = true;
+                    txtcedula.ReadOnly = false;
                     ObjEntidad.Cedula = txtcedula.Text;
                     ObjEntidad.Nombre = textnombre.Text;
                     ObjEntidad.Apellido = txtapellido.Text;
@@ -121,7 +121,7 @@ namespace Presentacion
 
                     MessageBox.Show("Se ha Editado el registro");
                     Limpiarcajas();
-                    mostrarBuscarTabla("");
+                    mostrarBuscarTabla();
                     Editarse = false;
                 }
                 catch (Exception ex)
