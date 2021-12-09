@@ -30,10 +30,10 @@ namespace Presentacion
             this.pacientesTableAdapter.Fill(this.vacunacionDataSet.Pacientes);
 
         }
-        public void mostrarBuscarTabla()
+        public void mostrarBuscarTabla(string buscar)
         {
             N_Pacientes objnegocio = new N_Pacientes();
-            tablaPacientes.DataSource = objnegocio.ListadoPacientes();
+            tablaPacientes.DataSource = objnegocio.ListadoPacientes(buscar);
         }
         private void Limpiarcajas()
         {
@@ -94,7 +94,7 @@ namespace Presentacion
 
                             MessageBox.Show("Se ha Guardado el registro");
                             Limpiarcajas();
-                            mostrarBuscarTabla();
+                            mostrarBuscarTabla("");
                         }
                        
                     }
@@ -121,7 +121,7 @@ namespace Presentacion
 
                     MessageBox.Show("Se ha Editado el registro");
                     Limpiarcajas();
-                    mostrarBuscarTabla();
+                    mostrarBuscarTabla("");
                     Editarse = false;
                 }
                 catch (Exception ex)
