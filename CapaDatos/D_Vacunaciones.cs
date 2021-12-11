@@ -59,5 +59,17 @@ namespace CapaDatos
             conexion.Close();
 
         }
+        public void Resta(E_Vacunaciones vacunaciones)
+        {
+            SqlCommand cmd = new SqlCommand("P_RESTA", conexion);
+            cmd.CommandType = CommandType.StoredProcedure;
+            conexion.Open();
+            cmd.Parameters.AddWithValue("@CODIGO", vacunaciones.Vac_Centro);
+            cmd.ExecuteNonQuery();
+            conexion.Close();
+
+        }
+
+
     }
 }

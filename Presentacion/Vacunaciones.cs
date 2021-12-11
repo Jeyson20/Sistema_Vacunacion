@@ -92,19 +92,30 @@ namespace Presentacion
             {
                 try
                 {
+
                     ObjEntidad.Vac_Paciente = cmbPaciente.SelectedValue.ToString();
                     ObjEntidad.Vac_Centro = Convert.ToInt32(cmbCentro.SelectedValue);
                     ObjEntidad.Vac_Vacuna = Convert.ToInt32(cmbVacuna.SelectedValue);
                     ObjEntidad.Vac_Dosis = Convert.ToInt32(cmbDosis.SelectedValue);
 
-                    ObjNegocio.InsertandoVacunacion(ObjEntidad);
-                    MessageBox.Show("Se ha Guardado el registro");
-                    mostrarTabla();
-                    mostrarCentros();
-                    mostrarDosis();
-                    mostrarPacientes("");
-                    mostrarVacunas();
-                    Limpiarcajas();
+                        if (ObjNegocio.ExisteCedula(cmbPaciente.SelectedValue.ToString()) == cmbDosis.SelectedValue.ToString())
+                        {
+                            MessageBox.Show("Ya este paciente esta vacunado con esta dosis!!");
+
+                        }
+                        else
+                        {
+                        ObjNegocio.EditcENTRO(ObjEntidad);
+                        ObjNegocio.InsertandoVacunacion(ObjEntidad);
+                        MessageBox.Show("Se ha Guardado el registro");
+                        mostrarTabla();
+                        mostrarCentros();
+                        mostrarDosis();
+                        mostrarPacientes("");
+                        mostrarVacunas();
+                        Limpiarcajas();
+                    }
+
                 }
                 catch (Exception ex)
                 {
@@ -121,17 +132,25 @@ namespace Presentacion
                     ObjEntidad.Vac_Vacuna = Convert.ToInt32(cmbVacuna.SelectedValue.ToString());
                     ObjEntidad.Vac_Dosis = Convert.ToInt32(cmbDosis.SelectedValue.ToString());
 
-                    ObjNegocio.EditandoVacunas(ObjEntidad);
+                    if (ObjNegocio.ExisteCedula(cmbPaciente.SelectedValue.ToString()) == cmbDosis.SelectedValue.ToString())
+                    {
+                        MessageBox.Show("Ya este paciente esta vacunado con esta dosis!!");
 
-                    MessageBox.Show("Se ha Editado el registro");
-                    mostrarTabla();
-                    mostrarCentros();
-                    mostrarDosis();
-                    mostrarPacientes("");
-                    mostrarVacunas();
+                    }
+                    else
+                    {
+                        ObjNegocio.EditandoVacunas(ObjEntidad);
 
-                    Limpiarcajas();
-                    Editarse = false;
+                        MessageBox.Show("Se ha Editado el registro");
+                        mostrarTabla();
+                        mostrarCentros();
+                        mostrarDosis();
+                        mostrarPacientes("");
+                        mostrarVacunas();
+
+                        Limpiarcajas();
+                        Editarse = false;
+                    }
                 }
                 catch (Exception ex)
                 {

@@ -78,7 +78,15 @@ namespace Presentacion
                     ObjEntidad.Fnacimiento = Convert.ToDateTime(dateTimePicker1.Text.ToUpper());
                     ObjEntidad.Sexo = checkSexo.Text.ToUpper();
                     ObjEntidad.Direccion = txtdireccion.Text.ToUpper();
-                    if (string.IsNullOrWhiteSpace(txtcedula.Text))
+                    if (dateTimePicker1.Value.CompareTo(DateTime.Now) == 1)
+
+                    {
+
+                        MessageBox.Show("La fecha de nacimiento no puede ser mayor a la actual");
+
+                    }
+                    
+                    else if (string.IsNullOrWhiteSpace(txtcedula.Text))
                     {
                         MessageBox.Show("La cedula es un campo obligatorio!");
                         txtcedula.Clear();
@@ -87,14 +95,16 @@ namespace Presentacion
                         if (ObjNegocio.ExisteCedula(txtcedula.Text) == txtcedula.Text)
                         {
                             MessageBox.Show("Ya existe esta cedula!!");
+                            this.pacientesTableAdapter.Fill(this.vacunacionDataSet.Pacientes);
 
-                        }else
+
+                        }
+                        else
                         {
                             ObjNegocio.InsertandoPacientes(ObjEntidad);
 
                             MessageBox.Show("Se ha Guardado el registro");
                             Limpiarcajas();
-                            mostrarBuscarTabla("");
                         }
                        
                     }
@@ -109,7 +119,7 @@ namespace Presentacion
             {
                 try
                 {
-                    txtcedula.ReadOnly = false;
+                    txtcedula.ReadOnly = true;
                     ObjEntidad.Cedula = txtcedula.Text;
                     ObjEntidad.Nombre = textnombre.Text;
                     ObjEntidad.Apellido = txtapellido.Text;
@@ -121,7 +131,6 @@ namespace Presentacion
 
                     MessageBox.Show("Se ha Editado el registro");
                     Limpiarcajas();
-                    mostrarBuscarTabla("");
                     Editarse = false;
                 }
                 catch (Exception ex)

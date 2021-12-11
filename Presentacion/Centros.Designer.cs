@@ -150,11 +150,11 @@ namespace Presentacion
             // 
             // btnEliminar
             // 
-            this.btnEliminar.Location = new System.Drawing.Point(290, 496);
+            this.btnEliminar.Location = new System.Drawing.Point(298, 496);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(100, 40);
             this.btnEliminar.TabIndex = 39;
-            this.btnEliminar.Text = "ELIMINAR";
+            this.btnEliminar.Text = "LIMPIAR";
             this.btnEliminar.UseVisualStyleBackColor = true;
             this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 

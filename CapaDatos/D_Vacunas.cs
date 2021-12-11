@@ -28,9 +28,6 @@ namespace CapaDatos
             conexion.Close();
             return dataTable;
         }
-
-
-
         public void InsertarVacunas(E_Vacunas vacunas)
         {
 
