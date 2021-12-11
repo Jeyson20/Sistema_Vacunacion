@@ -124,19 +124,7 @@ namespace Presentacion
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            if (tablacentros.SelectedRows.Count > 0)
-            {
-                ObjEntidad.V_Codigo = Convert.ToInt32(tablacentros.CurrentRow.Cells[0].Value.ToString());
-                ObjNegocio.EliminandoVacunas(ObjEntidad);
-
-                MessageBox.Show("Se elimino correctamente");
-                mostrarBuscarTabla();
-                Limpiarcajas();
-            }
-            else
-            {
-                MessageBox.Show("Seleccione la fila que desea Eliminar");
-            }
+            Limpiarcajas();
         }
 
         private void btnImprimir_Click(object sender, EventArgs e)

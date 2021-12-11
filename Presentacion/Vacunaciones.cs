@@ -70,10 +70,10 @@ namespace Presentacion
         {
             Editarse = false;
             txtId.Text = "";
-            cmbVacuna.Text = "";
-            cmbPaciente.Text = "";
-            cmbDosis.Text = "";
-            cmbCentro.Text = "";
+            cmbVacuna.ResetText();
+            cmbPaciente.ResetText();
+            cmbDosis.ResetText();
+            cmbCentro.ResetText();
             cmbPaciente.Focus();
         }
 
@@ -189,6 +189,9 @@ namespace Presentacion
             reporte.Show();
         }
 
-        
+        private void btnLimpiar_Click(object sender, EventArgs e)
+        {
+            Limpiarcajas();
+        }
     }
 }
